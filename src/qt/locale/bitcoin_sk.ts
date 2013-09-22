@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Zetacoin</source>
-        <translation>O Zetacoin</translation>
+        <source>About Joulecoin</source>
+        <translation>O Joulecoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Zetacoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Zetacoin&lt;/b&gt; verzia</translation>
+        <source>&lt;b&gt;Joulecoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Joulecoin&lt;/b&gt; verzia</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -29,7 +29,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Zetacoin developers</source>
+        <source>The Joulecoin developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -62,8 +62,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Zetacoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú Vaše Zetacoin adresy pre prijímanie platieb. Môžete dať každému odosielateľovi inú rôznu adresu a tak udržiavať prehľad o platbách.</translation>
+        <source>These are your Joulecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú Vaše Joulecoin adresy pre prijímanie platieb. Môžete dať každému odosielateľovi inú rôznu adresu a tak udržiavať prehľad o platbách.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -77,7 +77,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Zetacoin address</source>
+        <source>Sign a message to prove you own a Joulecoin address</source>
         <translation>Podpísať správu a dokázať že vlastníte túto adresu</translation>
     </message>
     <message>
@@ -102,7 +102,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Zetacoin address</source>
+        <source>Verify a message to ensure it was signed with a specified Joulecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -117,7 +117,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Zetacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Joulecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -243,8 +243,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZETACOINS&lt;/b&gt;!</source>
-        <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE ZETACOINY&lt;/b&gt;!⏎</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR JOULECOINS&lt;/b&gt;!</source>
+        <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE JOULECOINY&lt;/b&gt;!⏎</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -270,8 +270,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Zetacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your zetacoins from being stolen by malware infecting your computer.</source>
-        <translation>Zetacoin sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou zetacoinov pomocou škodlivého software.</translation>
+        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
+        <translation>Joulecoin sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou joulecoinov pomocou škodlivého software.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -369,8 +369,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Zetacoin</source>
-        <translation>Zobraziť informácie o Zetacoin</translation>
+        <source>Show information about Joulecoin</source>
+        <translation>Zobraziť informácie o Joulecoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -414,13 +414,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Zetacoin address</source>
-        <translation>Poslať zetacoins na adresu</translation>
+        <source>Send coins to a Joulecoin address</source>
+        <translation>Poslať joulecoins na adresu</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Zetacoin</source>
-        <translation>Upraviť možnosti nastavenia pre zetacoin</translation>
+        <source>Modify configuration options for Joulecoin</source>
+        <translation>Upraviť možnosti nastavenia pre joulecoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -450,7 +450,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Zetacoin</source>
+        <source>Joulecoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -475,8 +475,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Zetacoin</source>
-        <translation>&amp;O Zetacoin</translation>
+        <source>&amp;About Joulecoin</source>
+        <translation>&amp;O Joulecoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -495,12 +495,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Zetacoin addresses to prove you own them</source>
+        <source>Sign messages with your Joulecoin addresses to prove you own them</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Zetacoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Joulecoin addresses</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -531,13 +531,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Zetacoin client</source>
-        <translation>Zetacoin klient</translation>
+        <source>Joulecoin client</source>
+        <translation>Joulecoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Zetacoin network</source>
-        <translation><numerusform>%n aktívne spojenie v Zetacoin sieti</numerusform><numerusform>%n aktívne spojenia v Zetacoin sieti</numerusform><numerusform>%n aktívnych spojení v Bitconi sieti</numerusform></translation>
+        <source>%n active connection(s) to Joulecoin network</source>
+        <translation><numerusform>%n aktívne spojenie v Joulecoin sieti</numerusform><numerusform>%n aktívne spojenia v Joulecoin sieti</numerusform><numerusform>%n aktívnych spojení v Bitconi sieti</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -650,7 +650,7 @@ Adresa: %4</translation>
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Zetacoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Joulecoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -665,7 +665,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Zetacoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Joulecoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -731,8 +731,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Zetacoin address.</source>
-        <translation>Vložená adresa &quot;%1&quot; nieje platnou adresou zetacoin.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Joulecoin address.</source>
+        <translation>Vložená adresa &quot;%1&quot; nieje platnou adresou joulecoin.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -750,7 +750,7 @@ Adresa: %4</translation>
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Zetacoin-Qt</source>
+        <source>Joulecoin-Qt</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -813,13 +813,13 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Zetacoin after logging in to the system.</source>
-        <translation>Automaticky spustiť Zetacoin po zapnutí počítača</translation>
+        <source>Automatically start Joulecoin after logging in to the system.</source>
+        <translation>Automaticky spustiť Joulecoin po zapnutí počítača</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Zetacoin on system login</source>
-        <translation>&amp;Spustiť Zetacoin pri spustení systému správy okien</translation>
+        <source>&amp;Start Joulecoin on system login</source>
+        <translation>&amp;Spustiť Joulecoin pri spustení systému správy okien</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -838,8 +838,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Zetacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvorit port pre Zetacoin na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
+        <source>Automatically open the Joulecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvorit port pre Joulecoin na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -848,8 +848,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Zetacoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Pripojiť do siete Zetacoin cez SOCKS proxy (napr. keď sa pripájate cez Tor)</translation>
+        <source>Connect to the Joulecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Pripojiť do siete Joulecoin cez SOCKS proxy (napr. keď sa pripájate cez Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -923,7 +923,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Zetacoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -938,7 +938,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Zetacoin addresses in the transaction list or not.</source>
+        <source>Whether to show Joulecoin addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -990,7 +990,7 @@ Adresa: %4</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Zetacoin.</source>
+        <source>This setting will take effect after restarting Joulecoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1009,7 +1009,7 @@ Adresa: %4</translation>
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Zetacoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Joulecoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1063,7 +1063,7 @@ Adresa: %4</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start zetacoin: click-to-pay handler</source>
+        <source>Cannot start joulecoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1213,7 +1213,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Zetacoin-Qt help message to get a list with possible Zetacoin command-line options.</source>
+        <source>Show the Joulecoin-Qt help message to get a list with possible Joulecoin command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1233,12 +1233,12 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Zetacoin - Debug window</source>
+        <source>Joulecoin - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>Zetacoin Core</source>
+        <source>Joulecoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1248,7 +1248,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Zetacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1258,7 +1258,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Zetacoin RPC console.</source>
+        <source>Welcome to the Joulecoin RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1284,7 +1284,7 @@ Adresa: %4</translation>
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Poslať Zetacoins</translation>
+        <translation>Poslať Joulecoins</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1334,7 +1334,7 @@ Adresa: %4</translation>
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Potvrdiť odoslanie zetacoins</translation>
+        <translation>Potvrdiť odoslanie joulecoins</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1401,7 +1401,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <source>The address to send the payment to (e.g. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1442,8 +1442,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Zetacoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Zadajte Zetacoin adresu (napr. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Joulecoin address (e.g. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</source>
+        <translation>Zadajte Joulecoin adresu (napr. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</translation>
     </message>
 </context>
 <context>
@@ -1465,8 +1465,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Zadajte Zetacoin adresu (napr. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The address to sign the message with (e.g. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</source>
+        <translation>Zadajte Joulecoin adresu (napr. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1507,7 +1507,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Zetacoin address</source>
+        <source>Sign the message to prove you own this Joulecoin address</source>
         <translation>Podpíšte správu aby ste dokázali že vlastníte túto adresu</translation>
     </message>
     <message>
@@ -1538,12 +1538,12 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Zadajte Zetacoin adresu (napr. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The address the message was signed with (e.g. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</source>
+        <translation>Zadajte Joulecoin adresu (napr. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Zetacoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Joulecoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1559,8 +1559,8 @@ Adresa: %4</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Zetacoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Zadajte Zetacoin adresu (napr. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Joulecoin address (e.g. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</source>
+        <translation>Zadajte Joulecoin adresu (napr. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1569,7 +1569,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Zetacoin signature</source>
+        <source>Enter Joulecoin signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1643,7 +1643,7 @@ Adresa: %4</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+25"/>
-        <source>The Zetacoin developers</source>
+        <source>The Joulecoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2131,7 +2131,7 @@ Adresa: %4</translation>
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>Poslať Zetacoins</translation>
+        <translation>Poslať Joulecoins</translation>
     </message>
 </context>
 <context>
@@ -2181,8 +2181,8 @@ Adresa: %4</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Zetacoin version</source>
-        <translation>Zetacoin verzia</translation>
+        <source>Joulecoin version</source>
+        <translation>Joulecoin verzia</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2191,8 +2191,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or zetacoind</source>
-        <translation>Odoslať príkaz -server alebo zetacoind</translation>
+        <source>Send command to -server or joulecoind</source>
+        <translation>Odoslať príkaz -server alebo joulecoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2211,13 +2211,13 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: zetacoin.conf)</source>
-        <translation>Určiť súbor s nastaveniami (predvolené: zetacoin.conf)</translation>
+        <source>Specify configuration file (default: joulecoin.conf)</source>
+        <translation>Určiť súbor s nastaveniami (predvolené: joulecoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: zetacoind.pid)</source>
-        <translation>Určiť súbor pid (predvolené: zetacoind.pid)</translation>
+        <source>Specify pid file (default: joulecoind.pid)</source>
+        <translation>Určiť súbor pid (predvolené: joulecoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2294,13 +2294,13 @@ Adresa: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=zetacoinrpc
+rpcuser=joulecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Joulecoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2316,7 +2316,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Zetacoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Joulecoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2361,7 +2361,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Zetacoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Joulecoin will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2611,8 +2611,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Zetacoin Wiki for SSL setup instructions)</source>
-        <translation>SSL možnosť: (pozrite Zetacoin Wiki pre návod na nastavenie SSL)</translation>
+        <source>SSL options: (see the Joulecoin Wiki for SSL setup instructions)</source>
+        <translation>SSL možnosť: (pozrite Joulecoin Wiki pre návod na nastavenie SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2801,13 +2801,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Zetacoin</source>
-        <translation>Chyba načítania wallet.dat: Peňaženka vyžaduje novšiu verziu Zetacoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Joulecoin</source>
+        <translation>Chyba načítania wallet.dat: Peňaženka vyžaduje novšiu verziu Joulecoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Zetacoin to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: dokončite reštartovaním Zetacoin</translation>
+        <source>Wallet needed to be rewritten: restart Joulecoin to complete</source>
+        <translation>Bolo potrebné prepísať peňaženku: dokončite reštartovaním Joulecoin</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2866,7 +2866,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Zetacoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Joulecoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

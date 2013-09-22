@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Zetacoin</source>
-        <translation>Sobre Zetacoin</translation>
+        <source>About Joulecoin</source>
+        <translation>Sobre Joulecoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Zetacoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Zetacoin&lt;/b&gt; versió</translation>
+        <source>&lt;b&gt;Joulecoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Joulecoin&lt;/b&gt; versió</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -29,7 +29,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Zetacoin developers</source>
+        <source>The Joulecoin developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -62,8 +62,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Zetacoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Aquestes són les teves adreces Zetacoin per a rebre pagaments. Pot interesar-te proveïr diferents adreces a cadascun dels enviadors així pots identificar qui et va pagant.</translation>
+        <source>These are your Joulecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Aquestes són les teves adreces Joulecoin per a rebre pagaments. Pot interesar-te proveïr diferents adreces a cadascun dels enviadors així pots identificar qui et va pagant.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -77,8 +77,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Zetacoin address</source>
-        <translation>Signa el missatge per provar que ets propietari de l&apos;adreça Zetacoin</translation>
+        <source>Sign a message to prove you own a Joulecoin address</source>
+        <translation>Signa el missatge per provar que ets propietari de l&apos;adreça Joulecoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -102,8 +102,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Zetacoin address</source>
-        <translation>Verificar un missatge per asegurar-se que ha estat signat amb una adreça Zetacoin específica</translation>
+        <source>Verify a message to ensure it was signed with a specified Joulecoin address</source>
+        <translation>Verificar un missatge per asegurar-se que ha estat signat amb una adreça Joulecoin específica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -117,8 +117,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Zetacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són la seva adreça de Zetacoin per enviar els pagaments. Sempre revisi la quantitat i l&apos;adreça del destinatari abans transferència de monedes.</translation>
+        <source>These are your Joulecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són la seva adreça de Joulecoin per enviar els pagaments. Sempre revisi la quantitat i l&apos;adreça del destinatari abans transferència de monedes.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -243,8 +243,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ZETACOINS&lt;/b&gt;!</source>
-        <translation>Advertència: Si encripteu el vostre moneder i perdeu la constrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES ZETACOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR JOULECOINS&lt;/b&gt;!</source>
+        <translation>Advertència: Si encripteu el vostre moneder i perdeu la constrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES JOULECOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -270,8 +270,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Zetacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your zetacoins from being stolen by malware infecting your computer.</source>
-        <translation>Zetacoin es tancarà ara per acabar el procés d&apos;encriptació. Recorda que encriptar el teu moneder no protegeix completament els teus zetacoins de ser robades per programari maliciós instal·lat al teu ordinador.</translation>
+        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
+        <translation>Joulecoin es tancarà ara per acabar el procés d&apos;encriptació. Recorda que encriptar el teu moneder no protegeix completament els teus joulecoins de ser robades per programari maliciós instal·lat al teu ordinador.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -369,8 +369,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Zetacoin</source>
-        <translation>Mostra informació sobre Zetacoin</translation>
+        <source>Show information about Joulecoin</source>
+        <translation>Mostra informació sobre Joulecoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -414,13 +414,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Zetacoin address</source>
-        <translation>Enviar monedes a una adreça Zetacoin</translation>
+        <source>Send coins to a Joulecoin address</source>
+        <translation>Enviar monedes a una adreça Joulecoin</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Zetacoin</source>
-        <translation>Modificar les opcions de configuració per zetacoin</translation>
+        <source>Modify configuration options for Joulecoin</source>
+        <translation>Modificar les opcions de configuració per joulecoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -450,8 +450,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Zetacoin</source>
-        <translation>Zetacoin</translation>
+        <source>Joulecoin</source>
+        <translation>Joulecoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -475,8 +475,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Zetacoin</source>
-        <translation>&amp;Sobre Zetacoin</translation>
+        <source>&amp;About Joulecoin</source>
+        <translation>&amp;Sobre Joulecoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -495,13 +495,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Zetacoin addresses to prove you own them</source>
-        <translation>Signa el missatges amb la seva adreça de Zetacoin per provar que les poseeixes</translation>
+        <source>Sign messages with your Joulecoin addresses to prove you own them</source>
+        <translation>Signa el missatges amb la seva adreça de Joulecoin per provar que les poseeixes</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Zetacoin addresses</source>
-        <translation>Verificar els missatges per assegurar-te que han estat signades amb una adreça Zetacoin específica.</translation>
+        <source>Verify messages to ensure they were signed with specified Joulecoin addresses</source>
+        <translation>Verificar els missatges per assegurar-te que han estat signades amb una adreça Joulecoin específica.</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -531,13 +531,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Zetacoin client</source>
-        <translation>Client Zetacoin</translation>
+        <source>Joulecoin client</source>
+        <translation>Client Joulecoin</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Zetacoin network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Zetacoin</numerusform><numerusform>%n connexions actives a la xarxa Zetacoin</numerusform></translation>
+        <source>%n active connection(s) to Joulecoin network</source>
+        <translation><numerusform>%n connexió activa a la xarxa Joulecoin</numerusform><numerusform>%n connexions actives a la xarxa Joulecoin</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -647,8 +647,8 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Zetacoin address or malformed URI parameters.</source>
-        <translation>la URI no pot ser processada! Això es pot ser causat per una adreça Zetacoin invalida o paràmetres URI malformats.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Joulecoin address or malformed URI parameters.</source>
+        <translation>la URI no pot ser processada! Això es pot ser causat per una adreça Joulecoin invalida o paràmetres URI malformats.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -662,8 +662,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Zetacoin can no longer continue safely and will quit.</source>
-        <translation>Ha tingut lloc un error fatal. Zetacoin no pot continuar executant-se de manera segura i es tancará.</translation>
+        <source>A fatal error occurred. Joulecoin can no longer continue safely and will quit.</source>
+        <translation>Ha tingut lloc un error fatal. Joulecoin no pot continuar executant-se de manera segura i es tancará.</translation>
     </message>
 </context>
 <context>
@@ -728,8 +728,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Zetacoin address.</source>
-        <translation>L&apos;adreça introduida &quot;%1&quot; no és una adreça Zetacoin valida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Joulecoin address.</source>
+        <translation>L&apos;adreça introduida &quot;%1&quot; no és una adreça Joulecoin valida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -747,8 +747,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Zetacoin-Qt</source>
-        <translation>Zetacoin-Qt</translation>
+        <source>Joulecoin-Qt</source>
+        <translation>Joulecoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -810,13 +810,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Zetacoin after logging in to the system.</source>
-        <translation>Iniciar automàticament Zetacoin després de l&apos;inici de sessió del sistema.</translation>
+        <source>Automatically start Joulecoin after logging in to the system.</source>
+        <translation>Iniciar automàticament Joulecoin després de l&apos;inici de sessió del sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Zetacoin on system login</source>
-        <translation>&amp;Iniciar Zetacoin al inici de sessió del sistema.</translation>
+        <source>&amp;Start Joulecoin on system login</source>
+        <translation>&amp;Iniciar Joulecoin al inici de sessió del sistema.</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -835,8 +835,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Zetacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obrir el port del client de Zetacoin al router de forma automàtica. Això només funciona quan el teu router implementa UPnP i l&apos;opció està activada.</translation>
+        <source>Automatically open the Joulecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obrir el port del client de Joulecoin al router de forma automàtica. Això només funciona quan el teu router implementa UPnP i l&apos;opció està activada.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -845,8 +845,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Zetacoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connectar a la xarxa Zetacoin a través de un SOCKS proxy (per exemple connectant a través de Tor).</translation>
+        <source>Connect to the Joulecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connectar a la xarxa Joulecoin a través de un SOCKS proxy (per exemple connectant a través de Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -920,8 +920,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Zetacoin.</source>
-        <translation>Aquí pots definir el llenguatge de l&apos;aplicatiu. Aquesta configuració tindrà efecte un cop es reiniciï Zetacoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
+        <translation>Aquí pots definir el llenguatge de l&apos;aplicatiu. Aquesta configuració tindrà efecte un cop es reiniciï Joulecoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -935,8 +935,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Zetacoin addresses in the transaction list or not.</source>
-        <translation>Mostrar adreces Zetacoin als llistats de transaccions o no.</translation>
+        <source>Whether to show Joulecoin addresses in the transaction list or not.</source>
+        <translation>Mostrar adreces Joulecoin als llistats de transaccions o no.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -987,8 +987,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Zetacoin.</source>
-        <translation>Aquesta configuració tindrà efecte un cop es reiniciï Zetacoin.</translation>
+        <source>This setting will take effect after restarting Joulecoin.</source>
+        <translation>Aquesta configuració tindrà efecte un cop es reiniciï Joulecoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1006,8 +1006,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Zetacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Zetacoin un cop s&apos;ha establert connexió, però aquest proces no s&apos;ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Joulecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot no estar al día. El teu moneder es sincronitza automàticament amb la xarxa Joulecoin un cop s&apos;ha establert connexió, però aquest proces no s&apos;ha completat encara.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1060,8 +1060,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start zetacoin: click-to-pay handler</source>
-        <translation>No es pot iniciar zetacoin: manejador clicla-per-pagar</translation>
+        <source>Cannot start joulecoin: click-to-pay handler</source>
+        <translation>No es pot iniciar joulecoin: manejador clicla-per-pagar</translation>
     </message>
 </context>
 <context>
@@ -1210,8 +1210,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Zetacoin-Qt help message to get a list with possible Zetacoin command-line options.</source>
-        <translation>Mostrar el missatge d&apos;ajuda de Zetacoin-Qt per a obtenir un llistat de possibles ordres per a la línia d&apos;ordres de Zetacoin.</translation>
+        <source>Show the Joulecoin-Qt help message to get a list with possible Joulecoin command-line options.</source>
+        <translation>Mostrar el missatge d&apos;ajuda de Joulecoin-Qt per a obtenir un llistat de possibles ordres per a la línia d&apos;ordres de Joulecoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1230,13 +1230,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Zetacoin - Debug window</source>
-        <translation>Zetacoin -Finestra de debug</translation>
+        <source>Joulecoin - Debug window</source>
+        <translation>Joulecoin -Finestra de debug</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Zetacoin Core</source>
-        <translation>Nucli de Zetacoin</translation>
+        <source>Joulecoin Core</source>
+        <translation>Nucli de Joulecoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1245,8 +1245,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Zetacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Obrir el dietari de debug de Zetacoin del directori de dades actual. Aixó pot trigar uns quants segons per a dietàris grossos.</translation>
+        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Obrir el dietari de debug de Joulecoin del directori de dades actual. Aixó pot trigar uns quants segons per a dietàris grossos.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1255,8 +1255,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Zetacoin RPC console.</source>
-        <translation>Benvingut a la consola RPC de Zetacoin</translation>
+        <source>Welcome to the Joulecoin RPC console.</source>
+        <translation>Benvingut a la consola RPC de Joulecoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1398,8 +1398,8 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>La adreça a on envia el pagament (per exemple: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The address to send the payment to (e.g. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</source>
+        <translation>La adreça a on envia el pagament (per exemple: JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1439,8 +1439,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Zetacoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introdueixi una adreça de Zetacoin (per exemple 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Joulecoin address (e.g. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</source>
+        <translation>Introdueixi una adreça de Joulecoin (per exemple JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</translation>
     </message>
 </context>
 <context>
@@ -1462,8 +1462,8 @@ Address: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>La adreça amb la que signat els missatges (per exemple 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The address to sign the message with (e.g. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</source>
+        <translation>La adreça amb la que signat els missatges (per exemple JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1504,8 +1504,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Zetacoin address</source>
-        <translation>Signa el missatge per provar que ets propietari d&apos;aquesta adreça Zetacoin</translation>
+        <source>Sign the message to prove you own this Joulecoin address</source>
+        <translation>Signa el missatge per provar que ets propietari d&apos;aquesta adreça Joulecoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1535,13 +1535,13 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>La adreça amb el que el missatge va ser signat (per exemple 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>The address the message was signed with (e.g. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</source>
+        <translation>La adreça amb el que el missatge va ser signat (per exemple JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Zetacoin address</source>
-        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Zetacoin específica</translation>
+        <source>Verify the message to ensure it was signed with the specified Joulecoin address</source>
+        <translation>Verificar el missatge per assegurar-se que ha estat signat amb una adreça Joulecoin específica</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1556,8 +1556,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Zetacoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Introdueixi una adreça de Zetacoin (per exemple 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Joulecoin address (e.g. JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</source>
+        <translation>Introdueixi una adreça de Joulecoin (per exemple JUx4HMYEGAj2npGUQZW4tntt8eC73c6376)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1566,8 +1566,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Zetacoin signature</source>
-        <translation>Introduïr una clau Zetacoin</translation>
+        <source>Enter Joulecoin signature</source>
+        <translation>Introduïr una clau Joulecoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1640,7 +1640,7 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+25"/>
-        <source>The Zetacoin developers</source>
+        <source>The Joulecoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2178,8 +2178,8 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Zetacoin version</source>
-        <translation>Versió de Zetacoin</translation>
+        <source>Joulecoin version</source>
+        <translation>Versió de Joulecoin</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2188,8 +2188,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or zetacoind</source>
-        <translation>Enviar comanda a -servidor o zetacoind</translation>
+        <source>Send command to -server or joulecoind</source>
+        <translation>Enviar comanda a -servidor o joulecoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2208,13 +2208,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: zetacoin.conf)</source>
-        <translation>Especificat arxiu de configuració (per defecte: zetacoin.conf)</translation>
+        <source>Specify configuration file (default: joulecoin.conf)</source>
+        <translation>Especificat arxiu de configuració (per defecte: joulecoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: zetacoind.pid)</source>
-        <translation>Especificar arxiu pid (per defecte: zetacoind.pid)</translation>
+        <source>Specify pid file (default: joulecoind.pid)</source>
+        <translation>Especificar arxiu pid (per defecte: joulecoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2291,15 +2291,15 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=zetacoinrpc
+rpcuser=joulecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Joulecoin Alert&quot; admin@foo.com
 </source>
-        <translation>%s has de establir una contrasenya RPC a l&apos;arxiu de configuració:\n%s\nEs recomana que useu la següent constrasenya aleatòria:\nrpcuser=zetacoinrpc\nrpcpassword=%s\n(no necesiteu recordar aquesta contrsenya)\nEl nom d&apos;usuari i contrasenya NO HAN de ser els mateixos.\nSi l&apos;arxiu no existeix, crea&apos;l amb els permisos d&apos;arxiu de només lectura per al propietari.\nTambé es recomana establir la notificació d&apos;alertes i així seràs notificat de les incidències;\nper exemple: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo.com</translation>
+        <translation>%s has de establir una contrasenya RPC a l&apos;arxiu de configuració:\n%s\nEs recomana que useu la següent constrasenya aleatòria:\nrpcuser=joulecoinrpc\nrpcpassword=%s\n(no necesiteu recordar aquesta contrsenya)\nEl nom d&apos;usuari i contrasenya NO HAN de ser els mateixos.\nSi l&apos;arxiu no existeix, crea&apos;l amb els permisos d&apos;arxiu de només lectura per al propietari.\nTambé es recomana establir la notificació d&apos;alertes i així seràs notificat de les incidències;\nper exemple: alertnotify=echo %%s | mail -s &quot;Joulecoin Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2313,8 +2313,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Zetacoin is probably already running.</source>
-        <translation>No es pot bloquejar el directori de dades %s. Probablement Zetacoin ja estigui en execució.</translation>
+        <source>Cannot obtain a lock on data directory %s. Joulecoin is probably already running.</source>
+        <translation>No es pot bloquejar el directori de dades %s. Probablement Joulecoin ja estigui en execució.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2358,8 +2358,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Zetacoin will not work properly.</source>
-        <translation>Advertència: Si us plau comprovi que la data i hora del seu computador siguin correctes! Si el seu rellotge està mal configurat, Zetacoin no funcionará de manera apropiada.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Joulecoin will not work properly.</source>
+        <translation>Advertència: Si us plau comprovi que la data i hora del seu computador siguin correctes! Si el seu rellotge està mal configurat, Joulecoin no funcionará de manera apropiada.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2608,8 +2608,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Zetacoin Wiki for SSL setup instructions)</source>
-        <translation>Opcions SSL: (veure la Wiki de Zetacoin per a instruccions de configuració SSL)</translation>
+        <source>SSL options: (see the Joulecoin Wiki for SSL setup instructions)</source>
+        <translation>Opcions SSL: (veure la Wiki de Joulecoin per a instruccions de configuració SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2798,13 +2798,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Zetacoin</source>
-        <translation>Error carregant wallet.dat: El moneder requereix una versió de Zetacoin més moderna</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Joulecoin</source>
+        <translation>Error carregant wallet.dat: El moneder requereix una versió de Joulecoin més moderna</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Zetacoin to complete</source>
-        <translation>El moneder necesita ser re-escrit: re-inicia Zetacoin per a completar la tasca</translation>
+        <source>Wallet needed to be rewritten: restart Joulecoin to complete</source>
+        <translation>El moneder necesita ser re-escrit: re-inicia Joulecoin per a completar la tasca</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2863,8 +2863,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Zetacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Zetacoin is probably already running.</source>
-        <translation>Impossible d&apos;unir %s en aquest ordinador. Probablement Zetacoin ja estigui en execució.</translation>
+        <source>Unable to bind to %s on this computer. Joulecoin is probably already running.</source>
+        <translation>Impossible d&apos;unir %s en aquest ordinador. Probablement Joulecoin ja estigui en execució.</translation>
     </message>
     <message>
         <location line="+64"/>

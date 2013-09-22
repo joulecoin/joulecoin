@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2013 Zetacoin developers
+// Copyright (c) 2013 Joulecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -66,7 +66,7 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Zetacoin Signed Message:\n";
+const string strMessageMagic = "Joulecoin Signed Message:\n";
 
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
@@ -474,7 +474,7 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 
 bool IsStandardTx(const CTransaction& tx, string& reason)
 {
-    if (tx.nVersion > CTransaction::CURRENT_VERSION) {
+    if (tx.nVersion > CTransaction::TXMSG_VERSION) {
         reason = "version";
         return false;
     }
@@ -484,11 +484,15 @@ bool IsStandardTx(const CTransaction& tx, string& reason)
         return false;
     }
 
+	// Disallow large transaction comments
+	if (tx.strTxComment.length() > MAX_TX_COMMENT_LEN)
+		return false;
+        
     // Extremely large transactions with lots of inputs can cost the network
     // almost as much to process as they cost the sender in fees, because
     // computing signature hashes is O(ninputs*txsize). Limiting transactions
     // to MAX_STANDARD_TX_SIZE mitigates CPU exhaustion attacks.
-    unsigned int sz = tx.GetSerializeSize(SER_NETWORK, CTransaction::CURRENT_VERSION);
+    unsigned int sz = tx.GetSerializeSize(SER_NETWORK, tx.nVersion);
     if (sz >= MAX_STANDARD_TX_SIZE) {
         reason = "tx-size";
         return false;
@@ -1245,8 +1249,8 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
     return pblock->GetHash();
 }
 
-static const int64 nStartSubsidy = 1000 * COIN;
-static const int64 nMinSubsidy = 1 * COIN;
+static const int64 nStartSubsidy = 16 * COIN;
+static const int64 nMinSubsidy = 0.001 * COIN;
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
@@ -1266,14 +1270,14 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 2 * 60; // 2 minutes
-static const int64 nTargetSpacing = 30; // 30 seconds
-static const int64 nInterval = nTargetTimespan / nTargetSpacing; // 4 blocks
+static const int64 nTargetTimespan = 45; // 45 seconds
+static const int64 nTargetSpacing = 45; // 45 seconds
+static const int64 nInterval = nTargetTimespan / nTargetSpacing; // Joulecoin: retarget every block
 
-static const int64 nAveragingInterval = nInterval * 20; // 80 blocks
-static const int64 nAveragingTargetTimespan = nAveragingInterval * nTargetSpacing; // 40 minutes
+static const int64 nAveragingInterval = nInterval * 160; // 160 blocks
+static const int64 nAveragingTargetTimespan = nAveragingInterval * nTargetSpacing; // 120 minutes
 
-static const int64 nMaxAdjustDown = 20; // 20% adjustment down
+static const int64 nMaxAdjustDown = 10; // 10% adjustment down
 static const int64 nMaxAdjustUp = 1; // 1% adjustment up
 
 static const int64 nTargetTimespanAdjDown = nTargetTimespan * (100 + nMaxAdjustDown) / 100;
@@ -4598,7 +4602,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("ZetacoinMiner:\n");
+    printf("JoulecoinMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4607,7 +4611,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("ZetacoinMiner : generated block is stale");
+            return error("JoulecoinMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4621,7 +4625,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("ZetacoinMiner : ProcessBlock, block not accepted");
+            return error("JoulecoinMiner : ProcessBlock, block not accepted");
     }
 
     return true;
@@ -4629,7 +4633,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
 void static BitcoinMiner(CWallet *pwallet)
 {
-    printf("ZetacoinMiner started\n");
+    printf("JoulecoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("bitcoin-miner");
 
@@ -4657,7 +4661,7 @@ void static BitcoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running ZetacoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running JoulecoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -4768,7 +4772,7 @@ void static BitcoinMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        printf("ZetacoinMiner terminated\n");
+        printf("JoulecoinMiner terminated\n");
         throw;
     }
 }

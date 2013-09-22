@@ -147,10 +147,10 @@ OBJS= \
     obj/chainparams.o
 
 
-all: zetacoind
+all: joulecoind
 
-test check: test_zetacoin FORCE
-	./test_zetacoin
+test check: test_joulecoin FORCE
+	./test_joulecoin
 
 #
 # LevelDB support
@@ -178,7 +178,7 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-zetacoind: $(OBJS:obj/%=obj/%)
+joulecoind: $(OBJS:obj/%=obj/%)
 	$(LINK) $(xCXXFLAGS) -o $@ $^ $(xLDFLAGS) $(LIBS)
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
@@ -190,11 +190,11 @@ obj-test/%.o: test/%.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-test_zetacoin: $(TESTOBJS) $(filter-out obj/init.o obj/zetacoind.o,$(OBJS:obj/%=obj/%))
+test_joulecoin: $(TESTOBJS) $(filter-out obj/init.o obj/joulecoind.o,$(OBJS:obj/%=obj/%))
 	$(LINK) $(xCXXFLAGS) -o $@ $(LIBPATHS) $^ $(TESTLIBS) $(xLDFLAGS) $(LIBS)
 
 clean:
-	-rm -f zetacoind test_zetacoin
+	-rm -f joulecoind test_joulecoin
 	-rm -f obj/*.o
 	-rm -f obj-test/*.o
 	-rm -f obj/*.P

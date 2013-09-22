@@ -44,7 +44,7 @@ static const unsigned int UNDOFILE_CHUNK_SIZE = 0x100000; // 1 MiB
 /** Fake height value used in CCoins to signify they are only in the memory pool (since 0.8) */
 static const unsigned int MEMPOOL_HEIGHT = 0x7FFFFFFF;
 /** No amount larger than this (in satoshi) is valid */
-static const int64 MAX_MONEY = 200000000 * COIN;
+static const int64 MAX_MONEY = 50000000 * COIN;
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY = 100;
@@ -54,6 +54,8 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 static const int MAX_SCRIPTCHECK_THREADS = 16;
 /** Default amount of block size reserved for high-priority transactions (in bytes) */
 static const int DEFAULT_BLOCK_PRIORITY_SIZE = 27000;
+/** Tx comments */
+static const unsigned int MAX_TX_COMMENT_LEN = 240;
 #ifdef USE_UPNP
 static const int fHaveUPnP = true;
 #else

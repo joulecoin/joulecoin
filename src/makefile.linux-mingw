@@ -96,7 +96,7 @@ OBJS= \
     obj/txdb.o \
     obj/chainparams.o
 
-all: zetacoind.exe
+all: joulecoind.exe
 
 DEFS += -I"$(CURDIR)/leveldb/include"
 DEFS += -I"$(CURDIR)/leveldb/helpers"
@@ -111,7 +111,7 @@ DEFS += -DHAVE_BUILD_INFO
 obj/%.o: %.cpp $(HEADERS)
 	$(CXX) -c $(xCXXFLAGS) -o $@ $<
 
-zetacoind.exe: $(OBJS:obj/%=obj/%)
+joulecoind.exe: $(OBJS:obj/%=obj/%)
 	$(CXX) $(xCXXFLAGS) $(xLDFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
@@ -119,15 +119,15 @@ TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
 obj-test/%.o: test/%.cpp $(HEADERS)
 	$(CXX) -c $(TESTDEFS) $(xCXXFLAGS) -o $@ $<
 
-test_zetacoin.exe: $(TESTOBJS) $(filter-out obj/init.o obj/zetacoind.o,$(OBJS:obj/%=obj/%))
+test_joulecoin.exe: $(TESTOBJS) $(filter-out obj/init.o obj/joulecoind.o,$(OBJS:obj/%=obj/%))
 	$(CXX) $(xCXXFLAGS) $(xLDFLAGS) -o $@ $(LIBPATHS) $^ -lboost_unit_test_framework-mt-s $(LIBS)
 
 
 clean:
 	-rm -f obj/*.o
-	-rm -f zetacoind.exe
+	-rm -f joulecoind.exe
 	-rm -f obj-test/*.o
-	-rm -f test_zetacoin.exe
+	-rm -f test_joulecoin.exe
 	-rm -f obj/build.h
 	cd leveldb && TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) clean && cd ..
 
