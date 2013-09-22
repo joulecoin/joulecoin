@@ -1,7 +1,7 @@
 src/*.exe
-src/zetacoin
-src/zetacoind
-src/test_zetacoin
+src/joulecoin
+src/joulecoind
+src/test_joulecoin
 .*.swp
 *.*~*
 *.bak
@@ -9,17 +9,17 @@ src/test_zetacoin
 *.orig
 *.o
 *.patch
-.zetacoin
+.joulecoin
 
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-zetacoin-qt
-Zetacoin-Qt.app
+joulecoin-qt
+Joulecoin-Qt.app
 
 # Unit-tests
 Makefile.test
-zetacoin-qt_test
+joulecoin-qt_test
 
 # Resources cpp
 qrc_*.cpp
