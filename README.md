@@ -1,7 +1,7 @@
 Joulecoin integration/staging tree
 ==================================
 
-https://bitcointalk.org/index.php?topic=267545.0
+https://bitcointalk.org/index.php?topic=299308.0
 
 Copyright (c) 2009-2013 Bitcoin Developers,
 Copyright (c) 2013 Joulecoin Developers
@@ -14,9 +14,6 @@ anyone, anywhere in the world. Joulecoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. Joulecoin is also the name of the open source
 software which enables the use of this currency.
-
-For more information, as well as an immediately useable, binary version of
-the Joulecoin client sofware, see https://bitcointalk.org/index.php?topic=267545.0
 
 License
 -------
