@@ -124,7 +124,7 @@ bool WalletModel::validateAddress(const QString &address)
     return addressParsed.IsValid();
 }
 
-WalletModel::SendCoinsReturn WalletModel::sendCoins(const QList<SendCoinsRecipient> &recipients)
+WalletModel::SendCoinsReturn WalletModel::sendCoins(const QString &txcomment, const QList<SendCoinsRecipient> &recipients)
 {
     qint64 total = 0;
     QSet<QString> setAddress;
@@ -182,7 +182,10 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(const QList<SendCoinsRecipie
         CReserveKey keyChange(wallet);
         int64 nFeeRequired = 0;
         std::string strFailReason;
-        bool fCreated = wallet->CreateTransaction(vecSend, wtx, keyChange, nFeeRequired, strFailReason);
+		std::string strTxComment = txcomment.toStdString();
+		if (!strTxComment.empty())
+			strTxComment = "text:" + strTxComment;
+        bool fCreated = wallet->CreateTransaction(vecSend, wtx, keyChange, nFeeRequired, strFailReason, strTxComment);
 
         if(!fCreated)
         {

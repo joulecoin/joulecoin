@@ -187,12 +187,14 @@ public:
     int64 GetUnconfirmedBalance() const;
     int64 GetImmatureBalance() const;
     bool CreateTransaction(const std::vector<std::pair<CScript, int64> >& vecSend,
-                           CWalletTx& wtxNew, CReserveKey& reservekey, int64& nFeeRet, std::string& strFailReason);
+                           CWalletTx& wtxNew, CReserveKey& reservekey, int64& nFeeRet, std::string& strFailReason,
+                           std::string strTxComment);
     bool CreateTransaction(CScript scriptPubKey, int64 nValue,
-                           CWalletTx& wtxNew, CReserveKey& reservekey, int64& nFeeRet, std::string& strFailReason);
+                           CWalletTx& wtxNew, CReserveKey& reservekey, int64& nFeeRet, std::string& strFailReason,
+                           std::string strTxComment);
     bool CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey);
-    std::string SendMoney(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew, bool fAskFee=false);
-    std::string SendMoneyToDestination(const CTxDestination &address, int64 nValue, CWalletTx& wtxNew, bool fAskFee=false);
+    std::string SendMoney(CScript scriptPubKey, int64 nValue, CWalletTx& wtxNew, bool fAskFee=false, std::string strTxComment = "");
+    std::string SendMoneyToDestination(const CTxDestination &address, int64 nValue, CWalletTx& wtxNew, bool fAskFee=false, std::string strTxComment = "");
 
     bool NewKeyPool();
     bool TopUpKeyPool();

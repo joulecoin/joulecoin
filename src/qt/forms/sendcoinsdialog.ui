@@ -15,6 +15,36 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutTxComment">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="labelTxComment">
+	   <property name="text">
+	    <string>Transaction &amp;comment: </string>
+	   </property>
+	   <property name="alignment">
+	    <set>Qt::AlignLeft|Qt::AlignTrailing|Qt::AlignVCenter</set>
+	   </property>
+	   <property name="buddy">
+	    <cstring>editTxComment</cstring>
+	   </property>
+	  </widget>
+     </item>
+     <item>
+      <widget class="QValidatedLineEdit" name="editTxComment">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="toolTip">
+        <string>Enter a transaction comment (Note: this information is public)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
     <widget class="QScrollArea" name="scrollArea">
      <property name="widgetResizable">
       <bool>true</bool>
