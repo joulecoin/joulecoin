@@ -1274,25 +1274,49 @@ static const int64 nTargetTimespan = 45; // 45 seconds
 static const int64 nTargetSpacing = 45; // 45 seconds
 static const int64 nInterval = nTargetTimespan / nTargetSpacing; // Joulecoin: retarget every block
 
-static const int64 nAveragingInterval = nInterval * 160; // 160 blocks
-static const int64 nAveragingTargetTimespan = nAveragingInterval * nTargetSpacing; // 120 minutes
+static const int64 nHeightVer2 = 32000;
+static unsigned int nCheckpointTimeVer2 = 1380618777;                                          
 
-static const int64 nMaxAdjustDown = 10; // 10% adjustment down
-static const int64 nMaxAdjustUp = 1; // 1% adjustment up
+static const int64 nAveragingInterval1 = nInterval * 160; // 160 blocks
+static const int64 nAveragingTargetTimespan1 = nAveragingInterval1 * nTargetSpacing; // 120 minutes
 
-static const int64 nTargetTimespanAdjDown = nTargetTimespan * (100 + nMaxAdjustDown) / 100;
+static const int64 nAveragingInterval2 = nInterval * 8; // 8 blocks
+static const int64 nAveragingTargetTimespan2 = nAveragingInterval2 * nTargetSpacing; // 6 minutes
+
+static const int64 nMaxAdjustDown1 = 10; // 10% adjustment down
+static const int64 nMaxAdjustUp1 = 1; // 1% adjustment up
+
+static const int64 nMaxAdjustDown2 = 1; // 1% adjustment down
+static const int64 nMaxAdjustUp2 = 1; // 1% adjustment up
+
+static const int64 nTargetTimespanAdjDown1 = nTargetTimespan * (100 + nMaxAdjustDown1) / 100;
+static const int64 nTargetTimespanAdjDown2 = nTargetTimespan * (100 + nMaxAdjustDown2) / 100;
 
 //
 // minimum amount of work that could possibly be required nTime after
 // minimum work required was nBase
 //
-unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
+unsigned int ComputeMinWork(unsigned int nBase, int64 nTime, int64 nCheckpointTime, int64 nBlockTime)
 {
     const CBigNum &bnLimit = Params().ProofOfWorkLimit();
     // Testnet has min-difficulty blocks
     // after nTargetSpacing*2 time between blocks:
     if (TestNet() && nTime > nTargetSpacing*2)
         return bnLimit.GetCompact();
+        
+    int64 nMaxAdjustDown;
+    int64 nTargetTimespanAdjDown;
+
+    if ( (nBlockTime >= nCheckpointTimeVer2) && (nCheckpointTime >= nCheckpointTimeVer2) )
+    {
+        nMaxAdjustDown = nMaxAdjustDown2;
+        nTargetTimespanAdjDown = nTargetTimespanAdjDown2;
+    }
+    else
+    {
+        nMaxAdjustDown = nMaxAdjustDown1;
+        nTargetTimespanAdjDown = nTargetTimespanAdjDown1;
+    }
 
     CBigNum bnResult;
     bnResult.SetCompact(nBase);
@@ -1309,9 +1333,12 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
     return bnResult.GetCompact();
 }
 
-static const int64 nMinActualTimespan = nAveragingTargetTimespan * (100 - nMaxAdjustUp) / 100;
-static const int64 nMaxActualTimespan = nAveragingTargetTimespan * (100 + nMaxAdjustDown) / 100;
+static const int64 nMinActualTimespan1 = nAveragingTargetTimespan1 * (100 - nMaxAdjustUp1) / 100;
+static const int64 nMaxActualTimespan1 = nAveragingTargetTimespan1 * (100 + nMaxAdjustDown1) / 100;
     
+static const int64 nMinActualTimespan2 = nAveragingTargetTimespan2 * (100 - nMaxAdjustUp2) / 100;
+static const int64 nMaxActualTimespan2 = nAveragingTargetTimespan2 * (100 + nMaxAdjustDown2) / 100;
+
 unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
     unsigned int nProofOfWorkLimit = Params().ProofOfWorkLimit().GetCompact();
@@ -1320,8 +1347,28 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
         
-    if (pindexLast->nHeight+1 < nAveragingInterval) 
+    if (pindexLast->nHeight+1 < nAveragingInterval1) 
         return nProofOfWorkLimit;
+        
+    int64 nAveragingInterval;
+    int64 nMinActualTimespan;
+    int64 nMaxActualTimespan;
+    int64 nAveragingTargetTimespan;
+
+    if (pindexLast->nHeight+1 >= nHeightVer2)
+    {
+        nAveragingInterval = nAveragingInterval2;
+        nMinActualTimespan = nMinActualTimespan2;
+        nMaxActualTimespan = nMaxActualTimespan2;
+        nAveragingTargetTimespan = nAveragingTargetTimespan2;
+    }
+    else
+    {
+        nAveragingInterval = nAveragingInterval1;
+        nMinActualTimespan = nMinActualTimespan1;
+        nMaxActualTimespan = nMaxActualTimespan1;
+        nAveragingTargetTimespan = nAveragingTargetTimespan1;
+    }
 
     // Only change once per interval
     if ((pindexLast->nHeight+1) % nInterval != 0)
@@ -2438,7 +2485,7 @@ bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBl
         CBigNum bnNewBlock;
         bnNewBlock.SetCompact(pblock->nBits);
         CBigNum bnRequired;
-        bnRequired.SetCompact(ComputeMinWork(pcheckpoint->nBits, deltaTime));
+        bnRequired.SetCompact(ComputeMinWork(pcheckpoint->nBits, deltaTime, pcheckpoint->nTime, pblock->GetBlockTime()));
         if (bnNewBlock > bnRequired)
         {
             return state.DoS(100, error("ProcessBlock() : block with too little proof-of-work"));
