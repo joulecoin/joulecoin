@@ -1275,7 +1275,7 @@ static const int64 nTargetSpacing = 45; // 45 seconds
 static const int64 nInterval = nTargetTimespan / nTargetSpacing; // Joulecoin: retarget every block
 
 static const int64 nHeightVer2 = 32000;
-static unsigned int nCheckpointTimeVer2 = 1380618777;                                          
+static unsigned int nCheckpointTimeVer2 = 1380608826;
 
 static const int64 nAveragingInterval1 = nInterval * 160; // 160 blocks
 static const int64 nAveragingTargetTimespan1 = nAveragingInterval1 * nTargetSpacing; // 120 minutes
