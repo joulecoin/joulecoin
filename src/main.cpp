@@ -1277,11 +1277,17 @@ static const int64 nInterval = nTargetTimespan / nTargetSpacing; // Joulecoin: r
 static const int64 nHeightVer2 = 32000;
 static unsigned int nCheckpointTimeVer2 = 1380608826;
 
+static const int64 nHeightVer3 = 90000;
+static unsigned int nCheckpointTimeVer3 = 1383708330;
+
 static const int64 nAveragingInterval1 = nInterval * 160; // 160 blocks
 static const int64 nAveragingTargetTimespan1 = nAveragingInterval1 * nTargetSpacing; // 120 minutes
 
 static const int64 nAveragingInterval2 = nInterval * 8; // 8 blocks
 static const int64 nAveragingTargetTimespan2 = nAveragingInterval2 * nTargetSpacing; // 6 minutes
+
+static const int64 nAveragingInterval3 = nAveragingInterval2; // 8 blocks
+static const int64 nAveragingTargetTimespan3 = nAveragingTargetTimespan2; // 6 minutes
 
 static const int64 nMaxAdjustDown1 = 10; // 10% adjustment down
 static const int64 nMaxAdjustUp1 = 1; // 1% adjustment up
@@ -1289,8 +1295,12 @@ static const int64 nMaxAdjustUp1 = 1; // 1% adjustment up
 static const int64 nMaxAdjustDown2 = 1; // 1% adjustment down
 static const int64 nMaxAdjustUp2 = 1; // 1% adjustment up
 
+static const int64 nMaxAdjustDown3 = 3; // 3% adjustment down
+static const int64 nMaxAdjustUp3 = 1; // 1% adjustment up
+
 static const int64 nTargetTimespanAdjDown1 = nTargetTimespan * (100 + nMaxAdjustDown1) / 100;
 static const int64 nTargetTimespanAdjDown2 = nTargetTimespan * (100 + nMaxAdjustDown2) / 100;
+static const int64 nTargetTimespanAdjDown3 = nTargetTimespan * (100 + nMaxAdjustDown3) / 100;
 
 //
 // minimum amount of work that could possibly be required nTime after
@@ -1307,16 +1317,39 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime, int64 nCheckpointTi
     int64 nMaxAdjustDown;
     int64 nTargetTimespanAdjDown;
 
-    if ( (nBlockTime >= nCheckpointTimeVer2) && (nCheckpointTime >= nCheckpointTimeVer2) )
-    {
-        nMaxAdjustDown = nMaxAdjustDown2;
-        nTargetTimespanAdjDown = nTargetTimespanAdjDown2;
-    }
-    else
+    // v1
+    if ( (nBlockTime < nCheckpointTimeVer2) && (nCheckpointTime < nCheckpointTimeVer2) )
     {
         nMaxAdjustDown = nMaxAdjustDown1;
         nTargetTimespanAdjDown = nTargetTimespanAdjDown1;
     }
+    else
+    // max of v2&v3 until v3 switch
+    {
+        nMaxAdjustDown = nMaxAdjustDown3;
+        nTargetTimespanAdjDown = nTargetTimespanAdjDown3;
+    }
+    
+    /*
+    if ( (nBlockTime >= nCheckpointTimeVer3) && (nCheckpointTime >= nCheckpointTimeVer3) )
+    {
+        nMaxAdjustDown = nMaxAdjustDown3;
+        nTargetTimespanAdjDown = nTargetTimespanAdjDown3;
+    }
+    else
+    {
+        if ( (nBlockTime >= nCheckpointTimeVer2) && (nCheckpointTime >= nCheckpointTimeVer2) )
+        {
+            nMaxAdjustDown = nMaxAdjustDown2;
+            nTargetTimespanAdjDown = nTargetTimespanAdjDown2;
+        }
+        else
+        {
+            nMaxAdjustDown = nMaxAdjustDown1;
+            nTargetTimespanAdjDown = nTargetTimespanAdjDown1;
+        }
+    }
+    */
 
     CBigNum bnResult;
     bnResult.SetCompact(nBase);
@@ -1339,6 +1372,9 @@ static const int64 nMaxActualTimespan1 = nAveragingTargetTimespan1 * (100 + nMax
 static const int64 nMinActualTimespan2 = nAveragingTargetTimespan2 * (100 - nMaxAdjustUp2) / 100;
 static const int64 nMaxActualTimespan2 = nAveragingTargetTimespan2 * (100 + nMaxAdjustDown2) / 100;
 
+static const int64 nMinActualTimespan3 = nAveragingTargetTimespan3 * (100 - nMaxAdjustUp3) / 100;
+static const int64 nMaxActualTimespan3 = nAveragingTargetTimespan3 * (100 + nMaxAdjustDown3) / 100;
+
 unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
     unsigned int nProofOfWorkLimit = Params().ProofOfWorkLimit().GetCompact();
@@ -1355,19 +1391,29 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     int64 nMaxActualTimespan;
     int64 nAveragingTargetTimespan;
 
-    if (pindexLast->nHeight+1 >= nHeightVer2)
+    if (pindexLast->nHeight+1 >= nHeightVer3)
     {
-        nAveragingInterval = nAveragingInterval2;
-        nMinActualTimespan = nMinActualTimespan2;
-        nMaxActualTimespan = nMaxActualTimespan2;
-        nAveragingTargetTimespan = nAveragingTargetTimespan2;
+        nAveragingInterval = nAveragingInterval3;
+        nMinActualTimespan = nMinActualTimespan3;
+        nMaxActualTimespan = nMaxActualTimespan3;
+        nAveragingTargetTimespan = nAveragingTargetTimespan3;
     }
     else
     {
-        nAveragingInterval = nAveragingInterval1;
-        nMinActualTimespan = nMinActualTimespan1;
-        nMaxActualTimespan = nMaxActualTimespan1;
-        nAveragingTargetTimespan = nAveragingTargetTimespan1;
+        if (pindexLast->nHeight+1 >= nHeightVer2)
+        {
+            nAveragingInterval = nAveragingInterval2;
+            nMinActualTimespan = nMinActualTimespan2;
+            nMaxActualTimespan = nMaxActualTimespan2;
+            nAveragingTargetTimespan = nAveragingTargetTimespan2;
+        }
+        else
+        {
+            nAveragingInterval = nAveragingInterval1;
+            nMinActualTimespan = nMinActualTimespan1;
+            nMaxActualTimespan = nMaxActualTimespan1;
+            nAveragingTargetTimespan = nAveragingTargetTimespan1;
+        }
     }
 
     // Only change once per interval
