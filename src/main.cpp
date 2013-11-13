@@ -1278,7 +1278,7 @@ static const int64 nHeightVer2 = 32000;
 static unsigned int nCheckpointTimeVer2 = 1380608826;
 
 static const int64 nHeightVer3 = 90000;
-static unsigned int nCheckpointTimeVer3 = 1383708330;
+//static unsigned int nCheckpointTimeVer3 = 1384372762;
 
 static const int64 nAveragingInterval1 = nInterval * 160; // 160 blocks
 static const int64 nAveragingTargetTimespan1 = nAveragingInterval1 * nTargetSpacing; // 120 minutes
@@ -1317,40 +1317,19 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime, int64 nCheckpointTi
     int64 nMaxAdjustDown;
     int64 nTargetTimespanAdjDown;
 
-    // v1
+    // v1 max 10 %
     if ( (nBlockTime < nCheckpointTimeVer2) && (nCheckpointTime < nCheckpointTimeVer2) )
     {
         nMaxAdjustDown = nMaxAdjustDown1;
         nTargetTimespanAdjDown = nTargetTimespanAdjDown1;
     }
     else
-    // max of v2&v3 until v3 switch
+    // v2-v3 max 3%
     {
         nMaxAdjustDown = nMaxAdjustDown3;
         nTargetTimespanAdjDown = nTargetTimespanAdjDown3;
     }
     
-    /*
-    if ( (nBlockTime >= nCheckpointTimeVer3) && (nCheckpointTime >= nCheckpointTimeVer3) )
-    {
-        nMaxAdjustDown = nMaxAdjustDown3;
-        nTargetTimespanAdjDown = nTargetTimespanAdjDown3;
-    }
-    else
-    {
-        if ( (nBlockTime >= nCheckpointTimeVer2) && (nCheckpointTime >= nCheckpointTimeVer2) )
-        {
-            nMaxAdjustDown = nMaxAdjustDown2;
-            nTargetTimespanAdjDown = nTargetTimespanAdjDown2;
-        }
-        else
-        {
-            nMaxAdjustDown = nMaxAdjustDown1;
-            nTargetTimespanAdjDown = nTargetTimespanAdjDown1;
-        }
-    }
-    */
-
     CBigNum bnResult;
     bnResult.SetCompact(nBase);
     while (nTime > 0 && bnResult < bnLimit)
