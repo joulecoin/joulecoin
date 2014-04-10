@@ -72,6 +72,8 @@ public:
         vSeeds.push_back(CDNSSeedData("joule.redirectme.net", "joule.redirectme.net"));
         vSeeds.push_back(CDNSSeedData("seed1.joulecoin.org", "seed1.joulecoin.org"));
         vSeeds.push_back(CDNSSeedData("seed2.joulecoin.org", "seed2.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed3.joulecoin.org", "seed3.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed4.joulecoin.org", "seed4.joulecoin.org"));
         vSeeds.push_back(CDNSSeedData("xjo-seed1.twilightparadox.com", "xjo-seed1.twilightparadox.com"));        	
 
         base58Prefixes[PUBKEY_ADDRESS] = 43;
