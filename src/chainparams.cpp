@@ -67,14 +67,14 @@ public:
         assert(hashGenesisBlock == uint256("0x0000077e5cce889f0920029bf89e8ecb16f7be38e1019c3e21c26d4687ce11f5"));
         assert(genesis.hashMerkleRoot == uint256("0x2d089dcbae340c48fef8b956bfe63806c0ffd592d1d333082bfa8da6c4158e83"));
 
-        vSeeds.push_back(CDNSSeedData("joulecoin.no-ip.biz", "joulecoin.no-ip.biz"));
-        vSeeds.push_back(CDNSSeedData("xjo.zapto.org", "xjo.zapto.org"));
-        vSeeds.push_back(CDNSSeedData("joule.redirectme.net", "joule.redirectme.net"));
         vSeeds.push_back(CDNSSeedData("seed1.joulecoin.org", "seed1.joulecoin.org"));
         vSeeds.push_back(CDNSSeedData("seed2.joulecoin.org", "seed2.joulecoin.org"));
         vSeeds.push_back(CDNSSeedData("seed3.joulecoin.org", "seed3.joulecoin.org"));
         vSeeds.push_back(CDNSSeedData("seed4.joulecoin.org", "seed4.joulecoin.org"));
-        vSeeds.push_back(CDNSSeedData("xjo-seed1.twilightparadox.com", "xjo-seed1.twilightparadox.com"));        	
+        vSeeds.push_back(CDNSSeedData("seed5.joulecoin.org", "seed5.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed6.joulecoin.org", "seed6.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed7.joulecoin.org", "seed7.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed8.joulecoin.org", "seed8.joulecoin.org"));
 
         base58Prefixes[PUBKEY_ADDRESS] = 43;
         base58Prefixes[SCRIPT_ADDRESS] = 11;
