@@ -476,11 +476,16 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 bool IsStandardTx(const CTransaction& tx, string& reason)
 {
     AssertLockHeld(cs_main);
-    if (tx.nVersion > CTransaction::CURRENT_VERSION || tx.nVersion < 1) {
+    
+    if (tx.nVersion > CTransaction::TXMSG_VERSION || tx.nVersion < 1) {
         reason = "version";
         return false;
     }
 
+	// Disallow large transaction comments
+	if (tx.strTxComment.length() > MAX_TX_COMMENT_LEN)
+		return false;
+        
     // Treat non-final transactions as non-standard to prevent a specific type
     // of double-spend attack, as well as DoS attacks. (if the transaction
     // can't be mined, the attacker isn't expending resources broadcasting it)

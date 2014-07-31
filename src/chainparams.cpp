@@ -66,12 +66,14 @@ public:
         assert(hashGenesisBlock == uint256("0x0000077e5cce889f0920029bf89e8ecb16f7be38e1019c3e21c26d4687ce11f5"));
         assert(genesis.hashMerkleRoot == uint256("0x2d089dcbae340c48fef8b956bfe63806c0ffd592d1d333082bfa8da6c4158e83"));
 
-        vSeeds.push_back(CDNSSeedData("bitcoin.sipa.be", "seed.bitcoin.sipa.be"));
-        vSeeds.push_back(CDNSSeedData("bluematt.me", "dnsseed.bluematt.me"));
-        vSeeds.push_back(CDNSSeedData("dashjr.org", "dnsseed.bitcoin.dashjr.org"));
-        vSeeds.push_back(CDNSSeedData("bitcoinstats.com", "seed.bitcoinstats.com"));
-        vSeeds.push_back(CDNSSeedData("bitnodes.io", "seed.bitnodes.io"));
-        vSeeds.push_back(CDNSSeedData("xf2.org", "bitseed.xf2.org"));
+        vSeeds.push_back(CDNSSeedData("seed1.joulecoin.org", "seed1.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed2.joulecoin.org", "seed2.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed3.joulecoin.org", "seed3.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed4.joulecoin.org", "seed4.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed5.joulecoin.org", "seed5.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed6.joulecoin.org", "seed6.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed7.joulecoin.org", "seed7.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("seed8.joulecoin.org", "seed8.joulecoin.org"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(43);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(11);
