@@ -21,17 +21,19 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     setAutoFillBackground(true);
 
     // set reference point, paddings
-    int paddingRight            = 50;
-    int paddingTop              = 50;
+    int paddingRight            = 240;
+    int paddingTop              = 240;
     int titleVersionVSpace      = 17;
     int titleCopyrightVSpace    = 40;
+    int titleCopyrightVSpace2   = 53;
 
     float fontFactor            = 1.0;
 
     // define text to place
     QString titleText       = tr("Joulecoin Core");
     QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
-    QString copyrightText   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Joulecoin Core developers"));
+    QString copyrightText   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
+    QString copyrightText2  = QChar(0xA9)+QString(" 2013-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Joulecoin Core developers"));
     QString testnetAddText  = QString(tr("[testnet]")); // define text to place as single text object
 
     QString font            = "Arial";
@@ -76,6 +78,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f, bool isTest
     // draw copyright stuff
     pixPaint.setFont(QFont(font, 10*fontFactor));
     pixPaint.drawText(newPixmap.width()-titleTextWidth-paddingRight,paddingTop+titleCopyrightVSpace,copyrightText);
+    pixPaint.drawText(newPixmap.width()-titleTextWidth-paddingRight,paddingTop+titleCopyrightVSpace2,copyrightText2);
 
     // draw testnet string if testnet is on
     if(isTestNet) {
@@ -109,8 +112,8 @@ static void InitMessage(SplashScreen *splash, const std::string &message)
     QMetaObject::invokeMethod(splash, "showMessage",
         Qt::QueuedConnection,
         Q_ARG(QString, QString::fromStdString(message)),
-        Q_ARG(int, Qt::AlignBottom|Qt::AlignHCenter),
-        Q_ARG(QColor, QColor(55,55,55)));
+        Q_ARG(int, Qt::AlignVCenter|Qt::AlignHCenter),
+        Q_ARG(QColor, QColor(45,45,45)));
 }
 
 static void ShowProgress(SplashScreen *splash, const std::string &title, int nProgress)
