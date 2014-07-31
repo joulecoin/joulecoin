@@ -1180,50 +1180,110 @@ void static PruneOrphanBlocks()
     mapOrphanBlocks.erase(hash);
 }
 
+static const int64_t nStartSubsidy = 16 * COIN;
+static const int64_t nMinSubsidy = 0.001 * COIN;
+
 int64_t GetBlockValue(int nHeight, int64_t nFees)
 {
-    int64_t nSubsidy = 50 * COIN;
-    int halvings = nHeight / Params().SubsidyHalvingInterval();
+    int64_t nSubsidy = nStartSubsidy;
 
-    // Force block reward to zero when right shift is undefined.
-    if (halvings >= 64)
-        return nFees;
-
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-    nSubsidy >>= halvings;
+    // Mining phase: Subsidy is cut in half every SubsidyHalvingInterval
+    nSubsidy >>= (nHeight / Params().SubsidyHalvingInterval());
+    
+    // Inflation phase: Subsidy reaches minimum subsidy
+    // Network is rewarded for transaction processing with transaction fees and 
+    // the inflationary subsidy
+    if (nSubsidy < nMinSubsidy)
+    {
+        nSubsidy = nMinSubsidy;
+    }
 
     return nSubsidy + nFees;
 }
 
-static const int64_t nTargetTimespan = 14 * 24 * 60 * 60; // two weeks
-static const int64_t nTargetSpacing = 10 * 60;
-static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
+static const int64_t nTargetTimespan = 45; // 45 seconds
+static const int64_t nTargetSpacing = 45; // 45 seconds
+static const int64_t nInterval = nTargetTimespan / nTargetSpacing; // Joulecoin: retarget every block
+
+static const int64_t nHeightVer2 = 32000;
+static unsigned int nCheckpointTimeVer2 = 1380608826;
+
+static const int64_t nHeightVer3 = 90000;
+//static unsigned int nCheckpointTimeVer3 = 1384372762;
+
+static const int64_t nAveragingInterval1 = nInterval * 160; // 160 blocks
+static const int64_t nAveragingTargetTimespan1 = nAveragingInterval1 * nTargetSpacing; // 120 minutes
+
+static const int64_t nAveragingInterval2 = nInterval * 8; // 8 blocks
+static const int64_t nAveragingTargetTimespan2 = nAveragingInterval2 * nTargetSpacing; // 6 minutes
+
+static const int64_t nAveragingInterval3 = nAveragingInterval2; // 8 blocks
+static const int64_t nAveragingTargetTimespan3 = nAveragingTargetTimespan2; // 6 minutes
+
+static const int64_t nMaxAdjustDown1 = 10; // 10% adjustment down
+static const int64_t nMaxAdjustUp1 = 1; // 1% adjustment up
+
+static const int64_t nMaxAdjustDown2 = 1; // 1% adjustment down
+static const int64_t nMaxAdjustUp2 = 1; // 1% adjustment up
+
+static const int64_t nMaxAdjustDown3 = 3; // 3% adjustment down
+static const int64_t nMaxAdjustUp3 = 1; // 1% adjustment up
+
+static const int64_t nTargetTimespanAdjDown1 = nTargetTimespan * (100 + nMaxAdjustDown1) / 100;
+static const int64_t nTargetTimespanAdjDown2 = nTargetTimespan * (100 + nMaxAdjustDown2) / 100;
+static const int64_t nTargetTimespanAdjDown3 = nTargetTimespan * (100 + nMaxAdjustDown3) / 100;
 
 //
 // minimum amount of work that could possibly be required nTime after
 // minimum work required was nBase
 //
-unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime)
+unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime, int64_t nCheckpointTime, int64_t nBlockTime)
 {
     const CBigNum &bnLimit = Params().ProofOfWorkLimit();
     // Testnet has min-difficulty blocks
     // after nTargetSpacing*2 time between blocks:
     if (TestNet() && nTime > nTargetSpacing*2)
         return bnLimit.GetCompact();
+        
+    int64_t nMaxAdjustDown;
+    int64_t nTargetTimespanAdjDown;
 
+    // v1 max 10 %
+    if ( (nBlockTime < nCheckpointTimeVer2) && (nCheckpointTime < nCheckpointTimeVer2) )
+    {
+        nMaxAdjustDown = nMaxAdjustDown1;
+        nTargetTimespanAdjDown = nTargetTimespanAdjDown1;
+    }
+    else
+    // v2-v3 max 3%
+    {
+        nMaxAdjustDown = nMaxAdjustDown3;
+        nTargetTimespanAdjDown = nTargetTimespanAdjDown3;
+    }
+    
     CBigNum bnResult;
     bnResult.SetCompact(nBase);
     while (nTime > 0 && bnResult < bnLimit)
     {
-        // Maximum 400% adjustment...
-        bnResult *= 4;
-        // ... in best-case exactly 4-times-normal target time
-        nTime -= nTargetTimespan*4;
+        // Maximum adjustment...
+        bnResult *= (100 + nMaxAdjustDown);
+        bnResult /= 100;
+        // ... in best-case exactly adjustment times-normal target time
+        nTime -= nTargetTimespanAdjDown;
     }
     if (bnResult > bnLimit)
         bnResult = bnLimit;
     return bnResult.GetCompact();
 }
+
+static const int64_t nMinActualTimespan1 = nAveragingTargetTimespan1 * (100 - nMaxAdjustUp1) / 100;
+static const int64_t nMaxActualTimespan1 = nAveragingTargetTimespan1 * (100 + nMaxAdjustDown1) / 100;
+    
+static const int64_t nMinActualTimespan2 = nAveragingTargetTimespan2 * (100 - nMaxAdjustUp2) / 100;
+static const int64_t nMaxActualTimespan2 = nAveragingTargetTimespan2 * (100 + nMaxAdjustDown2) / 100;
+
+static const int64_t nMinActualTimespan3 = nAveragingTargetTimespan3 * (100 - nMaxAdjustUp3) / 100;
+static const int64_t nMaxActualTimespan3 = nAveragingTargetTimespan3 * (100 + nMaxAdjustDown3) / 100;
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
@@ -1232,6 +1292,39 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     // Genesis block
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
+        
+    if (pindexLast->nHeight+1 < nAveragingInterval1) 
+        return nProofOfWorkLimit;
+        
+    int64_t nAveragingInterval;
+    int64_t nMinActualTimespan;
+    int64_t nMaxActualTimespan;
+    int64_t nAveragingTargetTimespan;
+
+    if (pindexLast->nHeight+1 >= nHeightVer3)
+    {
+        nAveragingInterval = nAveragingInterval3;
+        nMinActualTimespan = nMinActualTimespan3;
+        nMaxActualTimespan = nMaxActualTimespan3;
+        nAveragingTargetTimespan = nAveragingTargetTimespan3;
+    }
+    else
+    {
+        if (pindexLast->nHeight+1 >= nHeightVer2)
+        {
+            nAveragingInterval = nAveragingInterval2;
+            nMinActualTimespan = nMinActualTimespan2;
+            nMaxActualTimespan = nMaxActualTimespan2;
+            nAveragingTargetTimespan = nAveragingTargetTimespan2;
+        }
+        else
+        {
+            nAveragingInterval = nAveragingInterval1;
+            nMinActualTimespan = nMinActualTimespan1;
+            nMaxActualTimespan = nMaxActualTimespan1;
+            nAveragingTargetTimespan = nAveragingTargetTimespan1;
+        }
+    }
 
     // Only change once per interval
     if ((pindexLast->nHeight+1) % nInterval != 0)
@@ -1255,34 +1348,34 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         return pindexLast->nBits;
     }
 
-    // Go back by what we want to be 14 days worth of blocks
+    // Go back by what we want to be nAveragingInterval blocks
     const CBlockIndex* pindexFirst = pindexLast;
-    for (int i = 0; pindexFirst && i < nInterval-1; i++)
+    for (int i = 0; pindexFirst && i < nAveragingInterval-1; i++)
         pindexFirst = pindexFirst->pprev;
     assert(pindexFirst);
 
     // Limit adjustment step
     int64_t nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
-    LogPrintf("  nActualTimespan = %d  before bounds\n", nActualTimespan);
-    if (nActualTimespan < nTargetTimespan/4)
-        nActualTimespan = nTargetTimespan/4;
-    if (nActualTimespan > nTargetTimespan*4)
-        nActualTimespan = nTargetTimespan*4;
+    LogPrintf("  nActualTimespan = %u before bounds\n", nActualTimespan);
+    if (nActualTimespan < nMinActualTimespan)
+        nActualTimespan = nMinActualTimespan;
+    if (nActualTimespan > nMaxActualTimespan)
+        nActualTimespan = nMaxActualTimespan;
 
     // Retarget
     CBigNum bnNew;
     bnNew.SetCompact(pindexLast->nBits);
     bnNew *= nActualTimespan;
-    bnNew /= nTargetTimespan;
+    bnNew /= nAveragingTargetTimespan;
 
     if (bnNew > Params().ProofOfWorkLimit())
         bnNew = Params().ProofOfWorkLimit();
 
     /// debug print
     LogPrintf("GetNextWorkRequired RETARGET\n");
-    LogPrintf("nTargetTimespan = %d    nActualTimespan = %d\n", nTargetTimespan, nActualTimespan);
-    LogPrintf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString());
-    LogPrintf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString());
+    LogPrintf("nTargetTimespan = %u  nActualTimespan = %u\n", nAveragingTargetTimespan, nActualTimespan);
+    LogPrintf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
+    LogPrintf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
 
     return bnNew.GetCompact();
 }
@@ -2519,8 +2612,8 @@ bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBl
         }
         CBigNum bnNewBlock;
         bnNewBlock.SetCompact(pblock->nBits);
-        CBigNum bnRequired;
-        bnRequired.SetCompact(ComputeMinWork(pcheckpoint->nBits, deltaTime));
+        CBigNum bnRequired;       
+        bnRequired.SetCompact(ComputeMinWork(pcheckpoint->nBits, deltaTime, pcheckpoint->nTime, pblock->GetBlockTime()));
         if (bnNewBlock > bnRequired)
         {
             return state.DoS(100, error("ProcessBlock() : block with too little proof-of-work"),

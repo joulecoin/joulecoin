@@ -186,10 +186,12 @@ public:
     static int64_t nMinTxFee;
     static int64_t nMinRelayTxFee;
     static const int CURRENT_VERSION=1;
+    static const int TXMSG_VERSION=2;
     int nVersion;
     std::vector<CTxIn> vin;
     std::vector<CTxOut> vout;
     unsigned int nLockTime;
+    std::string strTxComment;
 
     CTransaction()
     {
@@ -203,6 +205,8 @@ public:
         READWRITE(vin);
         READWRITE(vout);
         READWRITE(nLockTime);
+        if(this->nVersion >= TXMSG_VERSION) { 
+        READWRITE(strTxComment); }
     )
 
     void SetNull()
@@ -211,6 +215,7 @@ public:
         vin.clear();
         vout.clear();
         nLockTime = 0;
+        strTxComment.clear();
     }
 
     bool IsNull() const
