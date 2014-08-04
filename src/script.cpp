@@ -1066,6 +1066,9 @@ public:
              SerializeOutput(s, nOutput, nType, nVersion);
         // Serialie nLockTime
         ::Serialize(s, txTo.nLockTime, nType, nVersion);
+        // Serialize strTxComment
+        if(txTo.nVersion >= CTransaction::TXMSG_VERSION) { 
+        ::Serialize(s, txTo.strTxComment, nType, nVersion); }
     }
 };
 }
@@ -1163,10 +1166,12 @@ bool CheckSig(vector<unsigned char> vchSig, const vector<unsigned char> &vchPubK
     // Hash type is one byte tacked on to the end of the signature
     if (vchSig.empty())
         return false;
+        
     if (nHashType == 0)
         nHashType = vchSig.back();
     else if (nHashType != vchSig.back())
         return false;
+        
     vchSig.pop_back();
 
     uint256 sighash = SignatureHash(scriptCode, txTo, nIn, nHashType);
