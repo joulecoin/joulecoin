@@ -68,6 +68,8 @@ public:
         vSeeds.push_back(CDNSSeedData("seed6.joulecoin.org", "seed6.joulecoin.org"));
         vSeeds.push_back(CDNSSeedData("seed7.joulecoin.org", "seed7.joulecoin.org"));
         vSeeds.push_back(CDNSSeedData("seed8.joulecoin.org", "seed8.joulecoin.org"));
+        vSeeds.push_back(CDNSSeedData("joulecoin1.chickenkiller.com", "joulecoin1.chickenkiller.com"));
+        vSeeds.push_back(CDNSSeedData("joulecoin2.crabdance.com", "joulecoin2.crabdance.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(43);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(11);
