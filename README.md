@@ -3,9 +3,9 @@ Joulecoin Core integration/staging tree
 
 http://www.joulecoin.org
 
-Copyright (c) 2009-2015 Bitcoin Core Developers
+Copyright (c) 2009-2018 Bitcoin Core Developers
 
-Copyright (c) 2013-2015 Joulecoin Core Developers
+Copyright (c) 2013-2018 Joulecoin Core Developers
 
 What is Joulecoin?
 ------------------
