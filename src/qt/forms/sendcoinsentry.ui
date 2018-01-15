@@ -51,7 +51,7 @@
       <item>
        <widget class="QValidatedLineEdit" name="payTo">
         <property name="toolTip">
-         <string>The address to send the payment to (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</string>
+         <string>The Joulecoin address to send the payment to</string>
         </property>
        </widget>
       </item>
@@ -154,7 +154,7 @@
     <item row="3" column="1">
      <widget class="QLabel" name="messageTextLabel">
       <property name="toolTip">
-       <string>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Joulecoin network.</string>
+       <string>A message that was attached to the joulecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Joulecoin network.</string>
       </property>
       <property name="textFormat">
        <enum>Qt::PlainText</enum>

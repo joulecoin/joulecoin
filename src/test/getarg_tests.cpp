@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2013 The Joulecoin Core developers
+// Copyright (c) 2012-2013 The Bitcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,7 +16,8 @@ BOOST_AUTO_TEST_SUITE(getarg_tests)
 static void ResetArgs(const std::string& strArg)
 {
     std::vector<std::string> vecArg;
-    boost::split(vecArg, strArg, boost::is_space(), boost::token_compress_on);
+    if (strArg.size())
+      boost::split(vecArg, strArg, boost::is_space(), boost::token_compress_on);
 
     // Insert dummy executable name:
     vecArg.insert(vecArg.begin(), "testbitcoin");
