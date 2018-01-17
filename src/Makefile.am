@@ -402,8 +402,8 @@ clean-local:
 	  $(CPPFLAGS) $(AM_CXXFLAGS) $(QT_INCLUDES) $(CXXFLAGS)  -c -o $@ $<
 
 %.pb.cc %.pb.h: %.proto
-	@test -f $(PROTOC)
-	$(AM_V_GEN) $(PROTOC) --cpp_out=$(@D) --proto_path=$(abspath $(<D) $<)
+	test -f $(PROTOC)
+	$(PROTOC) --cpp_out=$(@D) --proto_path=$(abspath $(<D) $<)
 
 if ENABLE_TESTS
 include Makefile.test.include
