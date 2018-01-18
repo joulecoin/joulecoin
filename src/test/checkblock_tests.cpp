@@ -1,4 +1,4 @@
-// Copyright (c) 2013-2014 The Joulecoin Core developers
+// Copyright (c) 2013-2014 The Bitcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,7 +8,9 @@
 
 
 
+#include "clientversion.h"
 #include "main.h"
+#include "utiltime.h"
 
 #include <cstdio>
 
@@ -34,8 +36,8 @@ bool read_block(const std::string& filename, CBlock& block)
 
     fseek(fp, 8, SEEK_SET); // skip msgheader/size
 
-    CAutoFile filein = CAutoFile(fp, SER_DISK, CLIENT_VERSION);
-    if (!filein) return false;
+    CAutoFile filein(fp, SER_DISK, CLIENT_VERSION);
+    if (filein.IsNull()) return false;
 
     filein >> block;
 

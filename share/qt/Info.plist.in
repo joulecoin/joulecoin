@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, Copyright © 2014-@COPYRIGHT_YEAR@ The Joulecoin Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Joulecoin-Qt</string>
+  <string>Bitcoin-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>in.jouleco.Joulecoin-Qt</string>
+  <string>org.bitcoinfoundation.Bitcoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>in.jouleco.JoulecoinPayment</string>
+      <string>org.bitcoin.BitcoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>joulecoin</string>
+        <string>bitcoin</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>in.jouleco.paymentrequest</string>
+      <string>org.bitcoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Joulecoin payment request</string>
+      <string>Bitcoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-joulecoin-payment-request</string>
+        <string>application/x-bitcoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>joulecoinpaymentrequest</string>
+          <string>bitcoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>in.jouleco.paymentrequest</string>
+        <string>org.bitcoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>
@@ -91,6 +91,9 @@
   <key>NSHighResolutionCapable</key>
     <string>True</string>
 
+  <key>LSAppNapIsDisabled</key>
+    <string>True</string>
+  
   <key>LSApplicationCategoryType</key>
     <string>public.app-category.finance</string>
 </dict>
