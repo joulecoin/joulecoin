@@ -104,10 +104,6 @@
         <translation>Muta tesseram</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Insero veterem novamque tesseram cassidili.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Confirma cifrationem cassidilis</translation>
     </message>
@@ -130,10 +126,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Cassidile cifratum</translation>
-    </message>
-    <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>Joulecoin iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -165,7 +157,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signa &amp;nuntium...</translation>
@@ -233,10 +228,6 @@
     <message>
         <source>Send coins to a Joulecoin address</source>
         <translation>Mitte nummos ad inscriptionem Joulecoin</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Muta configurationis optiones pro Joulecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,25 +305,13 @@
         <source>Joulecoin Core</source>
         <translation>Joulecoin Nucleus</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Joulecoin network</source>
-        <translation><numerusform>%n activa conexio ad rete Joulecoin</numerusform><numerusform>%n activae conexiones ad rete Joulecoin</numerusform></translation>
+    <message>
+        <source>&amp;Command-line options</source>
+        <translation>Optiones mandati initiantis</translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>Nulla fons frustorum absens...</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n hora</numerusform><numerusform>%n horae</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dies</numerusform><numerusform>%n dies</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n hebdomas</numerusform><numerusform>%n hebdomades</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -373,18 +352,6 @@
     <message>
         <source>Incoming transaction</source>
         <translation>Transactio incipiens</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Dies: %1
-Quantitas: %2
-Typus: %3
-Inscriptio: %4
-</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -513,22 +480,6 @@ Inscriptio: %4
         <source>command-line options</source>
         <translation>Optiones mandati intiantis</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>UI optiones</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Constitue linguam, exempli gratia "de_DE" (praedefinitum: lingua systematis)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Incipe minifactum ut icon</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Monstra principem imaginem ad initium (praedefinitum: 1)</translation>
-    </message>
     </context>
 <context>
     <name>Intro</name>
@@ -555,14 +506,6 @@ Inscriptio: %4
         <translation>&amp;Princeps</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>Pelle Joulecoin per se postquam in systema inire.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>&amp;Pelle Joulecoin cum inire systema</translation>
-    </message>
-    <message>
         <source>Reset all client options to default.</source>
         <translation>Reconstitue omnes optiones clientis ad praedefinita.</translation>
     </message>
@@ -573,6 +516,10 @@ Inscriptio: %4
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Rete</translation>
+    </message>
+    <message>
+        <source>W&amp;allet</source>
+        <translation>Cassidile</translation>
     </message>
     <message>
         <source>Automatically open the Joulecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
@@ -607,10 +554,6 @@ Inscriptio: %4
         <translation>&amp;Minifac in tabellam systematis potius quam applicationum</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minifac potius quam exire applicatione quando fenestra clausa sit.  Si haec optio activa est, applicatio clausa erit tantum postquam selegeris Exi in menu.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>M&amp;inifac ad claudendum</translation>
     </message>
@@ -621,10 +564,6 @@ Inscriptio: %4
     <message>
         <source>User Interface &amp;language:</source>
         <translation>&amp;Lingua monstranda utenti:</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>Lingua monstranda utenti hic constitui potest.  Haec configuratio effectiva erit postquam Joulecoin iterum initiatum erit.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -673,11 +612,7 @@ Inscriptio: %4
         <source>Mined balance that has not yet matured</source>
         <translation>Fossum pendendum quod nondum maturum est</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>non synchronizato</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -729,6 +664,10 @@ Inscriptio: %4
         <translation>&amp;Informatio</translation>
     </message>
     <message>
+        <source>Debug window</source>
+        <translation>Fenestra Debug</translation>
+    </message>
+    <message>
         <source>Using OpenSSL version</source>
         <translation>Utens OpenSSL versione</translation>
     </message>
@@ -773,16 +712,8 @@ Inscriptio: %4
         <translation>Debug catalogi plica</translation>
     </message>
     <message>
-        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Aperi plicam catalogi de Joulecoin debug ex activo indice datorum.  Hoc possit pauca secunda pro plicis magnis catalogi.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Vacuefac terminale</translation>
-    </message>
-    <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>Bene ventio in terminale RPC de Joulecoin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -796,8 +727,16 @@ Inscriptio: %4
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+        <source>&amp;Amount:</source>
+        <translation>Quantitas:</translation>
+    </message>
+    <message>
         <source>&amp;Label:</source>
         <translation>&amp;Titulus:</translation>
+    </message>
+    <message>
+        <source>&amp;Message:</source>
+        <translation>Nuntius:</translation>
     </message>
     <message>
         <source>Copy label</source>
@@ -810,6 +749,10 @@ Inscriptio: %4
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Copy &amp;Address</source>
+        <translation>&amp;Copia Inscriptionem</translation>
+    </message>
     <message>
         <source>Address</source>
         <translation>Inscriptio</translation>
@@ -865,8 +808,16 @@ Inscriptio: %4
         <translation>Mitte Nummos</translation>
     </message>
     <message>
+        <source>Insufficient funds!</source>
+        <translation>Inopia nummorum</translation>
+    </message>
+    <message>
         <source>Amount:</source>
         <translation>Quantitas:</translation>
+    </message>
+    <message>
+        <source>Transaction Fee:</source>
+        <translation>Transactionis merces:</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -901,10 +852,6 @@ Inscriptio: %4
         <translation>Copia quantitatem</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Inscriptio accipientis non est valida, sodes reproba.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>Oportet quantitatem ad pensandum maiorem quam 0 esse.</translation>
     </message>
@@ -915,10 +862,6 @@ Inscriptio: %4
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>Quantitas est ultra quod habes cum merces transactionis %1 includitur.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Geminata inscriptio inventa, tantum posse mittere ad quamque inscriptionem semel singulare operatione.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -949,7 +892,7 @@ Inscriptio: %4
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Conglutina inscriptionem ex latibulo</translation>
+        <translation>Glutina inscriptionem ex latibulo</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -958,6 +901,10 @@ Inscriptio: %4
     <message>
         <source>Message:</source>
         <translation>Nuntius:</translation>
+    </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>Pensa Ad:</translation>
     </message>
     </context>
 <context>
@@ -972,10 +919,6 @@ Inscriptio: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Signa Nuntium</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Potes nuntios signare inscriptionibus tuis ut demonstres te eas possidere.  Cautus es non amibiguum signare, quia impetus phiscatorum conentur te fallere ut signes identitatem tuam ad eos.  Solas signa sententias cuncte descriptas quibus convenis.</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1020,10 +963,6 @@ Inscriptio: %4
     <message>
         <source>&amp;Verify Message</source>
         <translation>&amp;Verifica Nuntium</translation>
-    </message>
-    <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Insere inscriptionem signantem, nuntium (cura ut copias intermissiones linearum, spatia, tabs, et cetera exacte) et signationem infra ut nuntium verifices.  Cautus esto ne magis legas in signationem quam in nuntio signato ipso est, ut vites falli ab impetu homo-in-medio.</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Joulecoin address</source>
@@ -1126,10 +1065,6 @@ Inscriptio: %4
         <source>Status</source>
         <translation>Status</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, disseminatum per %n nodo</numerusform><numerusform>, disseminata per %n nodis</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>Dies</translation>
@@ -1161,10 +1096,6 @@ Inscriptio: %4
     <message>
         <source>Credit</source>
         <translation>Creditum</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>maturum erit in %n plure frusto</numerusform><numerusform>maturum erit in %n pluribus frustis</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -1249,14 +1180,6 @@ Inscriptio: %4
         <translation>Typus</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Inscriptio</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Aperi pro %n plure frusto</numerusform><numerusform>Aperi pro %n pluribus frustis</numerusform></translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>Apertum donec %1</translation>
     </message>
@@ -1271,6 +1194,10 @@ Inscriptio: %4
     <message>
         <source>Generated but not accepted</source>
         <translation>Generatum sed non acceptum</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Titulus</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -1307,10 +1234,6 @@ Inscriptio: %4
     <message>
         <source>Type of transaction.</source>
         <translation>Typus transactionis.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Inscriptio destinationis transactionis.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -1503,10 +1426,6 @@ Inscriptio: %4
         <translation>Operare infere sicut daemon et mandata accipe</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Utere rete experimentale</translation>
-    </message>
-    <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Accipe conexiones externas (praedefinitum: 1 nisi -proxy neque -connect)</translation>
     </message>
@@ -1523,20 +1442,8 @@ Inscriptio: %4
         <translation>Hoc est prae-dimittum experimentala aedes - utere eo periculo tuo proprio - nolite utere fodendo vel applicationibus mercatoriis</translation>
     </message>
     <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Monitio: -paytxfee constitutum valde magnum!  Hoc est merces transactionis solves si mittis transactionem.</translation>
-    </message>
-    <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Monitio: error legendo wallet.dat!  Omnes claves recte lectae, sed data transactionum vel libri inscriptionum fortasse desint vel prava sint.</translation>
-    </message>
-    <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Monitio: wallet.data corrupta, data salvata!  Originalis wallet.dat salvata ut wallet.{timestamp}.bak in %s; si pendendum tuum vel transactiones pravae sunt, oportet ab conservato restituere.</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Conare recipere claves privatas de corrupto wallet.dat</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -1549,10 +1456,6 @@ Inscriptio: %4
     <message>
         <source>Corrupted block database detected</source>
         <translation>Corruptum databasum frustorum invenitur</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Discooperi propriam inscriptionem IP (praedefinitum: 1 quando auscultans et nullum -externalip)</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -1587,10 +1490,6 @@ Inscriptio: %4
         <translation>Inopia descriptorum plicarum.</translation>
     </message>
     <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Restituere indicem catenae frustorum ex activis plicis blk000??.dat</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Verificante frusta...</translation>
     </message>
@@ -1599,12 +1498,16 @@ Inscriptio: %4
         <translation>Verificante cassidilem...</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Importat frusta ab externa plica blk000??.dat</translation>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Non posse resolvere -whitebind inscriptionem: '%s'</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>Informatio</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Quantitas non valida pro -maxtxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
@@ -1639,20 +1542,12 @@ Inscriptio: %4
         <translation>Transactio nimis magna</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Utere UPnP designare portam auscultandi (praedefinitum: 1 quando auscultans)</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Nomen utentis pro conexionibus JSON-RPC</translation>
     </message>
     <message>
         <source>Warning</source>
         <translation>Monitio</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Monitio: Haec versio obsoleta est, progressio postulata!</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
@@ -1665,18 +1560,6 @@ Inscriptio: %4
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Pelle mandatum quando optissimum frustum mutat (%s in mandato substituitur ab hash frusti)</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Progredere cassidile ad formam recentissimam</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Iterum perlege catenam frustorum propter absentes cassidilis transactiones</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Utere OpenSSL (https) pro conexionibus JSON-RPC</translation>
     </message>
     <message>
         <source>This help message</source>

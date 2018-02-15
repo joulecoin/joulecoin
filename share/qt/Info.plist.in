@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
   <key>LSMinimumSystemVersion</key>
-  <string>10.6.0</string>
+  <string>10.7.0</string>
 
   <key>LSArchitecturePriority</key>
   <array>
@@ -30,6 +30,12 @@
 
   <key>CFBundleExecutable</key>
   <string>Joulecoin-Qt</string>
+  
+  <key>CFBundleName</key>
+  <string>Joulecoin-Qt</string>
+
+  <key>LSHasLocalizedDisplayName</key>
+  <true/>
 
   <key>CFBundleIdentifier</key>
   <string>org.joulecoin.Joulecoin-Qt</string>

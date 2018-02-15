@@ -148,10 +148,6 @@
         <translation>Cambiar contrasinal</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Introduce o vello e novo contrasinais no moedeiro.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Confirmar encriptación de moedeiro</translation>
     </message>
@@ -174,10 +170,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Moedeiro encriptado</translation>
-    </message>
-    <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>Joulecoin se pechará agora para rematar o proceso de encriptación. Lembra que encriptar o teu moedeiro non protexe totalmente os teus joulecoins de ser robados por malware que infecte o teu ordenador.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -209,7 +201,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Asinar mensaxe...</translation>
@@ -267,6 +262,10 @@
         <translation>&amp;Cambiar contrasinal...</translation>
     </message>
     <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Direccións para recibir</translation>
+    </message>
+    <message>
         <source>Importing blocks from disk...</source>
         <translation>Importando bloques de disco...</translation>
     </message>
@@ -277,10 +276,6 @@
     <message>
         <source>Send coins to a Joulecoin address</source>
         <translation>Enviar moedas a unha dirección Joulecoin</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Modificar opcións de configuración para Joulecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -378,25 +373,13 @@
         <source>Open a joulecoin: URI or payment request</source>
         <translation>Abrir un joulecoin: URI ou solicitude de pago</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Joulecoin network</source>
-        <translation><numerusform>%n conexión activa coa rede Joulecoin</numerusform><numerusform>%n conexións activas coa rede Joulecoin</numerusform></translation>
+    <message>
+        <source>&amp;Command-line options</source>
+        <translation>Opcións da liña de comandos</translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>Non hai orixe de bloques dispoñible...</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n hora</numerusform><numerusform>%n horas</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n día</numerusform><numerusform>%n días</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n semana</numerusform><numerusform>%n semanas</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -437,18 +420,6 @@
     <message>
         <source>Incoming transaction</source>
         <translation>Transacción entrante</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Data: %1
-Cantidade: %2
-Tipo: %3
-Dirección: %4
-</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -733,27 +704,7 @@ Dirección: %4
         <source>command-line options</source>
         <translation>opcións da liña de comandos</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>opcións de UI</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Fixar idioma, por exemplo "de_DE" (por defecto: locale del sistema)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Comezar minimizado</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Amosar pantalla splash no arranque (por defecto: 1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Escolle directorio de datos ao arrancar (por defecto: 0)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -811,14 +762,6 @@ Dirección: %4
         <translation>&amp;Principal</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>Comezar Joulecoin automáticamente despois de loguearse no sistema.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>&amp;Comezar Joulecoin ao facer login no sistema</translation>
-    </message>
-    <message>
         <source>Reset all client options to default.</source>
         <translation>Restaurar todas as opcións de cliente ás por defecto</translation>
     </message>
@@ -829,6 +772,10 @@ Dirección: %4
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Rede</translation>
+    </message>
+    <message>
+        <source>W&amp;allet</source>
+        <translation>Moedeiro</translation>
     </message>
     <message>
         <source>Automatically open the Joulecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
@@ -863,10 +810,6 @@ Dirección: %4
         <translation>&amp;Minimizar á bandexa en lugar de á barra de tarefas.</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimizar en lugar de saír da aplicación cando se pecha a xanela. Cando se habilita esta opción, a aplicación so se pechará tras seleccionar Saír no menú.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>M&amp;inimizar ao pechar</translation>
     </message>
@@ -877,10 +820,6 @@ Dirección: %4
     <message>
         <source>User Interface &amp;language:</source>
         <translation>&amp;Linguaxe de interface de usuario:</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>A linguaxe de interface de usuario pode fixarse aquí. Esta configuración terá efecto tras reiniciar Joulecoin.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -945,11 +884,7 @@ Dirección: %4
         <source>Your current total balance</source>
         <translation>O teu balance actual total</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>non sincronizado</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1045,6 +980,10 @@ Dirección: %4
         <translation>&amp;Información</translation>
     </message>
     <message>
+        <source>Debug window</source>
+        <translation>Ventana de Depuración</translation>
+    </message>
+    <message>
         <source>Using OpenSSL version</source>
         <translation>Usar versión OpenSSL</translation>
     </message>
@@ -1109,16 +1048,8 @@ Dirección: %4
         <translation>Arquivo de log de depuración</translation>
     </message>
     <message>
-        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Abrir o arquivo de log de depuración de Joulecoin dende o directorio actual de datos. Esto pode levar uns cantos segundos para grandes arquivos de log.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Limpar consola</translation>
-    </message>
-    <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>Benvido á consola RPC de Joulecoin</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1169,7 +1100,7 @@ Dirección: %4
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>Limpar todos os campos do formulario</translation>
+        <translation>Limpar tódolos campos do formulario</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -1273,6 +1204,10 @@ Dirección: %4
         <translation>Moedas Enviadas</translation>
     </message>
     <message>
+        <source>Insufficient funds!</source>
+        <translation>Fondos insuficientes</translation>
+    </message>
+    <message>
         <source>Quantity:</source>
         <translation>Cantidade:</translation>
     </message>
@@ -1295,6 +1230,10 @@ Dirección: %4
     <message>
         <source>Change:</source>
         <translation>Cambiar:</translation>
+    </message>
+    <message>
+        <source>Transaction Fee:</source>
+        <translation>Tarifa de transacción:</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1361,10 +1300,6 @@ Dirección: %4
         <translation>Copiar cambio</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>A dirección de recepción non é válida, por favor compróbea.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>A cantidade a pagar debe ser maior que 0.</translation>
     </message>
@@ -1375,10 +1310,6 @@ Dirección: %4
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>O total sobrepasa o teu balance cando se inclúe a tarifa de transacción %1.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Atopouse dirección duplicada, so se pode enviar a cada dirección unha vez por operación.</translation>
     </message>
     <message>
         <source>Warning: Invalid Joulecoin address</source>
@@ -1444,16 +1375,12 @@ Dirección: %4
         <translation>Eliminar esta entrada</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Esta é unha solicitude de pago verificada</translation>
+        <source>Message:</source>
+        <translation>Mensaxe:</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Introduce unha etiqueta para esta dirección para engadila á listaxe de direccións empregadas</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Esta é unha solicitude de pago non verificada</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1476,10 +1403,6 @@ Dirección: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Asinar Mensaxe</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Podes asinar mensaxes coas túas direccións para probar que ti as posees. Ten conta de non asinar nada vago, xa que hai ataques de phishing que tentarán que asines coa túa identidade por riba deles. Asina únicamente declaracións totalmente detalladas coas que esteas de acordo.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1528,10 +1451,6 @@ Dirección: %4
     <message>
         <source>&amp;Verify Message</source>
         <translation>&amp;Verificar Mensaxe</translation>
-    </message>
-    <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Introduce a dirección coa que asinar, a mensaxe (asegúrate de copiar exactamente os saltos de liña, espacios, tabulacións, etc.) e a sinatura debaixo para verificar a mensaxe. Ten coidado de non ler máis na sinatura do que hai no mensaxe asinado mesmo, a fin de evitar ser cazado nun ataque de home no medio.</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Joulecoin address</source>
@@ -1765,14 +1684,6 @@ Dirección: %4
         <translation>Tipo</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Dirección</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Abrir para %n bloque máis</numerusform><numerusform>Abrir para %n bloques máis</numerusform></translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>Aberto ata %1</translation>
     </message>
@@ -1787,6 +1698,10 @@ Dirección: %4
     <message>
         <source>Generated but not accepted</source>
         <translation>Xerado pero non aceptado</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etiqueta</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -1823,10 +1738,6 @@ Dirección: %4
     <message>
         <source>Type of transaction.</source>
         <translation>Tipo de transacción.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Dirección de destino da transacción.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2051,10 +1962,6 @@ Dirección: %4
         <translation>Executar no fondo como un demo e aceptar comandos</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Empregar a rede de proba</translation>
-    </message>
-    <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Aceptar conexións de fóra (por defecto: 1 se non -proxy ou -connect)</translation>
     </message>
@@ -2071,10 +1978,6 @@ Dirección: %4
         <translation>Esta é unha build de test pre-lanzamento - emprégaa baixo o teu propio risco - non empregar para minado ou aplicacións de comerciantes</translation>
     </message>
     <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Precaución: -paytxfee está posto moi algo! Esta é a tarifa de transacción que ti pagarás se envías unha transacción.</translation>
-    </message>
-    <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Precaución: A rede non parece estar totalmente de acordo! Algúns mineitos parecen estar experimentando problemas.</translation>
     </message>
@@ -2083,20 +1986,12 @@ Dirección: %4
         <translation>Precaución: Non parece que esteamos totalmente de acordo cos nosos pares! Pode que precises actualizar, ou outros nodos poden precisar actualizarse.</translation>
     </message>
     <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Precaución: erro lendo wallet.dat! Tódalas claves lidas correctamente, pero os datos de transacción ou as entradas do libro de direccións podrían estar ausentes ou incorrectos.</translation>
-    </message>
-    <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Precaución: wallet.dat corrupto, datos salvagardados! O wallet.dat orixinal foi gardado como wallet.{timestamp}.bak en %s; se o teu balance ou transaccións son incorrectas deberías restauralas dende unha copia de seguridade.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;categoría&gt; pode ser:</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Tentar recuperar claves privadas dende un wallet.dat corrupto</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -2109,10 +2004,6 @@ Dirección: %4
     <message>
         <source>Corrupted block database detected</source>
         <translation>Detectada base de datos de bloques corrupta.</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Descobrir dirección IP propia (por defecto: 1 se á escoita e non -externalip)</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -2155,10 +2046,6 @@ Dirección: %4
         <translation>Non hai suficientes descritores de arquivo dispoñibles.</translation>
     </message>
     <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Reconstruír índice de cadea de bloque dende os ficheiros actuais blk000??.dat</translation>
-    </message>
-    <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Especificar arquivo do moedeiro (dentro do directorio de datos)</translation>
     </message>
@@ -2179,16 +2066,20 @@ Dirección: %4
         <translation>Precisas reconstruír a base de datos empregando -reindex para cambiar -txindex</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Importa bloques dende arquivos blk000??.dat externos</translation>
-    </message>
-    <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>Executar comando cando se recibe unha alerta relevante ou vemos un fork realmente longo (%s no cmd é substituído pola mensaxe)</translation>
     </message>
     <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Non se pode resolver dirección -whitebind: '%s'</translation>
+    </message>
+    <message>
         <source>Information</source>
         <translation>Información</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Cantidade inválida para -maxtxfee=&lt;cantidade&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
@@ -2223,20 +2114,12 @@ Dirección: %4
         <translation>A transacción é demasiado grande</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Usar UPnP para mapear o porto de escoita (por defecto: 1 se á escoita)</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Nome de usuario para conexións JSON-RPC</translation>
     </message>
     <message>
         <source>Warning</source>
         <translation>Precaución</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Precaución: Esta versión é obsoleta, precísase unha actualización!</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
@@ -2249,18 +2132,6 @@ Dirección: %4
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Executar comando cando o mellor bloque cambie (%s no comando é sustituído polo hash do bloque)</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Actualizar moedeiro ao formato máis recente</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Rescanear transaccións ausentes na cadea de bloques</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Empregar OpenSSL (https) para conexións JSON-RPC</translation>
     </message>
     <message>
         <source>This help message</source>

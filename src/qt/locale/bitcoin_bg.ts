@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Копиране на избрания адрес</translation>
+        <translation>Копиране на избрания адрес към клипборда</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -27,7 +27,7 @@
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Копирай</translation>
+        <translation>&amp;Копирай адрес</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -51,7 +51,7 @@
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Изберете адрес за получаване на монети</translation>
+        <translation>Изберете адрес, на който ще получавате монети</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -71,7 +71,7 @@
     </message>
     <message>
         <source>These are your Joulecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите Биткойн адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <translation>Това са Вашите Биткойн адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -121,7 +121,7 @@
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Въведи парола</translation>
+        <translation>Въведете текущата парола</translation>
     </message>
     <message>
         <source>New passphrase</source>
@@ -129,11 +129,11 @@
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Още веднъж</translation>
+        <translation>Въведете новата парола повторно</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>Криптиране на портфейла</translation>
+        <translation>Шифриране на портфейла</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
@@ -145,35 +145,35 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Тази операция изисква Вашата парола за декриптиране на портфейла.</translation>
+        <translation>Тази операция изисква Вашата парола за дешифриране на портфейла.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
-        <translation>Декриптиране на портфейла</translation>
+        <translation>Дешифриране на портфейла</translation>
     </message>
     <message>
         <source>Change passphrase</source>
         <translation>Смяна на паролата</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Въведете текущата и новата парола за портфейла.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
-        <translation>Потвърждаване на криптирането</translation>
+        <translation>Потвърдете на шифрирането на портфейла</translation>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR JOULECOINS&lt;/b&gt;!</source>
-        <translation>ВНИМАНИЕ: Ако защитите вашият портфейл и изгубите ключовата дума, вие ще &lt;b&gt;ИЗГУБИТЕ ВСИЧКИТЕ СИ БИТКОЙНОВЕ&lt;/b&gt;!</translation>
+        <translation>ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ БИТКОИНИ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Наистина ли искате да шифрирате портфейла?</translation>
+        <translation>Наистина ли желаете да шифрирате портфейла си?</translation>
+    </message>
+    <message>
+        <source>Joulecoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
+        <translation>Биткоин сега ще се затоври за да завърши процеса на криптиране. Запомнете, че криптирането на вашия портефейл не може напълно да предпази вашите монети от кражба чрез зловреден софтуер, инфектирал вашия компютър</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>ВАЖНО: Всякакви стари бекъп версии, които сте направили на вашият портфейл трябва да бъдат заменени със ново-генерирания, криптиран портфейл файл. От съображения за сигурност, предишните бекъпи на некриптираните портфейли ще станат неизползваеми веднага щом започнете да използвате новият криптиран портфейл.</translation>
+        <translation>ВАЖНО: Всички стари запазвания, които сте направили на Вашият портфейл трябва да замените с запазване на новополучения, шифриран портфейл. От съображения за сигурност, предишните запазвания на нешифрирани портфейли ще станат неизползваеми веднага, щом започнете да използвате новият, шифриран портфейл.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -181,19 +181,15 @@
     </message>
     <message>
         <source>Wallet encrypted</source>
-        <translation>Портфейлът е криптиран</translation>
-    </message>
-    <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>Биткоин ще се затоври сега за да завърши процеса на криптиране. Запомнете, че криптирането на вашия портефейл не може напълно да предпази вашите Бит-монети от кражба чрез зловреден софтуер, инфектирал вашия компютър</translation>
+        <translation>Портфейлът е шифриран</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Криптирането беше неуспешно</translation>
+        <translation>Шифрирането беше неуспешно</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Криптирането на портфейла беше неуспешно поради неизвестен проблем. Портфейлът не е криптиран.</translation>
+        <translation>Шифрирането на портфейла беше неуспешно, поради софтуерен проблем. Портфейлът не е шифриран.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
@@ -201,15 +197,15 @@
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation>Отключването беше неуспешно</translation>
+        <translation>Неуспешно отключване на портфейла</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>Паролата въведена за декриптиране на портфейла е грешна.</translation>
+        <translation>Паролата въведена за дешифриране на портфейла е грешна.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
-        <translation>Декриптирането беше неуспешно</translation>
+        <translation>Дешифрирането на портфейла беше неуспешно</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
@@ -217,7 +213,14 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    <message>
+        <source>Banned Until</source>
+        <translation>Със забранен достъп до</translation>
+    </message>
+</context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Подписване на &amp;съобщение...</translation>
@@ -240,11 +243,11 @@
     </message>
     <message>
         <source>&amp;Transactions</source>
-        <translation>&amp;Трансакции</translation>
+        <translation>&amp;Транзакции</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>История на трансакциите</translation>
+        <translation>История на транзакциите</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -268,7 +271,7 @@
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Криптиране на портфейла...</translation>
+        <translation>&amp;Шифриране на портфейла...</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
@@ -297,10 +300,6 @@
     <message>
         <source>Send coins to a Joulecoin address</source>
         <translation>Изпращане към Биткоин адрес</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Променете настройките на Биткойн</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -344,7 +343,7 @@
     </message>
     <message>
         <source>&amp;Show / Hide</source>
-        <translation>&amp;Покажи / Скрий</translation>
+        <translation>&amp;Показване / Скриване</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
@@ -410,37 +409,21 @@
         <source>Show the Joulecoin Core help message to get a list with possible Joulecoin command-line options</source>
         <translation>Покажи помощните съобщения на Биткойн за да видиш наличните и валидни команди</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Joulecoin network</source>
-        <translation><numerusform>%n връзка към Биткоин мрежата</numerusform><numerusform>%n връзки към Биткоин мрежата</numerusform></translation>
-    </message>
     <message>
         <source>No block source available...</source>
         <translation>Липсва източник на блоковете...</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n час</numerusform><numerusform>%n часа</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n ден</numerusform><numerusform>%n дни</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n седмица</numerusform><numerusform>%n седмици</numerusform></translation>
     </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 и %2</translation>
     </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n година</numerusform><numerusform>%n години</numerusform></translation>
-    </message>
     <message>
         <source>%1 behind</source>
         <translation>%1 зад</translation>
+    </message>
+    <message>
+        <source>Last received block was generated %1 ago.</source>
+        <translation>Последния получен блок е генериран преди %1.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
@@ -456,39 +439,53 @@
     </message>
     <message>
         <source>Information</source>
-        <translation>Данни</translation>
+        <translation>Информация</translation>
     </message>
     <message>
         <source>Up to date</source>
         <translation>Синхронизиран</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Обслужени %n блокове от историята с транзакции.</numerusform><numerusform>Обслужени %n блокове от историята с транзакции.</numerusform></translation>
     </message>
     <message>
         <source>Catching up...</source>
         <translation>Зарежда блокове...</translation>
     </message>
     <message>
+        <source>Date: %1
+</source>
+        <translation>Дата: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Сума: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Тип: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>Етикет: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Адрес: %1
+</translation>
+    </message>
+    <message>
         <source>Sent transaction</source>
-        <translation>Изходяща трансакция</translation>
+        <translation>Изходяща транзакция</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>Входяща трансакция</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Дата: %1
-Сума: %2
-Вид: %3
-Адрес: %4
-</translation>
+        <translation>Входяща транзакция</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -681,6 +678,10 @@ Address: %4
         <translation>нищо</translation>
     </message>
     <message>
+        <source>This label turns red if the transaction size is greater than 1000 bytes.</source>
+        <translation>Този етикет става червен, когато размера на транзакцията е по-голяма от 1000 бита.</translation>
+    </message>
+    <message>
         <source>yes</source>
         <translation>да</translation>
     </message>
@@ -695,10 +696,6 @@ Address: %4
     <message>
         <source>Can vary +/- 1 byte per input.</source>
         <translation>Може да варира с +-1 байт</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Това наименование се оцветява в червено, ако произволен получател получи сума по-малка от %1.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -737,11 +734,11 @@ Address: %4
     </message>
     <message>
         <source>Edit receiving address</source>
-        <translation>Редактиране на входящ адрес</translation>
+        <translation>Редактиране на адрес за получаване</translation>
     </message>
     <message>
         <source>Edit sending address</source>
-        <translation>Редактиране на изходящ адрес</translation>
+        <translation>Редактиране на адрес за изпращане</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -799,7 +796,7 @@ Address: %4
     </message>
     <message>
         <source>About Joulecoin Core</source>
-        <translation>За Joulecoin Core</translation>
+        <translation>Относно Joulecoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -813,23 +810,7 @@ Address: %4
         <source>command-line options</source>
         <translation>Списък с налични команди</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>UI Опции</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Задаване на език,например "de_DE" (по подразбиране: system locale)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Стартирай минимизирано</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Изберете директория при стартиране на програмата.( настройка по подразбиране:0)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -879,20 +860,16 @@ Address: %4
         <translation>&amp;Основни</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>Автоматично включване на Биткойн след влизане в системата.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>&amp;Пускане на Биткоин при вход в системата</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
         <translation>Размер на кеша в &amp;базата данни</translation>
     </message>
     <message>
         <source>MB</source>
         <translation>Мегабайта</translation>
+    </message>
+    <message>
+        <source>Number of script &amp;verification threads</source>
+        <translation>Брой на скриптове и &amp;нишки за потвърждение</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -923,12 +900,20 @@ Address: %4
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
+        <source>Automatically start Joulecoin Core after logging in to the system.</source>
+        <translation>Автоматично стартиране на Joulecoin Core след влизане в системата.</translation>
+    </message>
+    <message>
         <source>W&amp;allet</source>
         <translation>По&amp;ртфейл</translation>
     </message>
     <message>
         <source>Expert</source>
         <translation>Експерт</translation>
+    </message>
+    <message>
+        <source>Enable coin &amp;control features</source>
+        <translation>Позволяване на монетите и &amp;техните възможности</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -975,10 +960,6 @@ Address: %4
         <translation>&amp;Минимизиране в системния трей</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>При затваряне на прозореца приложението остава минимизирано. Ако изберете тази опция, приложението може да се затвори само чрез Изход в менюто.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>М&amp;инимизиране при затваряне</translation>
     </message>
@@ -991,12 +972,8 @@ Address: %4
         <translation>Език:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>Промяната на езика ще влезе в сила след рестартиране на Биткоин.</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Мерни единици:</translation>
+        <translation>Мерна единица за показваните суми:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1031,23 +1008,19 @@ Address: %4
         <translation>Изисква се рестартиране на клиента за активиране на извършените промени.</translation>
     </message>
     <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Клиентът ще бъде изключен,искате ли да продължите?</translation>
-    </message>
-    <message>
         <source>This change would require a client restart.</source>
         <translation>Тази промяна изисква рестартиране на клиента Ви.</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Прокси адресът е невалиден.</translation>
+        <translation>Текущият прокси адрес е невалиден.</translation>
     </message>
 </context>
 <context>
     <name>OverviewPage</name>
     <message>
         <source>Form</source>
-        <translation>Форма</translation>
+        <translation>Формуляр</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Joulecoin network after a connection is established, but this process has not completed yet.</source>
@@ -1097,11 +1070,7 @@ Address: %4
         <source>Recent transactions</source>
         <translation>Скорошни транзакции</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>несинхронизиран</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1121,10 +1090,6 @@ Address: %4
         <translation>Мрежата от която се извършва заявката за плащане не съвпада с мрежата на клиента.</translation>
     </message>
     <message>
-        <source>Payment request has expired.</source>
-        <translation>Заявката за плащане е изтекла.</translation>
-    </message>
-    <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
         <translation>Заявената сума за плащане: %1 е твърде малка (счита се за отпадък)</translation>
     </message>
@@ -1141,12 +1106,20 @@ Address: %4
         <translation>Файл за справяне със заявки</translation>
     </message>
     <message>
+        <source>Payment request expired.</source>
+        <translation>Заявката за плащане е изтекла.</translation>
+    </message>
+    <message>
+        <source>Invalid payment request.</source>
+        <translation>Невалидна заявка за плащане.</translation>
+    </message>
+    <message>
         <source>Refund from %1</source>
         <translation>Възстановяване на сума от %1</translation>
     </message>
     <message>
-        <source>Payment request DoS protection</source>
-        <translation>Дос защита на заявката за плащане</translation>
+        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
+        <translation>Заявката за плащане %1 е твърде голям (%2 байта, позволени %3 байта).</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
@@ -1170,10 +1143,6 @@ Address: %4
     <message>
         <source>User Agent</source>
         <translation>Клиент на потребителя</translation>
-    </message>
-    <message>
-        <source>Address/Hostname</source>
-        <translation>Адрес в интернет</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -1205,14 +1174,6 @@ Address: %4
     <message>
         <source>%1 s</source>
         <translation>%1 секунда</translation>
-    </message>
-    <message>
-        <source>NETWORK</source>
-        <translation>Мрежа</translation>
-    </message>
-    <message>
-        <source>UNKNOWN</source>
-        <translation>Неизвестен</translation>
     </message>
     <message>
         <source>None</source>
@@ -1254,7 +1215,7 @@ Address: %4
     </message>
     <message>
         <source>N/A</source>
-        <translation>N/A</translation>
+        <translation>Несъществуващ</translation>
     </message>
     <message>
         <source>Client version</source>
@@ -1333,10 +1294,6 @@ Address: %4
         <translation>Услуги</translation>
     </message>
     <message>
-        <source>Starting Height</source>
-        <translation>Стартова височина</translation>
-    </message>
-    <message>
         <source>Connection Time</source>
         <translation>Продължителност на връзката</translation>
     </message>
@@ -1347,14 +1304,6 @@ Address: %4
     <message>
         <source>Last Receive</source>
         <translation>Получени за последно</translation>
-    </message>
-    <message>
-        <source>Bytes Sent</source>
-        <translation>Изпратени байтове</translation>
-    </message>
-    <message>
-        <source>Bytes Received</source>
-        <translation>Получени байтове</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -1401,16 +1350,8 @@ Address: %4
         <translation>Лог файл,съдържащ грешките</translation>
     </message>
     <message>
-        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отворете Биткой дебъг лог файла от настоящата Data папка. Може да отнеме няколко секунди при по - големи лог файлове.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Изчисти конзолата</translation>
-    </message>
-    <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>Добре дошли в Биткойн RPC конзолата.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1453,12 +1394,16 @@ Address: %4
         <translation>Изходящи</translation>
     </message>
     <message>
-        <source>Unknown</source>
-        <translation>Неизвестен</translation>
+        <source>Yes</source>
+        <translation>Да</translation>
     </message>
     <message>
-        <source>Fetching...</source>
-        <translation>Прихващане...</translation>
+        <source>No</source>
+        <translation>Не</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Неизвестен</translation>
     </message>
 </context>
 <context>
@@ -1657,12 +1602,12 @@ Address: %4
         <translation>Избери...</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation>Минимизирай</translation>
-    </message>
-    <message>
         <source>per kilobyte</source>
         <translation>за килобайт</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Скрий</translation>
     </message>
     <message>
         <source>total at least</source>
@@ -1757,10 +1702,6 @@ Address: %4
         <translation>или</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Невалиден адрес на получателя.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>Сумата трябва да е по-голяма от 0.</translation>
     </message>
@@ -1777,12 +1718,8 @@ Address: %4
         <translation>Грешка при създаването на транзакция!</translation>
     </message>
     <message>
-        <source>A fee higher than %1 is considered an insanely high fee.</source>
-        <translation>Такса по-висока от %1 се смята за извънредно висока.</translation>
-    </message>
-    <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Платете минималната такса от %1</translation>
+        <source>Payment request expired.</source>
+        <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
         <source>Warning: Invalid Joulecoin address</source>
@@ -1806,7 +1743,7 @@ Address: %4
     </message>
     <message>
         <source>added as transaction fee</source>
-        <translation>добавено като такса за трансакция</translation>
+        <translation>добавено като такса за транзакция</translation>
     </message>
 </context>
 <context>
@@ -1856,14 +1793,6 @@ Address: %4
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Това е потвърдена транзакция.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Това е непотвърдена заявка за плащане.</translation>
-    </message>
-    <message>
         <source>Pay To:</source>
         <translation>Плащане на:</translation>
     </message>
@@ -1892,10 +1821,6 @@ Address: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Подпиши</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Можете да подпишете съобщение като доказателство, че притежавате определен адрес. Бъдете внимателни и не подписвайте съобщения, които биха разкрили лична информация без вашето съгласие.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1971,11 +1896,11 @@ Address: %4
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>Не е наличен частният ключ за въведеният адрес.</translation>
+        <translation>Не е наличен частен ключ за въведеният адрес.</translation>
     </message>
     <message>
         <source>Message signing failed.</source>
-        <translation>Подписването на съобщение бе неуспешно.</translation>
+        <translation>Подписването на съобщение беше неуспешно.</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -2075,6 +2000,10 @@ Address: %4
         <translation>собствен адрес</translation>
     </message>
     <message>
+        <source>watch-only</source>
+        <translation>само гледане</translation>
+    </message>
+    <message>
         <source>label</source>
         <translation>име</translation>
     </message>
@@ -2104,7 +2033,7 @@ Address: %4
     </message>
     <message>
         <source>Net amount</source>
-        <translation>Сума нето</translation>
+        <translation>Нетна сума</translation>
     </message>
     <message>
         <source>Message</source>
@@ -2132,7 +2061,7 @@ Address: %4
     </message>
     <message>
         <source>Transaction</source>
-        <translation>Трансакция</translation>
+        <translation>Транзакция</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2159,11 +2088,11 @@ Address: %4
     <name>TransactionDescDialog</name>
     <message>
         <source>Transaction details</source>
-        <translation>Трансакция</translation>
+        <translation>Транзакция</translation>
     </message>
     <message>
         <source>This pane shows a detailed description of the transaction</source>
-        <translation>Описание на трансакцията</translation>
+        <translation>Описание на транзакцията</translation>
     </message>
 </context>
 <context>
@@ -2175,10 +2104,6 @@ Address: %4
     <message>
         <source>Type</source>
         <translation>Тип</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Адрес</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
@@ -2205,6 +2130,10 @@ Address: %4
         <translation>Извън линия</translation>
     </message>
     <message>
+        <source>Label</source>
+        <translation>Име</translation>
+    </message>
+    <message>
         <source>Unconfirmed</source>
         <translation>Непотвърдено</translation>
     </message>
@@ -2218,7 +2147,7 @@ Address: %4
     </message>
     <message>
         <source>Received with</source>
-        <translation>Получени с</translation>
+        <translation>Получени</translation>
     </message>
     <message>
         <source>Received from</source>
@@ -2237,24 +2166,24 @@ Address: %4
         <translation>Емитирани</translation>
     </message>
     <message>
+        <source>watch-only</source>
+        <translation>само гледане</translation>
+    </message>
+    <message>
         <source>(n/a)</source>
         <translation>(n/a)</translation>
     </message>
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Състояние на трансакцията. Задръжте върху това поле за брой потвърждения.</translation>
+        <translation>Състояние на транзакцията. Задръжте върху това поле за брой потвърждения.</translation>
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>
-        <translation>Дата и час на получаване.</translation>
+        <translation>Дата и час на получаване на транзакцията.</translation>
     </message>
     <message>
         <source>Type of transaction.</source>
-        <translation>Вид трансакция.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Получател на трансакцията.</translation>
+        <translation>Вид транзакция.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2341,11 +2270,15 @@ Address: %4
     </message>
     <message>
         <source>Show transaction details</source>
-        <translation>Подробности за трансакцията</translation>
+        <translation>Подробности за транзакцията</translation>
     </message>
     <message>
         <source>Export Transaction History</source>
-        <translation>Изнасяне историята на трансакциите</translation>
+        <translation>Изнасяне историята на транзакциите</translation>
+    </message>
+    <message>
+        <source>Watch-only</source>
+        <translation>само гледане</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
@@ -2467,24 +2400,12 @@ Address: %4
         <translation>Въведете Ваш публичен адрес</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Използвайте тестовата мрежа</translation>
-    </message>
-    <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Приемайте връзки отвън.(по подразбиране:1 в противен случай -proxy или -connect)</translation>
     </message>
     <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Внимание: -paytxfee има голяма стойност! Това е таксата за транзакциите, която ще платите ако направите транзакция.</translation>
-    </message>
-    <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
         <translation>Сложете в бял списък пиъри,свързващи се от дадената интернет маска или айпи адрес.Може да бъде заложено неколкократно.</translation>
-    </message>
-    <message>
-        <source>(default: 1)</source>
-        <translation>(по подразбиране 1)</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -2531,10 +2452,6 @@ Address: %4
         <translation>Заложете броя на нишки за генерация на монети ако е включено(-1 = всички ядра, по подразбиране: %d)</translation>
     </message>
     <message>
-        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>Внимание: -maxtxfee има много висока стойност! Толкова високи такси могат да бъдат заплатени на една транзакция.</translation>
-    </message>
-    <message>
         <source>Connect through SOCKS5 proxy</source>
         <translation>Свързване чрез SOCKS5  прокси</translation>
     </message>
@@ -2544,7 +2461,11 @@ Address: %4
     </message>
     <message>
         <source>Information</source>
-        <translation>Данни</translation>
+        <translation>Информация</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Невалидна сума за -maxtxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
@@ -2564,15 +2485,15 @@ Address: %4
     </message>
     <message>
         <source>Transaction amount too small</source>
-        <translation>Сумата на трансакцията е твърде малка</translation>
+        <translation>Сумата на транзакцията е твърде малка</translation>
     </message>
     <message>
         <source>Transaction amounts must be positive</source>
-        <translation>Сумите на трансакциите трябва да са положителни</translation>
+        <translation>Сумите на транзакциите трябва да са положителни</translation>
     </message>
     <message>
         <source>Transaction too large</source>
-        <translation>Трансакцията е твърде голяма</translation>
+        <translation>Транзакцията е твърде голяма</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
@@ -2583,28 +2504,8 @@ Address: %4
         <translation>Предупреждение</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Внимание: Използвате остаряла версия, необходимо е обновление!</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>по време на стартирането</translation>
-    </message>
-    <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Парола за  JSON-RPC връзките</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Обновяване на портфейла до най-новия формат</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Повторно сканиране на блок-връзка за липсващи портфейлни трансакции</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Използвайте OpenSSL (https) за JSON-RPC връзките</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -2612,7 +2513,7 @@ Address: %4
     </message>
     <message>
         <source>Loading addresses...</source>
-        <translation>Зареждане на адресите...</translation>
+        <translation>Зареждане на адреси...</translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>

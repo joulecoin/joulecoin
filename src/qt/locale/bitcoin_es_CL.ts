@@ -46,6 +46,22 @@
         <translation>&amp;Borrar</translation>
     </message>
     <message>
+        <source>Choose the address to send coins to</source>
+        <translation>Selecciona la direccion para enviar coins</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>Selecciona la dirección para recibir coins</translation>
+    </message>
+    <message>
+        <source>Sending addresses</source>
+        <translation>Dirección de envio</translation>
+    </message>
+    <message>
+        <source>Receiving addresses</source>
+        <translation>Dirección para recibir</translation>
+    </message>
+    <message>
         <source>Copy &amp;Label</source>
         <translation>Copia &amp;etiqueta</translation>
     </message>
@@ -54,8 +70,16 @@
         <translation>&amp;Editar</translation>
     </message>
     <message>
+        <source>Export Address List</source>
+        <translation>Exportar lista de direcciones</translation>
+    </message>
+    <message>
         <source>Comma separated file (*.csv)</source>
         <translation>Archivos separados por coma (*.csv)</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Exportado fallo</translation>
     </message>
     </context>
 <context>
@@ -112,10 +136,6 @@
         <translation>Cambia contraseña</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Introduce la contraseña anterior y la nueva de cartera</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Confirma la codificación de cartera</translation>
     </message>
@@ -138,10 +158,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Billetera codificada</translation>
-    </message>
-    <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>Joulecoin se cerrará para finalizar el proceso de encriptación. Recuerde que encriptar su billetera no protegera completatamente sus joulecoins de ser robados por malware que infecte su computador</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -173,7 +189,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Firmar &amp;Mensaje...</translation>
@@ -231,6 +250,14 @@
         <translation>&amp;Cambiar la contraseña...</translation>
     </message>
     <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>Mandando direcciones</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Recibiendo direcciones</translation>
+    </message>
+    <message>
         <source>Open &amp;URI...</source>
         <translation>Abrir y url...</translation>
     </message>
@@ -245,10 +272,6 @@
     <message>
         <source>Send coins to a Joulecoin address</source>
         <translation>Enviar monedas a una dirección joulecoin</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Modifica las opciones de configuración de joulecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -267,6 +290,10 @@
         <translation>Abre consola de depuración y diagnóstico</translation>
     </message>
     <message>
+        <source>&amp;Verify message...</source>
+        <translation>Verificar mensaje....</translation>
+    </message>
+    <message>
         <source>Joulecoin</source>
         <translation>Joulecoin</translation>
     </message>
@@ -281,6 +308,10 @@
     <message>
         <source>&amp;Receive</source>
         <translation>y recibir</translation>
+    </message>
+    <message>
+        <source>Show information about Joulecoin Core</source>
+        <translation>Mostrar informacion sobre Joulecoin Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -310,21 +341,21 @@
         <source>Joulecoin Core</source>
         <translation>joulecoin core</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Joulecoin network</source>
-        <translation><numerusform>%n conexión activa hacia la red Joulecoin</numerusform><numerusform>%n conexiones activas hacia la red Joulecoin</numerusform></translation>
+    <message>
+        <source>Request payments (generates QR codes and joulecoin: URIs)</source>
+        <translation>Pide pagos (genera codigos QR and joulecoin: URls)</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n hora</numerusform><numerusform>%n horas</numerusform></translation>
+    <message>
+        <source>&amp;About Joulecoin Core</source>
+        <translation>&amp;Sobre Joulecoin Core</translation>
     </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n día</numerusform><numerusform>%n días</numerusform></translation>
+    <message>
+        <source>Modify configuration options for Joulecoin Core</source>
+        <translation>Modifica las opciones para BitCoin Core</translation>
     </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n semana</numerusform><numerusform>%n semanas</numerusform></translation>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 y %2</translation>
     </message>
     <message>
         <source>Error</source>
@@ -355,17 +386,6 @@
         <translation>Transacción entrante</translation>
     </message>
     <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Fecha: %1
-Cantidad: %2
-Tipo: %3
-Dirección: %4</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>La billetera esta &lt;b&gt;codificada&lt;/b&gt; y actualmente &lt;b&gt;desbloqueda&lt;/b&gt;</translation>
     </message>
@@ -388,12 +408,25 @@ Dirección: %4</translation>
         <translation>Cantidad:</translation>
     </message>
     <message>
+        <source>Priority:</source>
+        <translation>prioridad:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>comisión:
+</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Cantidad</translation>
     </message>
     <message>
         <source>Date</source>
         <translation>Fecha</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Confirmaciones</translation>
     </message>
     <message>
         <source>Confirmed</source>
@@ -416,8 +449,24 @@ Dirección: %4</translation>
         <translation>Copiar Cantidad</translation>
     </message>
     <message>
+        <source>Copy quantity</source>
+        <translation>copiar cantidad</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>copiar comision</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>copiar bytes</translation>
+    </message>
+    <message>
         <source>medium</source>
         <translation>medio</translation>
+    </message>
+    <message>
+        <source>low</source>
+        <translation>bajo</translation>
     </message>
     <message>
         <source>yes</source>
@@ -497,17 +546,12 @@ Dirección: %4</translation>
         <translation>versión</translation>
     </message>
     <message>
+        <source>Command-line options</source>
+        <translation>opciones de linea de comando</translation>
+    </message>
+    <message>
         <source>Usage:</source>
         <translation>Uso:</translation>
-    </message>
-    <message>
-        <source>UI options</source>
-        <translation>UI opciones</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Arranca minimizado
-</translation>
     </message>
     </context>
 <context>
@@ -543,20 +587,16 @@ Dirección: %4</translation>
         <translation>&amp;Principal</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>Inicia Joulecoin automáticamente despues de encender el computador</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>&amp;Inicia Joulecoin al iniciar el sistema</translation>
-    </message>
-    <message>
         <source>Reset all client options to default.</source>
         <translation>Reestablece todas las opciones.</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Red</translation>
+    </message>
+    <message>
+        <source>W&amp;allet</source>
+        <translation>Cartera</translation>
     </message>
     <message>
         <source>Expert</source>
@@ -594,10 +634,6 @@ Dirección: %4</translation>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
         <translation>&amp;Minimiza a la bandeja en vez de la barra de tareas</translation>
-    </message>
-    <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimiza la ventana en lugar de salir del programa cuando la ventana se cierra. Cuando esta opción esta activa el programa solo se puede cerrar seleccionando Salir desde el menu.</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
@@ -642,11 +678,7 @@ Dirección: %4</translation>
         <source>Total:</source>
         <translation>Total:</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>desincronizado</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -662,10 +694,6 @@ Dirección: %4</translation>
     <message>
         <source>Amount</source>
         <translation>Cantidad</translation>
-    </message>
-    <message>
-        <source>UNKNOWN</source>
-        <translation>DESCONOCIDO</translation>
     </message>
     <message>
         <source>N/A</source>
@@ -700,6 +728,10 @@ Dirección: %4</translation>
     <message>
         <source>&amp;Information</source>
         <translation>&amp;Información</translation>
+    </message>
+    <message>
+        <source>Debug window</source>
+        <translation>Ventana Debug</translation>
     </message>
     <message>
         <source>General</source>
@@ -749,6 +781,10 @@ Dirección: %4</translation>
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
+    <message>
+        <source>&amp;Amount:</source>
+        <translation>Cantidad:</translation>
+    </message>
     <message>
         <source>&amp;Label:</source>
         <translation>&amp;Etiqueta:</translation>
@@ -827,8 +863,33 @@ Dirección: %4</translation>
         <translation>Enviar monedas</translation>
     </message>
     <message>
+        <source>Insufficient funds!</source>
+        <translation>Fondos insuficientes</translation>
+    </message>
+    <message>
         <source>Amount:</source>
         <translation>Cantidad:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>prioridad:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>comisión:
+</translation>
+    </message>
+    <message>
+        <source>Transaction Fee:</source>
+        <translation>Comisión transacción:</translation>
+    </message>
+    <message>
+        <source>normal</source>
+        <translation>normal</translation>
+    </message>
+    <message>
+        <source>fast</source>
+        <translation>rapido</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -859,12 +920,20 @@ Dirección: %4</translation>
         <translation>Confirmar el envio de monedas</translation>
     </message>
     <message>
+        <source>Copy quantity</source>
+        <translation>copiar cantidad</translation>
+    </message>
+    <message>
         <source>Copy amount</source>
         <translation>Copiar Cantidad</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>La dirección de destinatarion no es valida, comprueba otra vez.</translation>
+        <source>Copy fee</source>
+        <translation>copiar comision</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>copiar bytes</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
@@ -877,10 +946,6 @@ Dirección: %4</translation>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>El total sobrepasa tu saldo cuando se incluyen %1 como tasa de envio.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Tienes una dirección duplicada, solo puedes enviar a direcciónes individuales de una sola vez.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -920,6 +985,10 @@ Dirección: %4</translation>
     <message>
         <source>Message:</source>
         <translation>Mensaje:</translation>
+    </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>Pagar a:</translation>
     </message>
     </context>
 <context>
@@ -974,6 +1043,10 @@ Dirección: %4</translation>
     <message>
         <source>Click "Sign Message" to generate signature</source>
         <translation>Click en "Firmar Mensage" para conseguir firma</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>La dirección introducida no es una valida.</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
@@ -1104,10 +1177,6 @@ Dirección: %4</translation>
         <source>, has not been successfully broadcast yet</source>
         <translation>, no ha sido emitido satisfactoriamente todavía</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Abierto para %n bloque más</numerusform><numerusform>Abierto para %n bloques más</numerusform></translation>
-    </message>
     <message>
         <source>unknown</source>
         <translation>desconocido</translation>
@@ -1135,10 +1204,6 @@ Dirección: %4</translation>
         <translation>Tipo</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Dirección</translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>Abierto hasta %1</translation>
     </message>
@@ -1153,6 +1218,18 @@ Dirección: %4</translation>
     <message>
         <source>Generated but not accepted</source>
         <translation>Generado pero no acceptado</translation>
+    </message>
+    <message>
+        <source>Offline</source>
+        <translation>fuera de linea</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etiqueta</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>no confirmado</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -1189,10 +1266,6 @@ Dirección: %4</translation>
     <message>
         <source>Type of transaction.</source>
         <translation>Tipo de transacción.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Dirección de destino para la transacción</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -1276,6 +1349,10 @@ Dirección: %4</translation>
     <message>
         <source>Show transaction details</source>
         <translation>Mostrar detalles de la transacción</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Exportado fallo</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
@@ -1373,15 +1450,6 @@ Dirección: %4</translation>
 </translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Usa la red de pruebas
-</translation>
-    </message>
-    <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Precaución: -paytxfee es muy alta. Esta es la comisión que pagarás si envias una transacción.</translation>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Conecta solo al nodo especificado
 </translation>
@@ -1395,20 +1463,24 @@ Dirección: %4</translation>
         <translation>Atención: Poco espacio en el disco duro</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Importar bloques desde el archivo externo blk000??.dat </translation>
-    </message>
-    <message>
         <source>Information</source>
         <translation>Información</translation>
     </message>
     <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Enviar informacion de seguimiento a la consola en vez del archivo debug.log</translation>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Cantidad inválida para -maxtxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Intenta usar UPnP para mapear el puerto de escucha (default: 1 when listening)</translation>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Cantidad inválida para -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Cantidad inválida para -mintxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation>Enviar informacion de seguimiento a la consola en vez del archivo debug.log</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
@@ -1420,30 +1492,12 @@ Dirección: %4</translation>
         <translation>Atención</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Advertencia: Esta versión está obsoleta, se necesita actualizar!</translation>
-    </message>
-    <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrompió, guardado fallido</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Contraseña para las conexiones JSON-RPC
-</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Actualizar billetera al formato actual</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Rescanea la cadena de bloques para transacciones perdidas de la cartera
-</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Usa OpenSSL (https) para las conexiones JSON-RPC
 </translation>
     </message>
     <message>
@@ -1473,6 +1527,14 @@ Dirección: %4</translation>
         <translation>Dirección -proxy invalida: '%s'</translation>
     </message>
     <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>No se pudo resolver la dirección fija: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>No se pudo resolver la dirección ip: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
         <translation>Cantidad inválida para -paytxfee=&lt;amount&gt;: '%s'</translation>
     </message>
@@ -1491,6 +1553,14 @@ Dirección: %4</translation>
     <message>
         <source>Loading wallet...</source>
         <translation>Cargando cartera...</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation>No es posible desactualizar la billetera</translation>
+    </message>
+    <message>
+        <source>Cannot write default address</source>
+        <translation>No se pudo escribir la dirección por defecto</translation>
     </message>
     <message>
         <source>Rescanning...</source>

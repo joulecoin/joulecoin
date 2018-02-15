@@ -156,10 +156,6 @@
         <translation>Махфий сузни узгартириш</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Ҳамёнга эски ва янги паролларингизни киритинг.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Ҳамённи кодлашни тасдиқлаш</translation>
     </message>
@@ -186,10 +182,6 @@
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Ҳамёнга янги махфий сўз киритинг.&lt;br/&gt;Илтимос, &lt;b&gt;ўнта ёки тасодифий белгили&lt;/b&gt; махфий сўздан фойдаланинг ёки &lt;b&gt;саккизта ёки кўпроқ сўзлар&lt;/b&gt;дан фойдаланинг.</translation>
-    </message>
-    <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>Joulecoin кодлаш жараёнини тугатиш учун ёпилади. Ёдда сақланг: ҳамёнингизни кодлаш компьютерингизни зарарлаган зарарли дастурлар томонидан joulecoin тангаларингизни ўғирланишидан тўлиқ ҳимоя қила олмайди.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -221,7 +213,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Хабар ёзиш...</translation>
@@ -309,10 +304,6 @@
     <message>
         <source>Send coins to a Joulecoin address</source>
         <translation>Тангаларни Joulecoin манзилига жўнатиш</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Joulecoin учун мослаш танловларини ўзгартириш</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -489,18 +480,6 @@
     <message>
         <source>Incoming transaction</source>
         <translation>Кирувчи операция</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Санаси: %1
-Миқдори: %2
-Тури: %3
-Манзили: %4
-</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -693,10 +672,6 @@ Address: %4
         <translation>йўқ</translation>
     </message>
     <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Агар ўтказманинг ҳажми 1000 байтдан ошса, ёрлиқ қизаради.</translation>
-    </message>
-    <message>
         <source>This means a fee of at least %1 per kB is required.</source>
         <translation>Бу дегани солиқ ҳар кб учун камида %1  талаб қилинади.</translation>
     </message>
@@ -707,14 +682,6 @@ Address: %4
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>Юқори муҳимликка эга бўлган ўтказмалар тезда блокнинг ичига қўшимча олади.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than "medium".</source>
-        <translation>Агар муҳимлиги "ўртача"дан паст бўлса, ушбу ёрлиқ қизил бўлиб ёнади.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Агар қабул қилувчи %1дан кичик миқдорни қабул қилса, ушбу ёрлиқ қизил бўлиб ёнади.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -826,6 +793,10 @@ Address: %4
         <translation>Joulecoin Core ҳақида</translation>
     </message>
     <message>
+        <source>Command-line options</source>
+        <translation>Буйруқлар сатри мосламалари</translation>
+    </message>
+    <message>
         <source>Usage:</source>
         <translation>Фойдаланиш:</translation>
     </message>
@@ -833,23 +804,7 @@ Address: %4
         <source>command-line options</source>
         <translation>буйруқлар қатори орқали мослаш</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>UI мосламалари</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Йиғилганларни бошлаш</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Тўлов сўровлари учун SSL асос сертификатларини ўрнатиш (стандарт: -system-)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Ишга тушиш вақтида маълумотлар директориясини танлаш (стандарт: 0)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -923,14 +878,6 @@ Address: %4
         <translation>&amp;Асосий</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>Тизимга киргандан сўнг Joulecoin дастури автоматик ишга туширилсин.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>Тизимга кирганда Joulecoin &amp;ишга туширилсин</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
         <translation>&amp;Маълумотлар базаси кеши</translation>
     </message>
@@ -961,6 +908,10 @@ Address: %4
     <message>
         <source>&amp;Network</source>
         <translation>Тармоқ</translation>
+    </message>
+    <message>
+        <source>W&amp;allet</source>
+        <translation>Ҳамён</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -999,10 +950,6 @@ Address: %4
         <translation>Фойдаланувчи интерфейси &amp;тили:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>Фойдаланувчи тили интерфесини шу ерда ўрнатиш мумкин. TУшбу созлама Joulecoin қайта ишга туширилганда кучга киради.</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>Миқдорларни кўрсатиш учун &amp;қисм:</translation>
     </message>
@@ -1029,10 +976,6 @@ Address: %4
     <message>
         <source>Client restart required to activate changes.</source>
         <translation>Ўзгаришлар амалга ошиши учун мижозни қайта ишга тушириш талаб қилинади.</translation>
-    </message>
-    <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Мижоз ўчирилади. Давом эттиришни хоҳлайсизми?</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
@@ -1107,15 +1050,11 @@ Address: %4
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Тасдиқланмаган ўтказмалар-фақат кўринадиган манзилларда</translation>
+        <translation>Тасдиқланмаган ўтказмалар-фақат манзилларини кўриш</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
         <translation>Жорий умумий баланс фақат кўринадиган манзилларда</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>Синхронлашдан ташқари</translation>
     </message>
 </context>
 <context>
@@ -1135,10 +1074,6 @@ Address: %4
     <message>
         <source>Payment request network doesn't match client network.</source>
         <translation>Тўлов сўрови тармоғи мижоз тармоғига мос келмайди.</translation>
-    </message>
-    <message>
-        <source>Payment request has expired.</source>
-        <translation>Тўлов сўрови тугади.</translation>
     </message>
     <message>
         <source>Payment request error</source>
@@ -1173,14 +1108,6 @@ Address: %4
     <message>
         <source>%1 s</source>
         <translation>%1 с</translation>
-    </message>
-    <message>
-        <source>NETWORK</source>
-        <translation>ТАРМОҚ</translation>
-    </message>
-    <message>
-        <source>UNKNOWN</source>
-        <translation>НОМАЪЛУМ</translation>
     </message>
     <message>
         <source>None</source>
@@ -1285,14 +1212,6 @@ Address: %4
         <translation>Хизматлар</translation>
     </message>
     <message>
-        <source>Starting Height</source>
-        <translation>Узунликнинг бошланиши</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>Узунликни синхронлаш</translation>
-    </message>
-    <message>
         <source>Ban Score</source>
         <translation>Тезликни бан қилиш</translation>
     </message>
@@ -1307,14 +1226,6 @@ Address: %4
     <message>
         <source>Last Receive</source>
         <translation>Сўнгги қабул қилинган</translation>
-    </message>
-    <message>
-        <source>Bytes Sent</source>
-        <translation>Жўнатилган байтлар</translation>
-    </message>
-    <message>
-        <source>Bytes Received</source>
-        <translation>Қабул қилинган байтлар</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -1361,16 +1272,8 @@ Address: %4
         <translation>Тузатиш журнали файли</translation>
     </message>
     <message>
-        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Жорий махлумотлар директориясидан Joulecoin тузатиш журнали файлини очинг. Бу катта журнал файллари учун бир неча сонияни олиши мумкин.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Терминални тозалаш</translation>
-    </message>
-    <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>Joulecoin RPC терминлга хуш келибсиз.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1413,12 +1316,16 @@ Address: %4
         <translation>Ташқи йўналиш</translation>
     </message>
     <message>
-        <source>Unknown</source>
-        <translation>Номаълум</translation>
+        <source>Yes</source>
+        <translation>Ҳа</translation>
     </message>
     <message>
-        <source>Fetching...</source>
-        <translation>Олинмоқда...</translation>
+        <source>No</source>
+        <translation>Йўқ</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Номаълум</translation>
     </message>
 </context>
 <context>
@@ -1586,7 +1493,7 @@ Address: %4
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation>Етарли бўлмаган миқдор</translation>
+        <translation>Кам миқдор</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -1633,10 +1540,6 @@ Address: %4
         <translation>Танлов</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation>Камайтириш</translation>
-    </message>
-    <message>
         <source>per kilobyte</source>
         <translation>Хар килобайтига</translation>
     </message>
@@ -1670,7 +1573,7 @@ Address: %4
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>Барчасини &amp;Тозалаш</translation>
+        <translation>Барчасини &amp; Тозалаш</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -1793,11 +1696,11 @@ Address: %4
     </message>
     <message>
         <source>Message:</source>
-        <translation>Хабар:</translation>
+        <translation>Хабар</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Бу тасдиқланган тўлов талаби.</translation>
+        <source>Pay To:</source>
+        <translation>Тўлов олувчи:</translation>
     </message>
     </context>
 <context>
@@ -1896,7 +1799,7 @@ Address: %4
     </message>
     <message>
         <source>Credit</source>
-        <translation>Кредит</translation>
+        <translation>Кредит (қарз)</translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -1920,7 +1823,7 @@ Address: %4
     </message>
     <message>
         <source>Transaction ID</source>
-        <translation>Ўтказма ID си</translation>
+        <translation>ID</translation>
     </message>
     <message>
         <source>Merchant</source>
@@ -1973,10 +1876,6 @@ Address: %4
         <translation>Тури</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Манзил</translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>%1 гача очиш</translation>
     </message>
@@ -1995,6 +1894,10 @@ Address: %4
     <message>
         <source>Offline</source>
         <translation>Оффлайн</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Ёрлиқ</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2035,10 +1938,6 @@ Address: %4
     <message>
         <source>Type of transaction.</source>
         <translation>Пул ўтказмаси тури</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Ўтказиладиган жараён манзили.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2132,6 +2031,10 @@ Address: %4
         <translation>Ўтказмалар тарихини экспорт қилиш</translation>
     </message>
     <message>
+        <source>Watch-only</source>
+        <translation>Фақат кўришга</translation>
+    </message>
+    <message>
         <source>Exporting Failed</source>
         <translation>Экспорт қилиб бўлмади</translation>
     </message>
@@ -2183,7 +2086,7 @@ Address: %4
     <name>WalletFrame</name>
     <message>
         <source>No wallet has been loaded.</source>
-        <translation>Хали бирорта хамён юкланмади.</translation>
+        <translation>Хали бирорта хамён юкланмади</translation>
     </message>
 </context>
 <context>
@@ -2223,10 +2126,6 @@ Address: %4
         <translation>Демон сифатида орқа фонда ишга туширинг ва буйруқларга рози бўлинг</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Синов тармоғидан фойдаланинг</translation>
-    </message>
-    <message>
         <source>Connection options:</source>
         <translation>Уланиш кўрсаткичлари:</translation>
     </message>
@@ -2247,16 +2146,16 @@ Address: %4
         <translation>JSON-RPC уланишлари учун парол</translation>
     </message>
     <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>JSON-RPC уланишлари учун OpenSSL (https)дан фойдаланиш</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Бу ёрдам хабари</translation>
     </message>
     <message>
         <source>Loading addresses...</source>
         <translation>Манзиллар юкланмоқда...</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation>Кам миқдор</translation>
     </message>
     <message>
         <source>Loading block index...</source>

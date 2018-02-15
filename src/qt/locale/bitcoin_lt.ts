@@ -34,6 +34,10 @@
         <translation>Ištrinti pasirinktą adresą iš sąrašo</translation>
     </message>
     <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Eksportuoti informaciją iš dabartinės lentelės į failą</translation>
+    </message>
+    <message>
         <source>&amp;Export</source>
         <translation>&amp;Eksportuoti</translation>
     </message>
@@ -46,6 +50,10 @@
         <translation>Pasirinkite adresą kuriam siūsite monetas</translation>
     </message>
     <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>Pasirinkite adresą su kuriuo gauti monetas</translation>
+    </message>
+    <message>
         <source>C&amp;hoose</source>
         <translation>P&amp;asirinkti</translation>
     </message>
@@ -56,6 +64,14 @@
     <message>
         <source>Receiving addresses</source>
         <translation>Gaunami adresai</translation>
+    </message>
+    <message>
+        <source>These are your Joulecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tai yra jūsų Joulecoin adresai mokėjimų siuntimui. Visada patikrinkite siunčiamą sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
+    </message>
+    <message>
+        <source>These are your Joulecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Tai yra jūsų Joulecoin adresai mokėjimų gavimui. Rekomenduojame naudoti naujus gavimo adresus kiekvienai tranzakcijai.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -71,7 +87,7 @@
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Kableliais išskirtas failas (*.csv)</translation>
+        <translation>Kableliais atskirtų duomenų failas (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
@@ -140,10 +156,6 @@
         <translation>Pakeisti slaptafrazę</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Įveskite seną ir naują piniginės slaptafrazes.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Patvirtinkite piniginės užšifravimą</translation>
     </message>
@@ -162,10 +174,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Piniginė užšifruota</translation>
-    </message>
-    <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>Joulecoin dabar užsidarys šifravimo proceso pabaigai. Atminkite, kad piniginės šifravimas negali pilnai apsaugoti joulecoinų vagysčių kai tinkle esančios kenkėjiškos programos patenka į jūsų kompiuterį.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -197,7 +205,14 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    <message>
+        <source>Banned Until</source>
+        <translation>Užblokuotas iki</translation>
+    </message>
+</context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Pasirašyti ži&amp;nutę...</translation>
@@ -287,10 +302,6 @@
         <translation>Siųsti monetas Joulecoin adresui</translation>
     </message>
     <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Keisti joulecoin konfigūracijos galimybes</translation>
-    </message>
-    <message>
         <source>Backup wallet to another location</source>
         <translation>Daryti piniginės atsarginę kopiją</translation>
     </message>
@@ -366,25 +377,9 @@
         <source>&amp;About Joulecoin Core</source>
         <translation>&amp;Apie Joulecoin Core</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Joulecoin network</source>
-        <translation><numerusform>%n Joulecoin tinklo aktyvus ryšys</numerusform><numerusform>%n Joulecoin tinklo aktyvūs ryšiai</numerusform><numerusform>%n Joulecoin tinklo aktyvūs ryšiai</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n valanda</numerusform><numerusform>%n valandos</numerusform><numerusform>%n valandų</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n diena</numerusform><numerusform>%n dienos</numerusform><numerusform>%n dienų</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n savaitė</numerusform><numerusform>%n savaitės</numerusform><numerusform>%n savaičių</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n metas</numerusform><numerusform>%n metai</numerusform><numerusform>%n metų</numerusform></translation>
+    <message>
+        <source>&amp;Command-line options</source>
+        <translation>Komandinės eilutės parametrai</translation>
     </message>
     <message>
         <source>Error</source>
@@ -413,17 +408,6 @@
     <message>
         <source>Incoming transaction</source>
         <translation>Ateinantis sandoris</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Data: %1
-Suma: %2
-Tipas: %3
-Adresas: %4</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -591,7 +575,11 @@ Adresas: %4</translation>
         <source>(no label)</source>
         <translation>(nėra žymės)</translation>
     </message>
-    </context>
+    <message>
+        <source>(change)</source>
+        <translation>(Graža)</translation>
+    </message>
+</context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -672,18 +660,6 @@ Adresas: %4</translation>
         <source>command-line options</source>
         <translation>komandinės eilutės parametrai</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>Naudotoji sąsajos parametrai</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Nustatyti kalbą, pavyzdžiui "lt_LT" (numatyta: sistemos kalba)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Paleisti sumažintą</translation>
-    </message>
     </context>
 <context>
     <name>Intro</name>
@@ -718,16 +694,24 @@ Adresas: %4</translation>
         <translation>&amp;Pagrindinės</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>Automatiškai paleisti Bitkoin programą įjungus sistemą.</translation>
+        <source>MB</source>
+        <translation>MB</translation>
     </message>
     <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>&amp;Paleisti Joulecoin programą su window sistemos paleidimu</translation>
+        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
+        <translation>Proxy IP adresas (Pvz. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+    </message>
+    <message>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Atstatyti Parinktis</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Tinklas</translation>
+    </message>
+    <message>
+        <source>W&amp;allet</source>
+        <translation>Piniginė</translation>
     </message>
     <message>
         <source>Automatically open the Joulecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
@@ -750,6 +734,18 @@ Adresas: %4</translation>
         <translation>Tarpinio serverio preivadas (pvz, 9050)</translation>
     </message>
     <message>
+        <source>IPv4</source>
+        <translation>IPv4</translation>
+    </message>
+    <message>
+        <source>IPv6</source>
+        <translation>IPv6</translation>
+    </message>
+    <message>
+        <source>Tor</source>
+        <translation>Tor</translation>
+    </message>
+    <message>
         <source>&amp;Window</source>
         <translation>&amp;Langas</translation>
     </message>
@@ -762,10 +758,6 @@ Adresas: %4</translation>
         <translation>&amp;M sumažinti langą bet ne užduočių juostą</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Uždarant langą neuždaryti programos. Kai ši parinktis įjungta, programa bus uždaryta tik pasirinkus  meniu komandą Baigti.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>&amp;Sumažinti uždarant</translation>
     </message>
@@ -776,10 +768,6 @@ Adresas: %4</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Naudotojo sąsajos &amp;kalba:</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>Čia gali būti nustatyta naudotojo sąsajos kalba. Šis nustatymas įsigalios iš naujo paleidus Joulecoin.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -810,6 +798,14 @@ Adresas: %4</translation>
         <translation>Patvirtinti nustatymų atstatymą</translation>
     </message>
     <message>
+        <source>Client restart required to activate changes.</source>
+        <translation>Kliento perkrovimas reikalingas nustatymų aktyvavimui</translation>
+    </message>
+    <message>
+        <source>This change would require a client restart.</source>
+        <translation>Šis pakeitimas reikalautų kliento perkrovimo</translation>
+    </message>
+    <message>
         <source>The supplied proxy address is invalid.</source>
         <translation>Nurodytas tarpinio serverio adresas negalioja.</translation>
     </message>
@@ -823,6 +819,10 @@ Adresas: %4</translation>
     <message>
         <source>Available:</source>
         <translation>Galimi:</translation>
+    </message>
+    <message>
+        <source>Your current spendable balance</source>
+        <translation>Jūsų dabartinis išleidžiamas balansas</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -840,11 +840,7 @@ Adresas: %4</translation>
         <source>Your current total balance</source>
         <translation>Jūsų balansas</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>nesinchronizuota</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -852,8 +848,16 @@ Adresas: %4</translation>
         <translation>URI apdorojimas</translation>
     </message>
     <message>
+        <source>Invalid payment address %1</source>
+        <translation>Neteisingas mokėjimo adresas %1</translation>
+    </message>
+    <message>
         <source>Payment request rejected</source>
         <translation>Mokėjimo siuntimas atmestas</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>Mokėjimo siuntimas pasibaigė</translation>
     </message>
     <message>
         <source>Network request error</source>
@@ -885,10 +889,18 @@ Adresas: %4</translation>
 <context>
     <name>QRImageWidget</name>
     <message>
+        <source>&amp;Copy Image</source>
+        <translation>Kopijuoti nuotrauką</translation>
+    </message>
+    <message>
         <source>Save QR Code</source>
         <translation>Įrašyti QR kodą</translation>
     </message>
-    </context>
+    <message>
+        <source>PNG Image (*.png)</source>
+        <translation>PNG paveikslėlis (*.png)</translation>
+    </message>
+</context>
 <context>
     <name>RPCConsole</name>
     <message>
@@ -908,6 +920,10 @@ Adresas: %4</translation>
         <translation>&amp;Informacija</translation>
     </message>
     <message>
+        <source>Debug window</source>
+        <translation>Derinimo langas</translation>
+    </message>
+    <message>
         <source>Using OpenSSL version</source>
         <translation>Naudojama OpenSSL versija</translation>
     </message>
@@ -918,6 +934,10 @@ Adresas: %4</translation>
     <message>
         <source>Network</source>
         <translation>Tinklas</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Pavadinimas</translation>
     </message>
     <message>
         <source>Number of connections</source>
@@ -944,14 +964,6 @@ Adresas: %4</translation>
         <translation>Versija</translation>
     </message>
     <message>
-        <source>Bytes Sent</source>
-        <translation>Nusiųsti baitai</translation>
-    </message>
-    <message>
-        <source>Bytes Received</source>
-        <translation>Gauti baitai</translation>
-    </message>
-    <message>
         <source>Last block time</source>
         <translation>Paskutinio bloko laikas</translation>
     </message>
@@ -962,6 +974,10 @@ Adresas: %4</translation>
     <message>
         <source>&amp;Console</source>
         <translation>&amp;Konsolė</translation>
+    </message>
+    <message>
+        <source>&amp;Clear</source>
+        <translation>Išvalyti</translation>
     </message>
     <message>
         <source>Totals</source>
@@ -978,10 +994,6 @@ Adresas: %4</translation>
     <message>
         <source>Clear console</source>
         <translation>Išvalyti konsolę</translation>
-    </message>
-    <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>Sveiki atvykę į Joulecoin RPC konsolę.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -1003,12 +1015,28 @@ Adresas: %4</translation>
         <source>never</source>
         <translation>Niekada</translation>
     </message>
+    <message>
+        <source>Yes</source>
+        <translation>Taip</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>Ne</translation>
+    </message>
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+        <source>&amp;Amount:</source>
+        <translation>Suma:</translation>
+    </message>
+    <message>
         <source>&amp;Label:</source>
         <translation>Ž&amp;ymė:</translation>
+    </message>
+    <message>
+        <source>&amp;Message:</source>
+        <translation>Žinutė:</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -1028,6 +1056,10 @@ Adresas: %4</translation>
     <message>
         <source>QR Code</source>
         <translation>QR kodas</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Address</source>
+        <translation>&amp;Kopijuoti adresą</translation>
     </message>
     <message>
         <source>Payment information</source>
@@ -1084,6 +1116,10 @@ Adresas: %4</translation>
         <translation>Siųsti monetas</translation>
     </message>
     <message>
+        <source>Insufficient funds!</source>
+        <translation>Nepakanka lėšų</translation>
+    </message>
+    <message>
         <source>Quantity:</source>
         <translation>Kiekis:</translation>
     </message>
@@ -1110,6 +1146,10 @@ Adresas: %4</translation>
     <message>
         <source>Change:</source>
         <translation>Graža:</translation>
+    </message>
+    <message>
+        <source>Transaction Fee:</source>
+        <translation>Sandorio mokestis:</translation>
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -1164,10 +1204,6 @@ Adresas: %4</translation>
         <translation>Kopijuoti pirmumą</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Negaliojantis gavėjo adresas. Patikrinkite.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>Apmokėjimo suma turi būti didesnė nei 0.</translation>
     </message>
@@ -1180,8 +1216,8 @@ Adresas: %4</translation>
         <translation>Jei pridedame sandorio mokestį %1 bendra suma viršija jūsų balansą.</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Rastas adreso dublikatas.</translation>
+        <source>Payment request expired.</source>
+        <translation>Mokėjimo siuntimas pasibaigė</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1221,6 +1257,10 @@ Adresas: %4</translation>
     <message>
         <source>Message:</source>
         <translation>Žinutė:</translation>
+    </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>Mokėti gavėjui:</translation>
     </message>
     </context>
 <context>
@@ -1267,6 +1307,10 @@ Adresas: %4</translation>
     <message>
         <source>Verify the message to ensure it was signed with the specified Joulecoin address</source>
         <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Joulecoin adresas</translation>
+    </message>
+    <message>
+        <source>Verify &amp;Message</source>
+        <translation>&amp;Patikrinti žinutę</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -1464,10 +1508,6 @@ Adresas: %4</translation>
         <translation>Tipas</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adresas</translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>Atidaryta iki %1</translation>
     </message>
@@ -1484,6 +1524,10 @@ Adresas: %4</translation>
         <translation>Išgauta bet nepriimta</translation>
     </message>
     <message>
+        <source>Label</source>
+        <translation>Žymė</translation>
+    </message>
+    <message>
         <source>Received with</source>
         <translation>Gauta su</translation>
     </message>
@@ -1493,7 +1537,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Siųsta </translation>
+        <translation>Išsiųsta</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
@@ -1518,10 +1562,6 @@ Adresas: %4</translation>
     <message>
         <source>Type of transaction.</source>
         <translation>Sandorio tipas.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Sandorio paskirties adresas</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -1667,6 +1707,10 @@ Adresas: %4</translation>
         <translation>&amp;Eksportuoti</translation>
     </message>
     <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Eksportuoti informaciją iš dabartinės lentelės į failą</translation>
+    </message>
+    <message>
         <source>Backup Wallet</source>
         <translation>Backup piniginę</translation>
     </message>
@@ -1706,14 +1750,6 @@ Adresas: %4</translation>
         <translation>Dirbti fone kaip šešėlyje ir priimti komandas</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Naudoti testavimo tinklą</translation>
-    </message>
-    <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Įspėjimas: -paytxfee yra nustatytas per didelis. Tai sandorio mokestis, kurį turėsite mokėti, jei siųsite sandorį.</translation>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Prisijungti tik prie nurodyto mazgo</translation>
     </message>
@@ -1734,12 +1770,20 @@ Adresas: %4</translation>
         <translation>Informacija</translation>
     </message>
     <message>
-        <source>Send trace/debug info to console instead of debug.log file</source>
-        <translation>Siųsti atsekimo/derinimo info į konsolę vietoj debug.log failo</translation>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Neteisinga suma -maxtxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Bandymas naudoti UPnP struktūra klausymosi prievadui (default: 1 when listening)</translation>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Neteisinga suma -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Neteisinga suma -mintxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file</source>
+        <translation>Siųsti atsekimo/derinimo info į konsolę vietoj debug.log failo</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
@@ -1752,18 +1796,6 @@ Adresas: %4</translation>
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Slaptažodis JSON-RPC sujungimams</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Atnaujinti piniginę į naujausią formatą</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Ieškoti  prarastų piniginės sandorių blokų grandinėje</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Naudoti OpenSSL (https) jungimuisi JSON-RPC </translation>
     </message>
     <message>
         <source>This help message</source>

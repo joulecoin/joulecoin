@@ -11,7 +11,7 @@
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;Νέα</translation>
+        <translation>&amp;Νέo</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -91,7 +91,7 @@
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>Η εξαγωγή απέτυχε</translation>
+        <translation>Η Εξαγωγή Απέτυχε</translation>
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
@@ -102,7 +102,7 @@
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
-        <translation>Ετικέτα</translation>
+        <translation>Επιγραφή</translation>
     </message>
     <message>
         <source>Address</source>
@@ -156,10 +156,6 @@
         <translation>Άλλαξε κωδικο πρόσβασης</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Εισάγετε τον παλιό και τον νεο κωδικο στο πορτοφολι.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Επιβεβαίωσε την κρυπτογραφηση του πορτοφολιού</translation>
     </message>
@@ -171,6 +167,11 @@
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Είστε σίγουροι ότι θέλετε να κρυπτογραφήσετε το πορτοφόλι σας;</translation>
+    </message>
+    <message>
+        <source>Joulecoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
+        <translation>Το Joulecoin Core θα κλεισει τώρα για να τελειώσει την διαδικασία κρυπτογράφησης. Θυμήσου ότι κρυπτογραφώντας το πορτοφόλι σου δεν μπορείς να προστατέψεις πλήρως τα joulecoins σου από κλοπή στην περίπτωση που μολυνθεί ο υπολογιστής σου με κακόβουλο λογισμικό.
+</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -189,8 +190,8 @@
         <translation>Εισάγετε τον νέο κωδικό πρόσβασης στον πορτοφόλι &lt;br/&gt; Παρακαλώ χρησιμοποιείστε ένα κωδικό με &lt;b&gt; 10 ή περισσότερους τυχαίους χαρακτήρες&lt;/b&gt; ή &lt;b&gt; οχτώ ή παραπάνω λέξεις&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>Το Joulecoin θα κλεισει τώρα για να τελειώσει την διαδικασία κρυπτογραφησης. Θυμησου ότι κρυπτογραφώντας το πορτοφολι σου δεν μπορείς να προστατέψεις πλήρως τα joulecoins σου από κλοπή στην περίπτωση όπου μολυνθεί ο υπολογιστής σου με κακόβουλο λογισμικό.</translation>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>Πληκτρολόγησε τον παλιό και τον νέο κωδικό στο πορτοφολι.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -222,7 +223,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Υπογραφή &amp;Μηνύματος...</translation>
@@ -310,10 +314,6 @@
     <message>
         <source>Send coins to a Joulecoin address</source>
         <translation>Στείλε νομίσματα σε μια διεύθυνση joulecoin</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Επεργασία  ρυθμισεων επιλογών για το Joulecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -421,35 +421,15 @@
     </message>
     <message>
         <source>Show the Joulecoin Core help message to get a list with possible Joulecoin command-line options</source>
-        <translation>Εμφανιση του Joulecoin.Qt μήνυματος βοήθειας για να πάρετε μια λίστα με τις πιθανές επιλογές Joulecoin γραμμής εντολών.</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Joulecoin network</source>
-        <translation><numerusform>%n ενεργή σύνδεση στο δίκτυο Joulecoin</numerusform><numerusform>%n ενεργές συνδέσεις στο δίκτυο Βitcoin</numerusform></translation>
+        <translation>Εμφανιση του Joulecoin-Qt μήνυματος βοήθειας για να πάρετε μια λίστα με τις πιθανές επιλογές Joulecoin γραμμής εντολών.</translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>Η πηγή του μπλοκ δεν ειναι διαθέσιμη... </translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n ώρες </numerusform><numerusform>%n ώρες </numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n ημέρες </numerusform><numerusform>%n ημέρες </numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n εβδομαδες</numerusform><numerusform>%n εβδομαδες</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 και %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n έτος</numerusform><numerusform>%n έτη</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -484,24 +464,42 @@
         <translation>Ενημέρωση...</translation>
     </message>
     <message>
+        <source>Date: %1
+</source>
+        <translation>Ημερομηνία: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Ποσό: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Τύπος: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>Ετικέτα: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Διεύθυνση: %1
+</translation>
+    </message>
+    <message>
         <source>Sent transaction</source>
         <translation>Η συναλλαγή απεστάλη</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
         <translation>Εισερχόμενη συναλλαγή</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Ημερομηνία: %1
-Ποσό: %2
-Τύπος: %3
-Διεύθυνση: %4
-</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -631,7 +629,7 @@ Address: %4
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Αντιγραφή ταρίφας</translation>
+        <translation>Αντιγραφή μετα-ταρίφας</translation>
     </message>
     <message>
         <source>Copy bytes</source>
@@ -694,6 +692,22 @@ Address: %4
         <translation>κανένα</translation>
     </message>
     <message>
+        <source>This label turns red if the transaction size is greater than 1000 bytes.</source>
+        <translation>Αυτή η ετικέτα γίνεται κόκκινη αν το μέγεθος της συναλλαγής είναι μεγαλύτερο από 1000 bytes.</translation>
+    </message>
+    <message>
+        <source>This label turns red if the priority is smaller than "medium".</source>
+        <translation>Αυτή η ετικέτα γίνεται κόκκινη αν η προτεραιότητα είναι μικρότερη από "μεσαία".</translation>
+    </message>
+    <message>
+        <source>This label turns red if any recipient receives an amount smaller than %1.</source>
+        <translation>Αυτή η ετικέτα γίνεται κόκκινη αν οποιοσδήποτε παραλήπτης λάβει ποσό μικρότερο από %1.</translation>
+    </message>
+    <message>
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>Μπορεί να διαφέρει +/- %1 Satoshi (ες) ανά εγγραφή.</translation>
+    </message>
+    <message>
         <source>yes</source>
         <translation>ναι</translation>
     </message>
@@ -702,24 +716,16 @@ Address: %4
         <translation>όχι</translation>
     </message>
     <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Η ετικετα γινετε κοκκινη , αν το μεγεθος της συναλαγης ειναι μεγαλητερο απο 1000 bytes.</translation>
-    </message>
-    <message>
         <source>This means a fee of at least %1 per kB is required.</source>
         <translation>Ελάχιστο χρεώσιμο ποσό τουλάχιστο %1 ανα kB</translation>
     </message>
     <message>
+        <source>Can vary +/- 1 byte per input.</source>
+        <translation>Μπορεί να διαφέρει +/- 1 byte ανά εγγραφή.</translation>
+    </message>
+    <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>Συναλλαγές με υψηλότερη προτεραιότητα είναι πιο πιθανό να περιλαμβάνονται σε ένα μπλοκ.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than "medium".</source>
-        <translation>Η ετικέτα γίνεται κόκκινη , αν το μέγεθος της συναλαγής είναι μεγαλύτερο απο το ",μεσαίο",</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Η ετικέτα γίνεται κόκκινη , αν ο παραλήπτης παραλάβει ένα ποσό μικρότερο απο %1.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -843,31 +849,7 @@ Address: %4
         <source>command-line options</source>
         <translation>επιλογής γραμμής εντολών</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>επιλογές UI</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Όρισε γλώσσα, για παράδειγμα "de_DE"(προεπιλογή:τοπικές ρυθμίσεις)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Έναρξη ελαχιστοποιημένο</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>Ορίστε SSL root certificates για αίτηση πληρωμής (default: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Εμφάνισε την οθόνη εκκίνησης κατά την εκκίνηση(προεπιλογή:1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Επιλογή καταλόγου</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -906,7 +888,15 @@ Address: %4
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
-    </context>
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>%n GB ελεύθερου χώρου διαθέσιμα</numerusform><numerusform>%n GB ελεύθερου χώρου διαθέσιμα</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation><numerusform>(από το %n GB που απαιτείται)</numerusform><numerusform>(από τα %n GB που απαιτούνται)</numerusform></translation>
+    </message>
+</context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -941,14 +931,6 @@ Address: %4
         <translation>&amp;Κύριο</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>Αυτόματη εκκίνηση του Joulecoin μετά την εισαγωγή στο σύστημα</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>&amp;Έναρξη του Βιtcoin κατά την εκκίνηση του συστήματος</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
         <translation>Μέγεθος κρυφής μνήμης βάσης δεδομένων.</translation>
     </message>
@@ -971,6 +953,10 @@ Address: %4
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>Διεύθυνση IP του διαμεσολαβητή (π.χ. 127.0.0.1  / IPv6: ::1)</translation>
+    </message>
+    <message>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
+        <translation>Ελαχιστοποίηση αντί για έξοδο κατά το κλείσιμο του παραθύρου. Όταν αυτή η επιλογή είναι ενεργοποιημένη, η εφαρμογή θα κλείνει μόνο αν επιλεχθεί η Έξοδος στο μενού.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1061,10 +1047,6 @@ Address: %4
         <translation>&amp;Ελαχιστοποίηση στην περιοχή ειδοποιήσεων αντί της γραμμής εργασιών</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Ελαχιστοποίηση αντί για έξοδο κατά το κλείσιμο του παραθύρου</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>Ε&amp;λαχιστοποίηση κατά το κλείσιμο</translation>
     </message>
@@ -1077,10 +1059,6 @@ Address: %4
         <translation>Γλώσσα περιβάλλοντος εργασίας: </translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>Εδώ μπορεί να ρυθμιστεί η γλώσσα διεπαφής χρήστη. Αυτή η ρύθμιση θα ισχύσει μετά την επανεκκίνηση του Joulecoin.</translation>
-    </message>
-    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Μονάδα μέτρησης:</translation>
     </message>
@@ -1090,7 +1068,8 @@ Address: %4
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Επιλογή κατα πόσο να αναδείχνονται οι δυνατότητες ελέγχου κερμάτων.</translation>
+        <translation>Επιλογή κατα πόσο να αναδείχνονται οι δυνατότητες ελέγχου κερμάτων.
+</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -1115,10 +1094,6 @@ Address: %4
     <message>
         <source>Client restart required to activate changes.</source>
         <translation>Χρειάζεται επανεκκίνηση του προγράμματος για να ενεργοποιηθούν οι αλλαγές.</translation>
-    </message>
-    <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Η εφαρμογή θα τερματιστεί. Θέλετε να προχωρήσετε;</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
@@ -1203,10 +1178,6 @@ Address: %4
         <source>Current total balance in watch-only addresses</source>
         <translation>Το τρέχον συνολικό υπόλοιπο σε διευθύνσεις παρακολούθησης μόνο</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>εκτός συγχρονισμού</translation>
-    </message>
 </context>
 <context>
     <name>PaymentServer</name>
@@ -1223,10 +1194,6 @@ Address: %4
         <translation>Η αίτηση πληρωμής έχει αρνηθεί.</translation>
     </message>
     <message>
-        <source>Payment request has expired.</source>
-        <translation>Η αίτηση πληρωμής έχει λήξει.</translation>
-    </message>
-    <message>
         <source>Payment request is not initialized.</source>
         <translation>Η αίτηση πληρωμής δεν έχει αρχίζει ακόμα.</translation>
     </message>
@@ -1240,7 +1207,7 @@ Address: %4
     </message>
     <message>
         <source>Cannot start joulecoin: click-to-pay handler</source>
-        <translation>Δεν είναι δυνατή η εκκίνηση του Joulecoin. click-to-pay handler</translation>
+        <translation>Δεν είναι δυνατή η εκκίνηση του Joulecoin: click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1278,10 +1245,6 @@ Address: %4
 <context>
     <name>PeerTableModel</name>
     <message>
-        <source>Address/Hostname</source>
-        <translation>Διεύθυθνση/Όνομα υπολογιστή</translation>
-    </message>
-    <message>
         <source>Ping Time</source>
         <translation>Χρόνος καθυστέρησης</translation>
     </message>
@@ -1311,14 +1274,6 @@ Address: %4
     <message>
         <source>%1 s</source>
         <translation>%1 s</translation>
-    </message>
-    <message>
-        <source>NETWORK</source>
-        <translation>Δίκτυο</translation>
-    </message>
-    <message>
-        <source>UNKNOWN</source>
-        <translation>Άγνωστο(α)</translation>
     </message>
     <message>
         <source>None</source>
@@ -1435,14 +1390,6 @@ Address: %4
         <translation>Υπηρεσίες</translation>
     </message>
     <message>
-        <source>Starting Height</source>
-        <translation>Αρχικό ύψος</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>Ύψος συγχονισμού</translation>
-    </message>
-    <message>
         <source>Ban Score</source>
         <translation>Σκορ αποκλησμού</translation>
     </message>
@@ -1457,14 +1404,6 @@ Address: %4
     <message>
         <source>Last Receive</source>
         <translation>Τελευταία λήψη</translation>
-    </message>
-    <message>
-        <source>Bytes Sent</source>
-        <translation>Σταλθέντα bytes</translation>
-    </message>
-    <message>
-        <source>Bytes Received</source>
-        <translation>Ληφθέντα bytes</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -1511,16 +1450,8 @@ Address: %4
         <translation>Αρχείο καταγραφής εντοπισμού σφαλμάτων </translation>
     </message>
     <message>
-        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ανοίξτε το αρχείο καταγραφής εντοπισμού σφαλμάτων από τον τρέχοντα κατάλογο δεδομένων. Αυτό μπορεί να πάρει μερικά δευτερόλεπτα για τα μεγάλα αρχεία καταγραφής. </translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Καθαρισμός κονσόλας</translation>
-    </message>
-    <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>Καλώς ήρθατε στην Joulecoin RPC κονσόλα.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1565,10 +1496,6 @@ Address: %4
     <message>
         <source>Unknown</source>
         <translation>Άγνωστο(α)</translation>
-    </message>
-    <message>
-        <source>Fetching...</source>
-        <translation>Ανάκτηση...</translation>
     </message>
 </context>
 <context>
@@ -1666,7 +1593,7 @@ Address: %4
     </message>
     <message>
         <source>Label</source>
-        <translation>Ετικέτα</translation>
+        <translation>Επιγραφή</translation>
     </message>
     <message>
         <source>Message</source>
@@ -1689,7 +1616,7 @@ Address: %4
     </message>
     <message>
         <source>Label</source>
-        <translation>Ετικέτα</translation>
+        <translation>Επιγραφή</translation>
     </message>
     <message>
         <source>Message</source>
@@ -1779,12 +1706,12 @@ Address: %4
         <translation>Επιλογή...</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation>Ελαχιστοποίηση</translation>
-    </message>
-    <message>
         <source>per kilobyte</source>
         <translation>ανά kilobyte</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Απόκρυψη</translation>
     </message>
     <message>
         <source>total at least</source>
@@ -1808,7 +1735,7 @@ Address: %4
     </message>
     <message>
         <source>fast</source>
-        <translation>γρήγορο</translation>
+        <translation>Γρήγορο</translation>
     </message>
     <message>
         <source>(confirmation may take longer)</source>
@@ -1887,10 +1814,6 @@ Address: %4
         <translation>ή</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Η διεύθυνση του αποδέκτη δεν είναι σωστή. Παρακαλώ ελέγξτε ξανά.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>Το ποσό πληρωμής πρέπει να είναι μεγαλύτερο από 0.</translation>
     </message>
@@ -1901,10 +1824,6 @@ Address: %4
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>Το σύνολο υπερβαίνει το υπόλοιπό σας όταν συμπεριληφθεί και η αμοιβή %1</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Βρέθηκε η ίδια διεύθυνση δύο φορές. Επιτρέπεται μία μόνο εγγραφή για κάθε διεύθυνση, σε κάθε διαδικασία αποστολής.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
@@ -1967,7 +1886,7 @@ Address: %4
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>Επικόλληση διεύθυνσης από το πρόχειρο</translation>
+        <translation>Επικόλληση διεύθυνσης από το βιβλίο διευθύνσεων</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -1984,10 +1903,6 @@ Address: %4
     <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Εισάγεται μία ετικέτα για αυτή την διεύθυνση για να προστεθεί στη λίστα με τις χρησιμοποιημένες διευθύνσεις</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Αυτή είναι μία ανεπιβεβαίωτη αίτηση πληρωμής.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2018,10 +1933,6 @@ Address: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Υπογραφή Μηνύματος</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Μπορείτε να υπογράφετε μηνύματα με τις διευθύνσεις σας, ώστε ν' αποδεικνύετε πως αυτές σας ανήκουν. Αποφεύγετε να υπογράφετε κάτι αόριστο καθώς ενδέχεται να εξαπατηθείτε. Υπογράφετε μόνο πλήρης δηλώσεις με τις οποίες συμφωνείτε.</translation>
     </message>
     <message>
         <source>The Joulecoin address to sign the message with</source>
@@ -2074,10 +1985,6 @@ Address: %4
     <message>
         <source>&amp;Verify Message</source>
         <translation>&amp;Επιβεβαίωση μηνύματος</translation>
-    </message>
-    <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Πληκτρολογήστε την υπογραφή διεύθυνσης, μήνυμα (βεβαιωθείτε ότι έχετε αντιγράψει τις αλλαγές γραμμής, κενά, tabs, κ.λπ. ακριβώς) και την υπογραφή παρακάτω, για να ελέγξει το μήνυμα. Να είστε προσεκτικοί για να μην διαβάσετε περισσότερα στην υπογραφή ό, τι είναι στην υπογραφή ίδιο το μήνυμα , για να μην εξαπατηθούν από έναν άνθρωπο -in - the-middle επίθεση.</translation>
     </message>
     <message>
         <source>The Joulecoin address the message was signed with</source>
@@ -2196,10 +2103,6 @@ Address: %4
         <source>Status</source>
         <translation>Κατάσταση</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, έχει μεταδοθεί μέσω %n κόμβων</numerusform><numerusform>, έχει μεταδοθεί μέσω %n κόμβων</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>Ημερομηνία</translation>
@@ -2235,10 +2138,6 @@ Address: %4
     <message>
         <source>Credit</source>
         <translation>Πίστωση </translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>ωρίμανση σε %n επιπλέον μπλοκ</numerusform><numerusform>ωρίμανση σε %n επιπλέον μπλοκ</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2312,10 +2211,6 @@ Address: %4
         <source>, has not been successfully broadcast yet</source>
         <translation>, δεν έχει ακόμα μεταδοθεί μ' επιτυχία</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Ανοιχτό για %n μπλοκ</numerusform><numerusform>Ανοιχτό για %n μπλοκ</numerusform></translation>
-    </message>
     <message>
         <source>unknown</source>
         <translation>άγνωστο</translation>
@@ -2343,14 +2238,6 @@ Address: %4
         <translation>Τύπος</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Διεύθυνση</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Ανοιχτό για %n μπλοκ</numerusform><numerusform>Ανοιχτό για %n μπλοκ</numerusform></translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>Ανοιχτό μέχρι %1</translation>
     </message>
@@ -2371,6 +2258,10 @@ Address: %4
         <translation>Offline</translation>
     </message>
     <message>
+        <source>Label</source>
+        <translation>Επιγραφή</translation>
+    </message>
+    <message>
         <source>Unconfirmed</source>
         <translation>Ανεπιβεβαίωτες</translation>
     </message>
@@ -2380,7 +2271,7 @@ Address: %4
     </message>
     <message>
         <source>Received with</source>
-        <translation>Παραλαβή με</translation>
+        <translation>Ελήφθη με</translation>
     </message>
     <message>
         <source>Received from</source>
@@ -2388,7 +2279,7 @@ Address: %4
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Αποστολή προς</translation>
+        <translation>Απεστάλη προς</translation>
     </message>
     <message>
         <source>Payment to yourself</source>
@@ -2417,10 +2308,6 @@ Address: %4
     <message>
         <source>Type of transaction.</source>
         <translation>Είδος συναλλαγής.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Διεύθυνση αποστολής της συναλλαγής.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2653,20 +2540,12 @@ Address: %4
         <translation>Εκτέλεση στο παρασκήνιο κι αποδοχή εντολών</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Χρήση του δοκιμαστικού δικτύου</translation>
-    </message>
-    <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Να δέχεσαι συνδέσεις από έξω(προεπιλογή:1)</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Αποθηκευση σε συγκεκριμένη διεύθυνση. Χρησιμοποιήστε τα πλήκτρα [Host] : συμβολισμός θύρα για IPv6</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Εισαγωγή δοκιμαστικής λειτουργίας παλινδρόμησης, που χρησιμοποιεί μια ειδική αλυσίδα στην οποία τα μπλοκ επιλύονται στιγμιαία.</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -2677,24 +2556,8 @@ Address: %4
         <translation>Αυτό είναι ένα προ-τεστ κυκλοφορίας - χρησιμοποιήστε το με δική σας ευθύνη - δεν χρησιμοποιείτε για εξόρυξη ή για αλλες εφαρμογές</translation>
     </message>
     <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Προειδοποίηση: Η παράμετρος -paytxfee είναι πολύ υψηλή. Πρόκειται για την αμοιβή που θα πληρώνετε για κάθε συναλλαγή που θα στέλνετε.</translation>
-    </message>
-    <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Προειδοποίηση : Σφάλμα wallet.dat κατα την ανάγνωση ! Όλα τα κλειδιά αναγνωρισθηκαν σωστά, αλλά τα δεδομένα των συναλλαγών ή καταχωρήσεις στο βιβλίο διευθύνσεων μπορεί να είναι ελλιπείς ή λανθασμένα. </translation>
-    </message>
-    <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Προειδοποίηση : το αρχειο wallet.dat ειναι διεφθαρμένο, τα δεδομένα σώζονται ! Original wallet.dat αποθηκεύονται ως wallet.{timestamp}.bak στο %s . Αν το υπόλοιπο του ή τις συναλλαγές σας, είναι λάθος θα πρέπει να επαναφέρετε από ένα αντίγραφο ασφαλείας</translation>
-    </message>
-    <message>
-        <source>(default: 1)</source>
-        <translation>(προεπιλογή: 1)</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Προσπάθεια για ανακτησει ιδιωτικων κλειδιων από ενα διεφθαρμένο αρχειο wallet.dat </translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -2711,10 +2574,6 @@ Address: %4
     <message>
         <source>Corrupted block database detected</source>
         <translation>Εντοπισθηκε διεφθαρμενη βαση δεδομενων των μπλοκ</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Ανακαλύψτε την δικη σας IP διεύθυνση (προεπιλογή: 1 όταν ακούει και δεν - externalip) </translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -2761,16 +2620,12 @@ Address: %4
         <translation>Μόνο σύνδεση σε κόμβους του δικτύου &lt;net&gt; (ipv4, ipv6 ή onion)</translation>
     </message>
     <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Εισαγωγή μπλοκ από εξωτερικό αρχείο blk000?.dat</translation>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation>Ορίστε το μέγιστο μέγεθος block σε bytes (προεπιλογή: %d)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Επιλέξτε αρχείο πορτοφολιού (μέσα απο κατάλογο δεδομένων)</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>Αυτό προορίζεται για εργαλεία δοκιμών παλινδρόμησης και την ανάπτυξη εφαρμογών.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -2789,24 +2644,16 @@ Address: %4
         <translation>Επιλογές πορτοφολιού:</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Εισαγωγή μπλοκ από εξωτερικό αρχείο blk000?.dat</translation>
-    </message>
-    <message>
         <source>Cannot obtain a lock on data directory %s. Joulecoin Core is probably already running.</source>
         <translation>Αδυναμία κλειδώματος του φακέλου δεδομένων %s. Πιθανώς το Joulecoin να είναι ήδη ενεργό.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Joulecoin Core will not work properly.</source>
-        <translation>Προειδοποίηση: Παρακαλώ ελέγξτε ότι η ημερομηνία και ώρα του υπολογιστή σας είναι σωστά ρυθμισμένες! Εάν το ρολόι σας είναι λάθος το Joulecoin Core δεν θα λειτουργήσει σωστά. </translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
         <translation>Σύνδεση μέσω διαμεσολαβητή SOCKS5</translation>
     </message>
     <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>Δεν μπόρεσε να αναλυθεί η παράμετρος -rpcbind value %s ως διεύθυνση δικτύου</translation>
+        <source>Copyright (C) 2009-%i The Joulecoin Core Developers</source>
+        <translation>Πνευματικά δικαιώματα 2009-%i Οι προγραμματιστές του Joulecoin Core</translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Joulecoin Core</source>
@@ -2817,16 +2664,16 @@ Address: %4
         <translation>Σφάλμα ανάγνωσης από τη βάση δεδομένων, γίνεται τερματισμός.</translation>
     </message>
     <message>
-        <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>Σφάλμα: Μη συμβατή παράμετρος -tor. Χρησιμοποιήσε την παράμετρο -onion</translation>
-    </message>
-    <message>
         <source>Information</source>
         <translation>Πληροφορία</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. Joulecoin Core is shutting down.</source>
         <translation>Η εκκίνηση ελέγχου ορθότητας απέτυχε.  Γίνεται τερματισμός του Joulecoin Core.</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Μη έγκυρο ποσό για την παράμετρο -maxtxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
@@ -2839,10 +2686,6 @@ Address: %4
     <message>
         <source>Node relay options:</source>
         <translation>Επιλογές αναμετάδοσης κόμβου: </translation>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the Joulecoin Wiki for SSL setup instructions)</source>
-        <translation>Ρυθμίσεις SSL: (ανατρέξτε στο Joulecoin Wiki για οδηγίες ρυθμίσεων SSL)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -2881,10 +2724,6 @@ Address: %4
         <translation>Η συναλλαγή ειναι πολύ μεγάλη </translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Χρησιμοποίηση του  UPnP για την χρήση της πόρτας αναμονής (προεπιλογή:1)</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Όνομα χρήστη για τις συνδέσεις JSON-RPC</translation>
     </message>
@@ -2893,16 +2732,8 @@ Address: %4
         <translation>Προειδοποίηση</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Προειδοποίηση: Αυτή η έκδοση είναι ξεπερασμένη, απαιτείται αναβάθμιση </translation>
-    </message>
-    <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Μεταφορά όλων των συναλλαγών απο το πορτοφόλι</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>κατά την εκκίνηση</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
@@ -2915,18 +2746,6 @@ Address: %4
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Εκτέλεσε την εντολή όταν το καλύτερο μπλοκ αλλάξει(%s στην εντολή αντικαθίσταται από το hash του μπλοκ)</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Αναβάθμισε το πορτοφόλι στην τελευταία έκδοση</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Επανέλεγχος της αλυσίδας μπλοκ για απούσες συναλλαγές</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Χρήση του OpenSSL (https) για συνδέσεις JSON-RPC</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -2961,10 +2780,6 @@ Address: %4
         <translation>Σφάλμα φόρτωσης αρχείου wallet.dat</translation>
     </message>
     <message>
-        <source>Force safe mode (default: %u)</source>
-        <translation>Επιβολή ασφαλής λειτουργίας (προεπιλογή: %u)</translation>
-    </message>
-    <message>
         <source>Generate coins (default: %u)</source>
         <translation>Δημιουργία νομισμάτων (προκαθορισμος: %u)</translation>
     </message>
@@ -2981,8 +2796,12 @@ Address: %4
         <translation>Δεν είναι έγκυρη η διεύθυνση διαμεσολαβητή: '%s'</translation>
     </message>
     <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>Αρχείο πιστοποιητικού του διακομιστή  (προεπιλογή: %s)</translation>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>Μέγιστες αριθμός συνδέσεων με τους peers &lt;n&gt; (προεπιλογή: %u)</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: %s)</source>
+        <translation>Ορίστε αρχείο ρυθμίσεων (προεπιλογή: %s)</translation>
     </message>
     <message>
         <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>

@@ -87,7 +87,7 @@
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Vesszővel elválasztott fájl (*. csv)</translation>
+        <translation>Vesszővel elválasztott fájl (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
@@ -156,10 +156,6 @@
         <translation>Jelszó megváltoztatása</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Írd be a tárca régi és új jelszavát.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Biztosan titkosítani akarod a tárcát?</translation>
     </message>
@@ -188,8 +184,8 @@
         <translation>Add meg a tárca új jelszavát.&lt;br/&gt;Olyan jelszót válassz, ami &lt;b&gt;legalább tíz véletlenszerű karakterből&lt;/b&gt; vagy &lt;b&gt;legalább 8 véletlenszerű szóból&lt;/b&gt; áll.</translation>
     </message>
     <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>A Joulecoin Core most bezár, hogy befejezze a titkosítást. Ne feledd: a tárca titkosítása nem nyújt teljes védelmet azzal szemben, hogy adathalász programok megfertőzzék a számítógéped és ellopják a joulecoinjaid.</translation>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>Add meg a tárcához a régi jelszavad és az új jelszavad.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -221,7 +217,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Üzenet aláírása...</translation>
@@ -311,10 +310,6 @@
         <translation>Joulecoin küldése megadott címre</translation>
     </message>
     <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Joulecoin konfigurációs opciók</translation>
-    </message>
-    <message>
         <source>Backup wallet to another location</source>
         <translation>Biztonsági másolat készítése a tárcáról egy másik helyre</translation>
     </message>
@@ -368,11 +363,11 @@
     </message>
     <message>
         <source>Sign messages with your Joulecoin addresses to prove you own them</source>
-        <translation>Üzenetek aláírása a Joulecoin.címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
+        <translation>Üzenetek aláírása a Joulecoin-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Joulecoin addresses</source>
-        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Joulecoin.címekkel vannak-e aláírva</translation>
+        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Joulecoin-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -403,6 +398,10 @@
         <translation>&amp;A Joulecoin Core-ról</translation>
     </message>
     <message>
+        <source>Modify configuration options for Joulecoin Core</source>
+        <translation>Konfigurációs opciók módosítása a Joulecoin Core-hoz</translation>
+    </message>
+    <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>A használt küldési címek és címkék megtekintése</translation>
     </message>
@@ -424,11 +423,15 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Joulecoin network</source>
-        <translation><numerusform>%n aktív kapcsolat a Joulecoin.hálózattal</numerusform><numerusform>%n aktív kapcsolat a Joulecoin.hálózattal</numerusform></translation>
+        <translation><numerusform>%n aktív kapcsolat a Joulecoin hálózathoz</numerusform><numerusform>%n aktív kapcsolat a Joulecoin hálózathoz</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
         <translation>Blokk forrása ismeretlen...</translation>
+    </message>
+    <message numerus="yes">
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation><numerusform>%n blokk feldolgozva a tranzakció előzményből.</numerusform><numerusform>%n blokk feldolgozva a tranzakció előzményből.</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -483,24 +486,42 @@
         <translation>Frissítés...</translation>
     </message>
     <message>
+        <source>Date: %1
+</source>
+        <translation>Dátum:  %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Összeg: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Típus: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>Címke: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Cím: %1
+</translation>
+    </message>
+    <message>
         <source>Sent transaction</source>
         <translation>Tranzakció elküldve.</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
         <translation>Beérkező tranzakció</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Dátum: %1
-Összeg: %2
-Típus: %3
-Cím: %4
-</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -542,7 +563,7 @@ Cím: %4
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Díjak:</translation>
+        <translation>Díj:</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -642,7 +663,7 @@ Cím: %4
     </message>
     <message>
         <source>Copy dust</source>
-        <translation>Por-határ másolása</translation>
+        <translation>Visszajáró másolása</translation>
     </message>
     <message>
         <source>Copy change</source>
@@ -693,6 +714,18 @@ Cím: %4
         <translation>semmi</translation>
     </message>
     <message>
+        <source>This label turns red if the transaction size is greater than 1000 bytes.</source>
+        <translation>Ez a címke pirosra változik, ha a tranzakció mérete nagyobb mint 1000 bájt.</translation>
+    </message>
+    <message>
+        <source>This label turns red if the priority is smaller than "medium".</source>
+        <translation>Ez a címke pirosra változik, ha a prioritás kisebb mint "közepes".</translation>
+    </message>
+    <message>
+        <source>This label turns red if any recipient receives an amount smaller than %1.</source>
+        <translation>Ez a címke pirosra változik, ha bármely fogadónak %1-nál kevesebb összeg érkezik.</translation>
+    </message>
+    <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
         <translation>Bemenetenként  +/- %1 satoshi-val változhat</translation>
     </message>
@@ -705,10 +738,6 @@ Cím: %4
         <translation>nem</translation>
     </message>
     <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Ez a címke piros lesz, ha tranzakció mérete nagyobb 1000 byte-nál.</translation>
-    </message>
-    <message>
         <source>This means a fee of at least %1 per kB is required.</source>
         <translation>Legalább %1 díj szüksége kB-onként.</translation>
     </message>
@@ -719,14 +748,6 @@ Cím: %4
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>Nagyobb prioritású tranzakciók nagyobb valószínűséggel kerülnek be egy blokkba.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than "medium".</source>
-        <translation>Ez a címke piros lesz, ha a prioritás közepesnél alacsonyabb.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Ez a címke piros lesz, ha valamelyik elfogadó kevesebbet kap mint %1.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -785,7 +806,7 @@ Cím: %4
     </message>
     <message>
         <source>The entered address "%1" is not a valid Joulecoin address.</source>
-        <translation>A megadott "%1" cím nem egy érvényes Joulecoin.cím.</translation>
+        <translation>A megadott "%1" cím nem egy érvényes Joulecoin-cím.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -845,32 +866,7 @@ Cím: %4
         <source>command-line options</source>
         <translation>parancssoros opciók</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>UI opciók</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Nyelvbeállítás, például "de_DE" (alapértelmezett: rendszer nyelve)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Indítás lekicsinyítve
-</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>SLL gyökér-igazolások megadása fizetési kérelmekhez (alapértelmezett: -system-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Indítóképernyő mutatása induláskor (alapértelmezett: 1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Adatkönyvtár kiválasztása induláskor (alapbeállítás: 0)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -904,6 +900,10 @@ Cím: %4
     <message>
         <source>Error</source>
         <translation>Hiba</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>%n GB elérhető szabad hely</numerusform><numerusform>%n GB elérhető szabad hely</numerusform></translation>
     </message>
     </context>
 <context>
@@ -940,14 +940,6 @@ Cím: %4
         <translation>&amp;Fő</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>Induljon el a Joulecoin a számítógép bekapcsolásakor</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>&amp;Induljon el a számítógép bekapcsolásakor</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
         <translation>A&amp;datbázis gyorsítótár mérete</translation>
     </message>
@@ -968,6 +960,10 @@ Cím: %4
         <translation>A proxy IP címe (pl.: IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin Core.</source>
+        <translation>Itt beállíthatod a kezelőfelület nyelvét. A beállítás a Joulecoin újraindítása után lép érvénybe.</translation>
+    </message>
+    <message>
         <source>Reset all client options to default.</source>
         <translation>Minden kliensbeállítás alapértelmezettre állítása.</translation>
     </message>
@@ -980,16 +976,20 @@ Cím: %4
         <translation>&amp;Hálózat</translation>
     </message>
     <message>
+        <source>&amp;Start Joulecoin Core on system login</source>
+        <translation>A Joulecoin elindítása bejelentkezéskor</translation>
+    </message>
+    <message>
         <source>W&amp;allet</source>
         <translation>T&amp;árca</translation>
     </message>
     <message>
         <source>Expert</source>
-        <translation>szakértő</translation>
+        <translation>Szakértő</translation>
     </message>
     <message>
         <source>Automatically open the Joulecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>A Joulecoin.kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <translation>A Joulecoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1012,6 +1012,18 @@ Cím: %4
         <translation>Proxy portja (pl.: 9050)</translation>
     </message>
     <message>
+        <source>IPv4</source>
+        <translation>IPv4</translation>
+    </message>
+    <message>
+        <source>IPv6</source>
+        <translation>IPv6</translation>
+    </message>
+    <message>
+        <source>Tor</source>
+        <translation>Tor</translation>
+    </message>
+    <message>
         <source>&amp;Window</source>
         <translation>&amp;Ablak</translation>
     </message>
@@ -1024,10 +1036,6 @@ Cím: %4
         <translation>&amp;Kicsinyítés a tálcára az eszköztár helyett</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Az alkalmazásból való kilépés helyett az eszköztárba kicsinyíti az alkalmazást az ablak bezárásakor. Ez esetben az alkalmazás csak a Kilépés menüponttal zárható be.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>K&amp;icsinyítés záráskor</translation>
     </message>
@@ -1038,10 +1046,6 @@ Cím: %4
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Felhasználófelület nye&amp;lve:</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a Joulecoin ujraindítása után lép érvénybe.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1138,11 +1142,7 @@ Cím: %4
         <source>Recent transactions</source>
         <translation>A legutóbbi tranzakciók</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>Nincs szinkronban.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1153,16 +1153,20 @@ Cím: %4
         <source>Cannot start joulecoin: click-to-pay handler</source>
         <translation>A joulecoint nem lehet elindítani: click-to-pay handler</translation>
     </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>A fizetési kérelem lejárt</translation>
+    </message>
+    <message>
+        <source>Invalid payment request.</source>
+        <translation>Érvénytelen fizetési kérelem</translation>
+    </message>
     </context>
 <context>
     <name>PeerTableModel</name>
     <message>
         <source>User Agent</source>
         <translation>User Agent</translation>
-    </message>
-    <message>
-        <source>Address/Hostname</source>
-        <translation>Cím/Hosztnév</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -1194,14 +1198,6 @@ Cím: %4
     <message>
         <source>%1 s</source>
         <translation>%1 mp</translation>
-    </message>
-    <message>
-        <source>NETWORK</source>
-        <translation>HÁLÓZAT</translation>
-    </message>
-    <message>
-        <source>UNKNOWN</source>
-        <translation>ISMERETLEN</translation>
     </message>
     <message>
         <source>None</source>
@@ -1294,6 +1290,10 @@ Cím: %4
         <translation>Aktuális blokkok száma</translation>
     </message>
     <message>
+        <source>Memory usage</source>
+        <translation>Memóriahasználat</translation>
+    </message>
+    <message>
         <source>Received</source>
         <translation>Fogadott</translation>
     </message>
@@ -1327,19 +1327,11 @@ Cím: %4
     </message>
     <message>
         <source>Last Send</source>
-        <translation>Legutóbb küldött</translation>
+        <translation>Legutóbbi küldés</translation>
     </message>
     <message>
         <source>Last Receive</source>
         <translation>Legutóbbi fogadás</translation>
-    </message>
-    <message>
-        <source>Bytes Sent</source>
-        <translation>Küldött bájtok</translation>
-    </message>
-    <message>
-        <source>Bytes Received</source>
-        <translation>Fogadott bájtok</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -1390,8 +1382,20 @@ Cím: %4
         <translation>Konzol törlése</translation>
     </message>
     <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>Üdv a Joulecoin RPC konzoljában!</translation>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;óra</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>1 &amp;nap</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>1 &amp;hét</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>1 &amp;év</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1419,7 +1423,7 @@ Cím: %4
     </message>
     <message>
         <source>via %1</source>
-        <translation>által %1</translation>
+        <translation>%1 által</translation>
     </message>
     <message>
         <source>never</source>
@@ -1434,12 +1438,16 @@ Cím: %4
         <translation>Kimenő</translation>
     </message>
     <message>
-        <source>Unknown</source>
-        <translation>Ismeretlen</translation>
+        <source>Yes</source>
+        <translation>Igen</translation>
     </message>
     <message>
-        <source>Fetching...</source>
-        <translation>Begyüjtés</translation>
+        <source>No</source>
+        <translation>Nem</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Ismeretlen</translation>
     </message>
 </context>
 <context>
@@ -1638,16 +1646,24 @@ Cím: %4
         <translation>Válassz...</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation>Kicsinyítés</translation>
-    </message>
-    <message>
         <source>per kilobyte</source>
         <translation>kilobájtonként</translation>
     </message>
     <message>
+        <source>Hide</source>
+        <translation>Elrejtés</translation>
+    </message>
+    <message>
+        <source>Recommended:</source>
+        <translation>Ajánlott:</translation>
+    </message>
+    <message>
+        <source>Custom:</source>
+        <translation>Egyéni:</translation>
+    </message>
+    <message>
         <source>normal</source>
-        <translation>normal</translation>
+        <translation>normál</translation>
     </message>
     <message>
         <source>fast</source>
@@ -1722,10 +1738,6 @@ Cím: %4
         <translation>vagy</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>A címzett címe érvénytelen, kérlek, ellenőrizd.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>A fizetendő összegnek nagyobbnak kell lennie 0-nál.</translation>
     </message>
@@ -1738,8 +1750,8 @@ Cím: %4
         <translation>A küldeni kívánt összeg és a %1 tranzakciós díj együtt meghaladja az egyenlegeden rendelkezésedre álló összeget.</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Többször szerepel ugyanaz a cím. Egy küldési műveletben egy címre csak egyszer lehet küldeni.</translation>
+        <source>Payment request expired.</source>
+        <translation>A fizetési kérelem lejárt</translation>
     </message>
     <message>
         <source>Warning: Invalid Joulecoin address</source>
@@ -1802,6 +1814,10 @@ Cím: %4
         <translation>Üzenet:</translation>
     </message>
     <message>
+        <source>Pay To:</source>
+        <translation>Címzett:</translation>
+    </message>
+    <message>
         <source>Memo:</source>
         <translation>Jegyzet:</translation>
     </message>
@@ -1814,7 +1830,7 @@ Cím: %4
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Ne álljon le a számítógép amíg ez az ablak el nem tűnik.</translation>
+        <translation>Ne állítsd le a számítógépet amíg ez az ablak el nem tűnik.</translation>
     </message>
 </context>
 <context>
@@ -1826,10 +1842,6 @@ Cím: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>Üzenet aláírása...</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Aláírhat a címeivel üzeneteket, amivel bizonyíthatja, hogy a címek az önéi. Vigyázzon, hogy ne írjon alá semmi félreérthetőt, mivel a phising támadásokkal megpróbálhatják becsapni, hogy az azonosságát átírja másokra. Csak olyan részletes állításokat írjon alá, amivel egyetért.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1876,8 +1888,8 @@ Cím: %4
         <translation>Üzenet ellenőrzése</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Írja be az aláírás címét, az üzenetet (ügyelve arra, hogy az új-sor, szóköz, tab, stb. karaktereket is pontosan) és az aláírást az üzenet ellenőrzéséhez. Ügyeljen arra, ne gondoljon többet az aláírásról, mint amennyi az aláírt szövegben ténylegesen áll, hogy elkerülje a köztes-ember (man-in-the-middle) támadást.</translation>
+        <source>Verify &amp;Message</source>
+        <translation>Üzenet ellenőrzése</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -1924,7 +1936,7 @@ Cím: %4
     </message>
     <message>
         <source>The Joulecoin Core developers</source>
-        <translation>A Joulecoin fejlesztői</translation>
+        <translation>A Joulecoin Core fejlesztői</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -1942,7 +1954,7 @@ Cím: %4
     <name>TransactionDesc</name>
     <message>
         <source>Open until %1</source>
-        <translation>Megnyitva %1-ig</translation>
+        <translation>%1-ig megnyitva</translation>
     </message>
     <message>
         <source>%1/unconfirmed</source>
@@ -1987,10 +1999,6 @@ Cím: %4
     <message>
         <source>Credit</source>
         <translation>Jóváírás</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>beérik %n blokk múlva</numerusform><numerusform>beérik %n blokk múlva</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2048,10 +2056,6 @@ Cím: %4
         <source>, has not been successfully broadcast yet</source>
         <translation>, még nem sikerült elküldeni.</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>%n további blokkra megnyitva</numerusform><numerusform>%n további blokkra megnyitva</numerusform></translation>
-    </message>
     <message>
         <source>unknown</source>
         <translation>ismeretlen</translation>
@@ -2079,14 +2083,6 @@ Cím: %4
         <translation>Típus</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Cím</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>%n további blokkra megnyitva</numerusform><numerusform>%n további blokkra megnyitva</numerusform></translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>%1-ig megnyitva</translation>
     </message>
@@ -2105,6 +2101,10 @@ Cím: %4
     <message>
         <source>Offline</source>
         <translation>Offline</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Címke</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2145,10 +2145,6 @@ Cím: %4
     <message>
         <source>Type of transaction.</source>
         <translation>Tranzakció típusa.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>A tranzakció címzettjének címe.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2238,6 +2234,10 @@ Cím: %4
         <translation>Tranzakciós részletek megjelenítése</translation>
     </message>
     <message>
+        <source>Watch-only</source>
+        <translation>Csak megfigyelés</translation>
+    </message>
+    <message>
         <source>Exporting Failed</source>
         <translation>Az exportálás sikertelen volt</translation>
     </message>
@@ -2299,7 +2299,7 @@ Cím: %4
     <name>WalletView</name>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Exportálás...</translation>
+        <translation>&amp;Exportálás</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -2353,11 +2353,6 @@ Cím: %4
 </translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Teszthálózat használata
-</translation>
-    </message>
-    <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Kívülről érkező kapcsolatok elfogadása (alapértelmezett: 1, ha nem használt a -proxy vagy a -connect)</translation>
     </message>
@@ -2366,20 +2361,12 @@ Cím: %4
         <translation>Parancs, amit akkor hajt végre, amikor egy tárca-tranzakció megváltozik  (%s a parancsban lecserélődik a blokk TxID-re)</translation>
     </message>
     <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Figyelem: a -paytxfee nagyon magas.  Ennyi tranzakciós díjat fogsz fizetni, ha elküldöd a tranzakciót.</translation>
-    </message>
-    <message>
         <source>Connect only to the specified node(s)</source>
         <translation>Csatlakozás csak a megadott csomóponthoz</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Sérült blokk-adatbázis észlelve</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Saját IP-cím felfedezése (alapértelmezett: 1, amikor figyel és nem használt a -externalip)</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -2422,10 +2409,6 @@ Cím: %4
         <translation>Nincs elég fájlleíró. </translation>
     </message>
     <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Blokklánc index újraalkotása az alábbi blk000??.dat fájlokból</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Blokkok ellenőrzése...</translation>
     </message>
@@ -2442,6 +2425,10 @@ Cím: %4
         <translation>Az adatbázist újra kell építeni -reindex használatával (módosítás -tindex).</translation>
     </message>
     <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Külső cím (-whitebind address) feloldása nem sikerült: '%s'</translation>
+    </message>
+    <message>
         <source>Copyright (C) 2009-%i The Joulecoin Core Developers</source>
         <translation>Copyright (C) 2009-%i A Joulecoin Core Fejlesztői</translation>
     </message>
@@ -2452,6 +2439,10 @@ Cím: %4
     <message>
         <source>Information</source>
         <translation>Információ</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Érvénytelen -maxtxfee=&lt;amount&gt;: '%s' összeg</translation>
     </message>
     <message>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
@@ -2486,10 +2477,6 @@ Cím: %4
         <translation>Túl nagy tranzakció</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>UPnP-használat engedélyezése a figyelő port feltérképezésénél (default: 1 when listening)</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Felhasználói név JSON-RPC csatlakozásokhoz
 </translation>
@@ -2506,20 +2493,6 @@ Cím: %4
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Parancs, amit akkor hajt végre, amikor a legjobb blokk megváltozik (%s a cmd-ban lecserélődik a blokk hash-re)</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>A Tárca frissítése a legfrissebb formátumra</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Blokklánc újraszkennelése hiányzó tárca-tranzakciók után
-</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>OpenSSL (https) használata JSON-RPC csatalkozásokhoz
-</translation>
     </message>
     <message>
         <source>This help message</source>

@@ -106,7 +106,7 @@
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(ללא תווית)</translation>
+        <translation>(אין תווית)</translation>
     </message>
 </context>
 <context>
@@ -152,10 +152,6 @@
         <translation>שינוי מילת צופן</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>נא להכניס את מילות הצופן הישנה והחדשה לארנק.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>אישור הצפנת הארנק</translation>
     </message>
@@ -182,10 +178,6 @@
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>נא להזין את מילת הצופן החדשה לארנק.&lt;br/&gt;כדאי להשתמש במילת צופן המורכבת מ&lt;b&gt;עשרה תווים אקראיים ומעלה&lt;/b&gt;, או &lt;b&gt;שמונה מילים ומעלה&lt;/b&gt;.</translation>
-    </message>
-    <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>ביטקוין ייסגר כעת כדי להשלים את תהליך ההצפנה. עליך לזכור שהצפנת הארנק שלך אינה מגנה באופן מלא על הביטקוינים שלך מתכניות זדוניות המושתלות על המחשב.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -217,7 +209,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;חתימה על הודעה…</translation>
@@ -307,10 +302,6 @@
         <translation>שליחת מטבעות לכתובת ביטקוין</translation>
     </message>
     <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>שינוי התצורה של ביטקוין</translation>
-    </message>
-    <message>
         <source>Backup wallet to another location</source>
         <translation>גיבוי הארנק למיקום אחר</translation>
     </message>
@@ -392,7 +383,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and joulecoin: URIs)</source>
-        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :joulecoin)</translation>
+        <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :bitcoin)</translation>
     </message>
     <message>
         <source>&amp;About Joulecoin Core</source>
@@ -422,21 +413,13 @@
         <source>No block source available...</source>
         <translation>אין מקור מקטעים זמין…</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n שעה</numerusform><numerusform>%n שעות</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n יום</numerusform><numerusform>%n ימים</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n שבוע</numerusform><numerusform>%n שבועות</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 ו%2</translation>
+    </message>
+    <message>
+        <source>%1 behind</source>
+        <translation>%1 מאחור</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -475,17 +458,6 @@
         <translation>העברת קבלה</translation>
     </message>
     <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>תאריך: %1
-כמות: %2
-סוג: %3
-כתובת: %4</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>הארנק &lt;b&gt;מוצפן&lt;/b&gt; ו&lt;b&gt;פתוח&lt;/b&gt; כרגע</translation>
     </message>
@@ -513,7 +485,7 @@ Address: %4
     </message>
     <message>
         <source>Amount:</source>
-        <translation>כמות:</translation>
+        <translation>סכום:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -521,7 +493,7 @@ Address: %4
     </message>
     <message>
         <source>Fee:</source>
-        <translation>תשלום:</translation>
+        <translation>עמלה:</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -533,7 +505,7 @@ Address: %4
     </message>
     <message>
         <source>Change:</source>
-        <translation>שינוי:</translation>
+        <translation>עודף:</translation>
     </message>
     <message>
         <source>(un)select all</source>
@@ -597,7 +569,7 @@ Address: %4
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>העתקת מחיר</translation>
+        <translation>העתקת עמלה</translation>
     </message>
     <message>
         <source>Copy after fee</source>
@@ -656,6 +628,10 @@ Address: %4
         <translation>הנמוך ביותר</translation>
     </message>
     <message>
+        <source>(%1 locked)</source>
+        <translation>(%1 נעול)</translation>
+    </message>
+    <message>
         <source>none</source>
         <translation>ללא</translation>
     </message>
@@ -672,10 +648,6 @@ Address: %4
         <translation>לא</translation>
     </message>
     <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>תווית זו מאדימה אם גודל ההעברה עולה על 1000 בתים.</translation>
-    </message>
-    <message>
         <source>This means a fee of at least %1 per kB is required.</source>
         <translation>זאת אומרת שנחוצה עמלה של לא פחות מ־%1 לכל קילו בית.</translation>
     </message>
@@ -686,10 +658,6 @@ Address: %4
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>העברות עם עדיפות גבוהה, יותר סיכוי שיכנסו לתוך המקטע.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than "medium".</source>
-        <translation>תווית זו מאדימה אם העדיפות היא פחות מ„בינוני“</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -812,31 +780,7 @@ Address: %4
         <source>command-line options</source>
         <translation>אפשרויות שורת פקודה</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>אפשרויות מנשק</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>הגדרת שפה, למשל „he_il“ (בררת מחדל: שפת המערכת)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>התחלה במצב ממוזער</translation>
-    </message>
-    <message>
-        <source>Set SSL root certificates for payment request (default: -system-)</source>
-        <translation>הגדרות אישורי בסיס של SSL לבקשות תשלום (בררת המחדל: -מערכת-)</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>הצגת מסך פתיחה בעת הפעלה (בררת מחדל: 1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>בחירת תיקיית נתונים עם ההפעלה (בררת מחדל: 0)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -908,14 +852,6 @@ Address: %4
     <message>
         <source>&amp;Main</source>
         <translation>&amp;ראשי</translation>
-    </message>
-    <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>הפעלת ביטקוין אוטומטית לאחר כניסה למערכת.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>ה&amp;פעלת ביטקוין בעת הכניסה למערכת</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1022,10 +958,6 @@ Address: %4
         <translation>מ&amp;זעור למגש במקום לשורת המשימות</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>מזעור התכנית במקום לצאת ממנה כשהחלון נסגר. כשאפשרות זו פעילה, התכנית תיסגר רק לאחר בחירת יציאה מהתפריט.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>מ&amp;זעור עם סגירה</translation>
     </message>
@@ -1036,10 +968,6 @@ Address: %4
     <message>
         <source>User Interface &amp;language:</source>
         <translation>&amp;שפת מנשק המשתמש:</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>להלן ניתן לקבוע את שפת מנשק המשתמש. הגדרה זו תיכנס לתוקף לאחר הפעלה מחדש של ביטקוין.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1076,10 +1004,6 @@ Address: %4
     <message>
         <source>Client restart required to activate changes.</source>
         <translation>נדרשת הפעלה מחדש של הלקוח כדי להפעיל את השינויים.</translation>
-    </message>
-    <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>הלקוח יכבה, האם להמשיך?</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
@@ -1160,10 +1084,6 @@ Address: %4
         <source>Current total balance in watch-only addresses</source>
         <translation>המאזן הכולל הנוכחי בכתובות לצפייה בלבד</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>לא בסנכרון</translation>
-    </message>
 </context>
 <context>
     <name>PaymentServer</name>
@@ -1182,10 +1102,6 @@ Address: %4
     <message>
         <source>Payment request network doesn't match client network.</source>
         <translation>רשת בקשת התשלום אינה תואמת לרשת הלקוח.</translation>
-    </message>
-    <message>
-        <source>Payment request has expired.</source>
-        <translation>בקשת התשלום פגה.</translation>
     </message>
     <message>
         <source>Payment request is not initialized.</source>
@@ -1255,10 +1171,6 @@ Address: %4
         <translation>סוכן משתמש</translation>
     </message>
     <message>
-        <source>Address/Hostname</source>
-        <translation>כתובת/שם מארח</translation>
-    </message>
-    <message>
         <source>Ping Time</source>
         <translation>זמן המענה</translation>
     </message>
@@ -1288,14 +1200,6 @@ Address: %4
     <message>
         <source>%1 s</source>
         <translation>%1 שניות</translation>
-    </message>
-    <message>
-        <source>NETWORK</source>
-        <translation>רשת</translation>
-    </message>
-    <message>
-        <source>UNKNOWN</source>
-        <translation>לא ידוע</translation>
     </message>
     <message>
         <source>None</source>
@@ -1420,14 +1324,6 @@ Address: %4
         <translation>שירותים</translation>
     </message>
     <message>
-        <source>Starting Height</source>
-        <translation>גובה התחלתי</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>גובה הסנכרון</translation>
-    </message>
-    <message>
         <source>Ban Score</source>
         <translation>דירוג חסימה</translation>
     </message>
@@ -1442,14 +1338,6 @@ Address: %4
     <message>
         <source>Last Receive</source>
         <translation>קבלה אחרונה</translation>
-    </message>
-    <message>
-        <source>Bytes Sent</source>
-        <translation>בתים שנשלחו</translation>
-    </message>
-    <message>
-        <source>Bytes Received</source>
-        <translation>בתים שהתקבלו</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -1496,16 +1384,8 @@ Address: %4
         <translation>קובץ יומן ניפוי</translation>
     </message>
     <message>
-        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>פתיחת קובץ יומן הניפוי מתיקיית הנתונים הנוכחית. פעולה זו עשויה להימשך מספר שניות עבור קובצי יומן גדולים.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>ניקוי מסוף הבקרה</translation>
-    </message>
-    <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>ברוכים הבאים למסוף ה־RPC של ביטקוין.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1548,12 +1428,16 @@ Address: %4
         <translation>תעבורה יוצאת</translation>
     </message>
     <message>
-        <source>Unknown</source>
-        <translation>לא ידוע</translation>
+        <source>Yes</source>
+        <translation>כן</translation>
     </message>
     <message>
-        <source>Fetching...</source>
-        <translation>מתקבל…</translation>
+        <source>No</source>
+        <translation>לא</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>לא ידוע</translation>
     </message>
 </context>
 <context>
@@ -1596,7 +1480,7 @@ Address: %4
     </message>
     <message>
         <source>Clear all fields of the form.</source>
-        <translation>ניקוי כל השדות של הטופס.</translation>
+        <translation>ניקוי של כל השדות בטופס.</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -1784,6 +1668,10 @@ Address: %4
         <translation>כתובת לעודף מותאמת אישית</translation>
     </message>
     <message>
+        <source>Transaction Fee:</source>
+        <translation>עמלת העברה:</translation>
+    </message>
+    <message>
         <source>Send to multiple recipients at once</source>
         <translation>שליחה למספר מוטבים בו־זמנית</translation>
     </message>
@@ -1801,7 +1689,7 @@ Address: %4
     </message>
     <message>
         <source>Clear &amp;All</source>
-        <translation>ניקוי ה&amp;כול</translation>
+        <translation>&amp;ניקוי הכול</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -1829,7 +1717,7 @@ Address: %4
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>העתקת סכום</translation>
+        <translation>העתקת כמות</translation>
     </message>
     <message>
         <source>Copy fee</source>
@@ -1856,10 +1744,6 @@ Address: %4
         <translation>או</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>כתובת המוטב אינה תקינה, נא לבדוק שוב.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>הכמות לתשלום חייבת להיות גדולה מ־0.</translation>
     </message>
@@ -1870,10 +1754,6 @@ Address: %4
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>הכמות הכוללת, ובכללה עמלת העברה בסך %1, עולה על המאזן שלך.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>כתובת כפולה נמצאה, ניתן לשלוח לכל כתובת רק פעם אחת בכל פעולת שליחה.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
@@ -1959,20 +1839,12 @@ Address: %4
         <translation>הודעה:</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>זוהי בקשה מאומתת לתשלום.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>יש להזין תווית עבור כתובת זו כדי להוסיף אותה לרשימת הכתובות בשימוש</translation>
     </message>
     <message>
         <source>A message that was attached to the joulecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Joulecoin network.</source>
         <translation>הודעה שצורפה לביטקוין: כתובת שתאוחסן בהעברה לצורך מעקב מצדך. לתשומת לבך: הודעה זו לא תישלח ברשת הביטקוין.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>זוהי בקשת תשלום בלתי־מאומתת.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2003,10 +1875,6 @@ Address: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>חתימה על הו&amp;דעה</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>ניתן לחתום על הודעות עם הכתובות שלך כדי להוכיח שהן בבעלותך. מומלץ להיזהר לא לחתום על משהו מפוקפק, שכן התקפות דיוג עשויות לגרום לך בעורמה למסור את זהותך. רצוי לחתום רק על הצהרות מפורטות לחלוטין שהסכמת עמן.</translation>
     </message>
     <message>
         <source>The Joulecoin address to sign the message with</source>
@@ -2059,10 +1927,6 @@ Address: %4
     <message>
         <source>&amp;Verify Message</source>
         <translation>&amp;אימות הודעה</translation>
-    </message>
-    <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>הכנס למטה את הכתובת החותמת, ההודעה (ודא שאתה מעתיק מעברי שורה, רווחים, טאבים וכו' באופן מדויק) והחתימה כדי לאמת את ההודעה. היזהר לא לפרש את החתימה כיותר ממה שמופיע בהודעה החתומה בעצמה, כדי להימנע מליפול קורבן למתקפת איש-באמצע.</translation>
     </message>
     <message>
         <source>The Joulecoin address the message was signed with</source>
@@ -2289,10 +2153,6 @@ Address: %4
         <source>, has not been successfully broadcast yet</source>
         <translation>, טרם שודר בהצלחה</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>פתיחה למשך מקטע %n נוסף</numerusform><numerusform>פתיחה למשך %n מקטעים נוספים</numerusform></translation>
-    </message>
     <message>
         <source>unknown</source>
         <translation>לא ידוע</translation>
@@ -2320,16 +2180,8 @@ Address: %4
         <translation>סוג</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>כתובת</translation>
-    </message>
-    <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>לא בשל (%1 אישורים, יהיו זמינים לאחר %2)</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>פתח למשך בלוק %n יותר</numerusform><numerusform>פתיחה למשך %n מקטעים נוספים</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -2350,6 +2202,10 @@ Address: %4
     <message>
         <source>Offline</source>
         <translation>מנותק</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>תווית</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2406,10 +2262,6 @@ Address: %4
     <message>
         <source>Whether or not a watch-only address is involved in this transaction.</source>
         <translation>האם כתובות לצפייה בלבד מעורבות בהעברה זאת או שלא.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>כתובת היעד של ההעברה.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2642,10 +2494,6 @@ Address: %4
         <translation>ריצה כסוכן ברקע וקבלת פקודות</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>שימוש ברשת הבדיקה</translation>
-    </message>
-    <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>קבלת חיבורים מבחוץ (בררת מחדל: 1 ללא ‎-proxy או ‎-connect)</translation>
     </message>
@@ -2656,10 +2504,6 @@ Address: %4
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>מחיקת כל העברות הארנק ולשחזר רק את החלקים המסוימים בשרשרת המקטעים באמצעות ‎-rescan עם ההפעלה</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>כניסה למצב בדיקת נסיגה, שמשתמש בשרשרת מיוחדת בה ניתן לפתור את המקטעים במהירות.</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -2674,10 +2518,6 @@ Address: %4
         <translation>לא ניתן להתאגד אל %s במחשב זה. כנראה שליבת ביטקוין כבר פועלת.</translation>
     </message>
     <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>אזהרה: ‎-paytxfee נקבע לערך מאד גבוה! זוהי עמלת הפעולה שתשולם בעת העברת שליחה.</translation>
-    </message>
-    <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>אזהרה: נראה שלא כל הרשת מסכימה! נראה שישנם כורים שנתקלים בבעיות.</translation>
     </message>
@@ -2686,24 +2526,12 @@ Address: %4
         <translation>אזהרה: נראה שישנה אי־הסכמה בינינו לבין שאר העמיתים שלנו! יתכן שעדיף לשדרג או שכל שאר העמיתים צריכים לשדרג.</translation>
     </message>
     <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>אזהרה: שגיאה בקריאת wallet.dat! כל המפתחות נקראו באופן תקין, אך נתוני ההעברות או ספר הכתובות עלולים להיות חסרים או שגויים.</translation>
-    </message>
-    <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>אזהרה: הקובץ wallet.dat הושחת, המידע חולץ! קובץ ה־wallet.dat המקורי נשמר בשם wallet.{timestamp}.bak במיקום %s; אם המאזן או ההעברות שגויים עליך לשחזר גיבוי.</translation>
     </message>
     <message>
-        <source>(default: 1)</source>
-        <translation>(בררת מחדל: 1)</translation>
-    </message>
-    <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;קטגוריה&gt; יכולה להיות:</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>נסה לשחזר מפתחות פרטיים מקובץ wallet.dat מושחת.</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -2724,10 +2552,6 @@ Address: %4
     <message>
         <source>Debugging/Testing options:</source>
         <translation>אפשרויות ניפוי/בדיקה:</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>לגלות את כתובת ה־IP העצמית (בררת מחדל: 1 בעת האזנה וללא ‎-externalip)</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2762,10 +2586,6 @@ Address: %4
         <translation>האזנה נכשלה בכל פורט. השתמש ב- -listen=0 אם ברצונך בכך.</translation>
     </message>
     <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>אם לא סופקה &lt;קטגוריה&gt; יש לייצא את כל פרטי הניפוי.</translation>
-    </message>
-    <message>
         <source>Importing...</source>
         <translation>מתבצע יבוא…</translation>
     </message>
@@ -2786,10 +2606,6 @@ Address: %4
         <translation>תמיד להתחבר למפרקים ברשת &lt;net&gt;‏ (ipv4,‏ ipv6 או onion)</translation>
     </message>
     <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>בנייה מחדש של מפתח שרשרת המקטעים מקובצי ה־blk000??.dat הנוכחיים.</translation>
-    </message>
-    <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
         <translation>הגדרת גודל מטמון מסדי הנתונים במגה בתים (%d עד %d, בררת מחדל: %d)</translation>
     </message>
@@ -2800,10 +2616,6 @@ Address: %4
     <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>ציון קובץ ארנק (בתוך תיקיית הנתונים)</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>תכונה זו מיועדת לכלי בדיקות נסיגה ופיתוח יישומים.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -2826,20 +2638,8 @@ Address: %4
         <translation>עליך לבנות מחדש את מסד הנתונים תוך שימוש ב־‎-reindex על מנת לשנות את ‎-txindex</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>מיובאים מקטעים מקובצי blk000??.dat חיצוניים</translation>
-    </message>
-    <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>הרץ פקודה כאשר ההתראה הרלוונטית מתקבלת או כשאנחנו עדים לפיצול ארוך מאוד (%s בשורת הפקודה יוחלף ע"י ההודעה)</translation>
-    </message>
-    <message>
-        <source>Fees (in XJO/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>העמלות (ב־XJO/ק״ב) הנמוכות מהסכום הזה נחשבות לעמלות אפס ליצירת העברה (בררת מחדל: %s)</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Joulecoin Core will not work properly.</source>
-        <translation>אזהרה: נא לבדוק שהתאריך והשעה של המחשב שלך נכונים! אם השעון שלך שגוי ליבת ביטקוין לא תעבוד כראוי.</translation>
     </message>
     <message>
         <source>Cannot resolve -whitebind address: '%s'</source>
@@ -2854,20 +2654,8 @@ Address: %4
         <translation>כל הזכויות שמורות (C)‏ 2009‏-%i מתכנתי ליבת ביטקוין</translation>
     </message>
     <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>לא ניתן לנתח את הערך של ‎-rpcbind שצוין בתור %s ככתובת רשת</translation>
-    </message>
-    <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Joulecoin Core</source>
         <translation>אירעה שגיאה בטעינת wallet.dat: הארנק דורש גרסה חדשה יותר של ליבת ביטקוין</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>שגיאה: נמצא ארגומנט בלתי נתמך ‎-tor, יש להשתמש ב־‎-onion.</translation>
-    </message>
-    <message>
-        <source>Fee (in XJO/kB) to add to transactions you send (default: %s)</source>
-        <translation>עמלה (ב־XJO/ק״ב) להוספה להעברות שנשלחות ממך (בררת מחדל: %s)</translation>
     </message>
     <message>
         <source>Information</source>
@@ -2876,6 +2664,10 @@ Address: %4
     <message>
         <source>Initialization sanity check failed. Joulecoin Core is shutting down.</source>
         <translation>בדיקת התקינות ההתחלתית נכשלה. ליבת ביטקוין תיסגר כעת.</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>כמות לא תקינה עבור -maxtxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
@@ -2902,16 +2694,8 @@ Address: %4
         <translation>אפשרויות ממסר מפרק:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Joulecoin Wiki for SSL setup instructions)</source>
-        <translation>אפשרויות RPC SSL: (נא לעיין בוויקי של ביטקוין לקבלת הנחיות על הגדרת SSL)</translation>
-    </message>
-    <message>
         <source>RPC server options:</source>
         <translation>הגדרות שרת RPC</translation>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>להשמיט אקראית אחת מתוך כל &lt;n&gt; הודעות רשת</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -2950,10 +2734,6 @@ Address: %4
         <translation>לא ניתן להתאגד עם הפתחה %s במחשב זה (פעולת האיגוד החזירה את השגיאה %s)</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>יש להשתמש ב־UPnP כדי למפות את הפתחה להאזנה (בררת מחדל: 1 בעת האזנה)</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>שם משתמש לחיבורי JSON-RPC</translation>
     </message>
@@ -2966,22 +2746,6 @@ Address: %4
         <translation>אזהרה</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>אזהרה: הגרסה הזאת מיושנת, יש צורך בשדרוג!</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>אזהרה: הארגומנט שאינו נתמך עוד ‎-benchmark לא הופעל, נא להשתמש ב־‎-debug=bench.</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>אזהרה: הארגומנט שאינו נתמך עוד ‎-debugnet לא הופעל, נא להשתמש ב־‎-debug=net.</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>עם ההפעלה</translation>
-    </message>
-    <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>קובץ wallet.dat מושחת, החילוץ נכשל</translation>
     </message>
@@ -2992,18 +2756,6 @@ Address: %4
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>יש לבצע פקודה זו כשהמקטע הטוב ביותר משתנה (%s בפקודה יוחלף בגיבוב המקטע)</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>שדרוג הארנק למבנה העדכני</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>יש לסרוק מחדש את שרשרת המקטעים למציאת העברות חסרות בארנק</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>שימוש ב־OpenSSL (https)‎ עבור חיבורי JSON-RPC</translation>
     </message>
     <message>
         <source>This help message</source>

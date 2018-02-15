@@ -132,10 +132,6 @@
         <translation>Ndrysho frazkalimin</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Futni frazkalimin e vjetër dhe të ri në portofol. </translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Konfirmoni enkriptimin e portofolit</translation>
     </message>
@@ -173,7 +169,10 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Duke u sinkronizuar me rrjetin...</translation>
@@ -201,6 +200,10 @@
     <message>
         <source>&amp;Options...</source>
         <translation>&amp;Opsione</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Duke marr adresen</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -250,25 +253,9 @@
         <source>&amp;About Joulecoin Core</source>
         <translation>Rreth Berthames Bitkoin</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n ore</numerusform><numerusform>%n ore</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dite</numerusform><numerusform>%n dite</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n jave</numerusform><numerusform>%n jave</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 dhe %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n vit</numerusform><numerusform>%n vite</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -438,6 +425,10 @@
         <source>Options</source>
         <translation>Opsionet</translation>
     </message>
+    <message>
+        <source>W&amp;allet</source>
+        <translation>Portofol</translation>
+    </message>
     </context>
 <context>
     <name>OverviewPage</name>
@@ -465,6 +456,10 @@
 <context>
     <name>RPCConsole</name>
     <message>
+        <source>&amp;Information</source>
+        <translation>Informacion</translation>
+    </message>
+    <message>
         <source>&amp;Open</source>
         <translation>&amp;Hap</translation>
     </message>
@@ -480,16 +475,28 @@
         <source>Unknown</source>
         <translation>i/e panjohur</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>ReceiveCoinsDialog</name>
+    <message>
+        <source>&amp;Amount:</source>
+        <translation>Shuma:</translation>
+    </message>
     <message>
         <source>&amp;Label:</source>
         <translation>&amp;Etiketë:</translation>
     </message>
+    <message>
+        <source>Clear</source>
+        <translation>Pastro</translation>
+    </message>
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Copy &amp;Address</source>
+        <translation>&amp;Kopjo adresen</translation>
+    </message>
     <message>
         <source>Address</source>
         <translation>Adresë</translation>
@@ -527,6 +534,10 @@
     <message>
         <source>Send Coins</source>
         <translation>Dërgo Monedha</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Fonde te pamjaftueshme</translation>
     </message>
     <message>
         <source>Amount:</source>
@@ -587,6 +598,10 @@
         <source>Alt+P</source>
         <translation>Alt+P</translation>
     </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>Paguaj drejt:</translation>
+    </message>
     </context>
 <context>
     <name>ShutdownWindow</name>
@@ -639,6 +654,10 @@
         <translation>Data</translation>
     </message>
     <message>
+        <source>Transaction</source>
+        <translation>transaksionit</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Sasia</translation>
     </message>
@@ -673,10 +692,6 @@
         <translation>Lloji</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adresë</translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>Hapur deri më %1</translation>
     </message>
@@ -691,6 +706,10 @@
     <message>
         <source>Generated but not accepted</source>
         <translation>I krijuar por i papranuar</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etiketë</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -774,6 +793,10 @@
     </context>
 <context>
     <name>bitcoin-core</name>
+    <message>
+        <source>Options:</source>
+        <translation>Opsionet:</translation>
+    </message>
     <message>
         <source>Information</source>
         <translation>Informacion</translation>

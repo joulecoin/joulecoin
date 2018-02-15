@@ -137,7 +137,10 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;Tổng quan</translation>
@@ -161,6 +164,10 @@
     <message>
         <source>Show information about Qt</source>
         <translation>Xem thông tin về Qt</translation>
+    </message>
+    <message>
+        <source>&amp;Receiving addresses...</source>
+        <translation>Địa chỉ nhận</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -258,18 +265,6 @@
         <source>Incoming transaction</source>
         <translation>Giao dịch đang tới</translation>
     </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Ngày: %1
-Lượng: %2
-Loại: %3
-Địa chỉ: %4
-</translation>
-    </message>
     </context>
 <context>
     <name>ClientModel</name>
@@ -363,6 +358,14 @@ Loại: %3
     </context>
 <context>
     <name>EditAddressDialog</name>
+    <message>
+        <source>&amp;Label</source>
+        <translation>Nhãn</translation>
+    </message>
+    <message>
+        <source>&amp;Address</source>
+        <translation>Địa chỉ</translation>
+    </message>
     </context>
 <context>
     <name>FreespaceChecker</name>
@@ -427,6 +430,10 @@ Loại: %3
         <translation>MB</translation>
     </message>
     <message>
+        <source>W&amp;allet</source>
+        <translation>Ví</translation>
+    </message>
+    <message>
         <source>&amp;Display</source>
         <translation>&amp;Hiển thị</translation>
     </message>
@@ -470,16 +477,16 @@ Loại: %3
         <source>Amount</source>
         <translation>Lượng</translation>
     </message>
-    <message>
-        <source>NETWORK</source>
-        <translation>NETWORK</translation>
-    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
     </context>
 <context>
     <name>RPCConsole</name>
+    <message>
+        <source>&amp;Information</source>
+        <translation>Thông tin</translation>
+    </message>
     <message>
         <source>General</source>
         <translation>Nhìn Chung</translation>
@@ -504,6 +511,10 @@ Loại: %3
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+        <source>&amp;Amount:</source>
+        <translation>Lượng:</translation>
+    </message>
+    <message>
         <source>Copy label</source>
         <translation>Copy nhãn</translation>
     </message>
@@ -514,6 +525,10 @@ Loại: %3
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Copy &amp;Address</source>
+        <translation>&amp;Copy Địa Chỉ</translation>
+    </message>
     <message>
         <source>Address</source>
         <translation>Địa chỉ</translation>
@@ -549,6 +564,10 @@ Loại: %3
 <context>
     <name>SendCoinsDialog</name>
     <message>
+        <source>Insufficient funds!</source>
+        <translation>Không đủ tiền</translation>
+    </message>
+    <message>
         <source>Quantity:</source>
         <translation>Lượng:</translation>
     </message>
@@ -583,6 +602,10 @@ Loại: %3
     </context>
 <context>
     <name>SendCoinsEntry</name>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>Lượng:</translation>
+    </message>
     </context>
 <context>
     <name>ShutdownWindow</name>
@@ -621,8 +644,8 @@ Loại: %3
         <translation>Ngày tháng</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <source>Label</source>
+        <translation>Nhãn</translation>
     </message>
     </context>
 <context>
@@ -687,6 +710,14 @@ Loại: %3
 <context>
     <name>bitcoin-core</name>
     <message>
+        <source>Options:</source>
+        <translation>Lựa chọn:</translation>
+    </message>
+    <message>
+        <source>(default: %u)</source>
+        <translation>(mặc định: %u)</translation>
+    </message>
+    <message>
         <source>Information</source>
         <translation>Thông tin</translation>
     </message>
@@ -697,10 +728,6 @@ Loại: %3
     <message>
         <source>Warning</source>
         <translation>Chú ý</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>khi khởi động</translation>
     </message>
     <message>
         <source>This help message</source>

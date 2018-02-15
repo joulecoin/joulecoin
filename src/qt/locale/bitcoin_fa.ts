@@ -89,7 +89,11 @@
         <source>Exporting Failed</source>
         <translation>استخراج انجام نشد</translation>
     </message>
-    </context>
+    <message>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>خطایی هنگام تلاش برای ذخیرهٔ لیست آدرس ها در %1 رخ داد.</translation>
+    </message>
+</context>
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -148,10 +152,6 @@
         <translation>تغییر گذرواژه</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>گذرواژهٔ قدیمی و جدید کیف پول را وارد کنید.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>تأیید رمزنگاری کیف پول</translation>
     </message>
@@ -162,6 +162,10 @@
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>آیا مطمئن هستید که می‌خواهید کیف پول خود را رمزنگاری کنید؟</translation>
+    </message>
+    <message>
+        <source>Joulecoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
+        <translation>هسته بیت‌کوین هم اکنون بسته می‌شود تا فرایند رمزگذاری را تمام کند. به خاطر داشته باشید که رمزگذاری کردن کیف پول‌تان نمی‌تواند به طور کامل بیت‌کوین‌های شما را در برابر دزدیده شدن توسط بدافزارهایی که رایانه‌ی شما را آلوده می‌کنند، محافظت نماید.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -180,8 +184,8 @@
         <translation>رمز جدید کیف پول خود را وارد کنید.&lt;br/&gt;از رمز عبوری استفاده کنید که&lt;b&gt; حداقل 10  کاراکتر تصادفی &lt;/b&gt; و یا &lt;b&gt; حداقل 8 حرف داشته باشد.&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>بیت‌کوین هم اکنون بسته می‌شود تا فرایند رمزگذاری را تمام کند. به خاطر داشته باشید که رمزگذاری کردن کیف پول‌تان نمی‌تواند به طور کامل بیت‌کوین‌های شما را در برابر دزدیده شدن توسط بدافزارهایی که احتمالاً رایانهٔ شما را آلوده می‌کنند، محافظت نماید.</translation>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>رمز عبور قدیمی و رمز عبور جدید کیف پول خود را وارد گنید.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -213,7 +217,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;امضای پیام...</translation>
@@ -276,7 +283,7 @@
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
-        <translation>$ارسال آدرس ها...</translation>
+        <translation>&amp;در حال ارسال آدرس ها...</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
@@ -297,10 +304,6 @@
     <message>
         <source>Send coins to a Joulecoin address</source>
         <translation>ارسال وجه به نشانی بیت‌کوین</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>تغییر و اصلاح تنظیمات پیکربندی بیت‌کوین</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -394,6 +397,10 @@
         <source>Show the list of used receiving addresses and labels</source>
         <translation>نمایش لیست آدرس های دریافت و لیبل ها</translation>
     </message>
+    <message>
+        <source>&amp;Command-line options</source>
+        <translation>گزینه‌های خط‌فرمان</translation>
+    </message>
     <message numerus="yes">
         <source>%n active connection(s) to Joulecoin network</source>
         <translation><numerusform>%n ارتباط فعال با شبکهٔ بیت‌کوین</numerusform></translation>
@@ -413,6 +420,14 @@
     <message numerus="yes">
         <source>%n week(s)</source>
         <translation><numerusform>%n هفته</numerusform></translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 و %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n سال</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -453,18 +468,6 @@
     <message>
         <source>Incoming transaction</source>
         <translation>تراکنش دریافت شد</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>تاریخ: %1
-مبلغ: %2
-نوع: %3
-نشانی: %4
-</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -582,7 +585,7 @@ Address: %4
     </message>
     <message>
         <source>medium-high</source>
-        <translation>متوسط رو به بالا</translation>
+        <translation>متوسط متمایل به زیاد</translation>
     </message>
     <message>
         <source>medium</source>
@@ -721,27 +724,7 @@ Address: %4
         <source>command-line options</source>
         <translation>گزینه‌های خط فرمان</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>گزینه‌های رابط کاربری</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>زبان را تنظیم کنید؛ برای مثال «de_DE» (زبان پیش‌فرض محلی)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>اجرای برنامه به صورت کوچک‌شده</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>نمایش پنجرهٔ خوشامدگویی در ابتدای اجرای برنامه (پیش‌فرض: 1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>انتخاب مسیر داده‌ها در ابتدای اجرای برنامه (پیش‌فرض: 0)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -772,6 +755,10 @@ Address: %4
         <source>Error</source>
         <translation>خطا</translation>
     </message>
+    <message numerus="yes">
+        <source>%n GB of free space available</source>
+        <translation><numerusform>%n گیگابایت فضا موجود است</numerusform></translation>
+    </message>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -787,14 +774,6 @@ Address: %4
         <translation>&amp;عمومی</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>اجرای خودکار بیت‌کوین در زمان ورود به سیستم.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>&amp;اجرای بیت‌کوین با ورود به سیستم</translation>
-    </message>
-    <message>
         <source>Reset all client options to default.</source>
         <translation>بازنشانی تمام تنظیمات به پیش‌فرض.</translation>
     </message>
@@ -805,6 +784,10 @@ Address: %4
     <message>
         <source>&amp;Network</source>
         <translation>&amp;شبکه</translation>
+    </message>
+    <message>
+        <source>W&amp;allet</source>
+        <translation>کیف پول</translation>
     </message>
     <message>
         <source>Expert</source>
@@ -843,10 +826,6 @@ Address: %4
         <translation>&amp;کوچک کردن به سینی به‌جای نوار وظیفه</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>مخفی کردن در نوار کناری به‌جای خروج هنگام بستن پنجره. زمانی که این گزینه فعال است، برنامه فقط با استفاده از گزینهٔ خروج در منو قابل بسته شدن است.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>کوچک کردن &amp;در زمان بسته شدن</translation>
     </message>
@@ -857,10 +836,6 @@ Address: %4
     <message>
         <source>User Interface &amp;language:</source>
         <translation>زبان &amp;رابط کاربری:</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>زبان رابط کاربر می‌تواند در این‌جا تنظیم شود. تنظیمات بعد از ظروع مجدد بیت‌کوین اعمال خواهد شد.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -949,11 +924,7 @@ Address: %4
         <source>Recent transactions</source>
         <translation>تراکنش های اخیر</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>ناهمگام</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -971,6 +942,14 @@ Address: %4
     <message>
         <source>Cannot start joulecoin: click-to-pay handler</source>
         <translation>نمی‌توان بیت‌کوین را اجرا کرد: کنترل‌کنندهٔ کلیک-و-پرداخت</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>درخواست پرداخت منقضی شد.</translation>
+    </message>
+    <message>
+        <source>Invalid payment request.</source>
+        <translation>درخواست پرداخت نامعتبر</translation>
     </message>
     </context>
 <context>
@@ -1015,6 +994,10 @@ Address: %4
     <message>
         <source>&amp;Information</source>
         <translation>&amp;اطلاعات</translation>
+    </message>
+    <message>
+        <source>Debug window</source>
+        <translation>پنجرهٔ اشکالزدایی</translation>
     </message>
     <message>
         <source>Using OpenSSL version</source>
@@ -1085,16 +1068,12 @@ Address: %4
         <translation>فایلِ لاگِ اشکال زدایی</translation>
     </message>
     <message>
-        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>فایلِ لاگِ اشکال زدایی Joulecoin  را از دایرکتوری جاری داده ها باز کنید. این عملیات ممکن است برای فایلهای لاگِ حجیم طولانی شود.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>پاکسازی کنسول</translation>
     </message>
     <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>به کنسور RPC بیت‌کوین خوش آمدید.</translation>
+        <source>Welcome to the Joulecoin Core RPC console.</source>
+        <translation>به کنسول RPC هسته بیت کوین خوش آمدید.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1108,12 +1087,20 @@ Address: %4
         <source>Unknown</source>
         <translation>ناشناخته</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+        <source>&amp;Amount:</source>
+        <translation>مبلغ:</translation>
+    </message>
+    <message>
         <source>&amp;Label:</source>
         <translation>&amp;برچسب:</translation>
+    </message>
+    <message>
+        <source>&amp;Message:</source>
+        <translation>پیام:</translation>
     </message>
     <message>
         <source>Show</source>
@@ -1137,6 +1124,10 @@ Address: %4
     <message>
         <source>QR Code</source>
         <translation>کد QR</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Address</source>
+        <translation>&amp;کپی نشانی</translation>
     </message>
     <message>
         <source>Address</source>
@@ -1193,6 +1184,10 @@ Address: %4
         <translation>ارسال سکه</translation>
     </message>
     <message>
+        <source>Insufficient funds!</source>
+        <translation>بود جه نا کافی </translation>
+    </message>
+    <message>
         <source>Quantity:</source>
         <translation>تعداد:</translation>
     </message>
@@ -1219,6 +1214,10 @@ Address: %4
     <message>
         <source>Change:</source>
         <translation>پول خورد:</translation>
+    </message>
+    <message>
+        <source>Transaction Fee:</source>
+        <translation>هزینهٔ تراکنش:</translation>
     </message>
     <message>
         <source>fast</source>
@@ -1261,10 +1260,6 @@ Address: %4
         <translation>یا</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>نشانی گیرنده معتبر نیست؛ لطفا دوباره بررسی کنید.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>مبلغ پرداخت باید بیشتر از ۰ باشد.</translation>
     </message>
@@ -1277,8 +1272,8 @@ Address: %4
         <translation>با احتساب هزینهٔ %1 برای هر تراکنش، مجموع میزان پرداختی از مبلغ تراز شما بیشتر می‌شود.</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>یک نشانی تکراری پیدا شد. در هر عملیات ارسال، به هر نشانی فقط مبلغ می‌توان ارسال کرد.</translation>
+        <source>Payment request expired.</source>
+        <translation>درخواست پرداخت منقضی شد.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1339,6 +1334,10 @@ Address: %4
         <source>Message:</source>
         <translation>پیام:</translation>
     </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>پرداخت به:</translation>
+    </message>
     </context>
 <context>
     <name>ShutdownWindow</name>
@@ -1354,16 +1353,12 @@ Address: %4
         <translation>ا&amp;مضای پیام</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>برای احراز اینکه پیام‌ها از جانب شما هستند، می‌توانید آن‌ها را با نشانی خودتان امضا کنید. مراقب باشید چیزی که بدان اطمینان ندارید را امضا نکنید زیرا حملات فیشینگ ممکن است بخواهند از.پیامی با امضای شما سوءاستفاده کنند. تنها مواردی را که حاوی اطلاعات دقیق و قابل قبول برای شما هستند امضا کنید.</translation>
-    </message>
-    <message>
         <source>The Joulecoin address to sign the message with</source>
         <translation>نشانی بیت‌کوین برای امضاء پیغام با آن</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>انتخاب نشانی پیش‌تر استفاده شده</translation>
+        <translation>انتخاب نشانی پیشتر استفاده شده</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1408,10 +1403,6 @@ Address: %4
     <message>
         <source>&amp;Verify Message</source>
         <translation>&amp;شناسایی پیام</translation>
-    </message>
-    <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>برای شناسایی پیام، نشانیِ امضا کننده و متن پیام را وارد کنید. (مطمئن شوید که فاصله‌ها، تب‌ها و خطوط را عیناً کپی می‌کنید.) مراقب باشید در امضا چیزی بیشتر از آنچه در پیام می‌بینید وجود نداشته باشد تا فریب دزدان اینترنتی و حملات از نوع MITM را نخورید.</translation>
     </message>
     <message>
         <source>The Joulecoin address the message was signed with</source>
@@ -1652,10 +1643,6 @@ Address: %4
         <source>Type</source>
         <translation>نوع</translation>
     </message>
-    <message>
-        <source>Address</source>
-        <translation>نشانی</translation>
-    </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
         <translation><numerusform>باز برای %n بلوک دیگر</numerusform></translation>
@@ -1675,6 +1662,18 @@ Address: %4
     <message>
         <source>Generated but not accepted</source>
         <translation>تولید شده ولی قبول نشده</translation>
+    </message>
+    <message>
+        <source>Offline</source>
+        <translation>آفلاین</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>برچسب</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>تایید نشده</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -1711,10 +1710,6 @@ Address: %4
     <message>
         <source>Type of transaction.</source>
         <translation>نوع تراکنش.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>نشانی مقصد تراکنش.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -1915,10 +1910,6 @@ Address: %4
         <translation>اجرا در پشت زمینه به‌صورت یک سرویس و پذیرش دستورات</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>استفاده از شبکهٔ آزمایش</translation>
-    </message>
-    <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>پذیرش اتصالات از بیرون (پیش فرض:1 بدون پراکسی یا اتصال)</translation>
     </message>
@@ -1935,10 +1926,6 @@ Address: %4
         <translation>این یک نسخه ی آزمایشی است - با مسئولیت خودتان از آن استفاده کنید -  آن را در معدن و بازرگانی بکار نگیرید.</translation>
     </message>
     <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>هشدار: مبلغ paytxfee بسیار بالایی تنظیم شده است! این مبلغ هزینه‌ای است که شما برای تراکنش‌ها پرداخت می‌کنید.</translation>
-    </message>
-    <message>
         <source>Block creation options:</source>
         <translation>بستن گزینه ایجاد</translation>
     </message>
@@ -1949,10 +1936,6 @@ Address: %4
     <message>
         <source>Corrupted block database detected</source>
         <translation>یک پایگاه داده ی بلوک خراب یافت شد</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>آدرس آی.پی. خود را شناسایی کنید (پیش فرض:1 در زمان when listening وno -externalip)</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -1991,12 +1974,20 @@ Address: %4
         <translation>در حال بازبینی کیف پول...</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Joulecoin Core will not work properly.</source>
-        <translation>هشدار: تاریخ و ساعت کامپیوتر خود را بررسی کنید. اگر ساعت درست نباشد هسته بیت‌کوین به درستی کار نخواهد کرد.</translation>
-    </message>
-    <message>
         <source>Information</source>
         <translation>اطلاعات</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>میزان وجه اشتباه برای maxtxfee=&lt;میزان وجه&gt;: %s</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>میزان وجه اشتباه برای minrelaytxfee=&lt;میزان وجه&gt;: %s</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>میزان وجه اشتباه برای mintxfee=&lt;میزان وجه&gt;: %s</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -2007,10 +1998,6 @@ Address: %4
         <translation>فایل debug.log  را در startup مشتری کوچک کن (پیش فرض:1 اگر اشکال زدایی روی نداد)</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>از UPnP  برای شناسایی درگاه شنیداری استفاده کنید (پیش فرض:1 در زمان شنیدن)</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>JSON-RPC شناسه برای ارتباطات</translation>
     </message>
@@ -2019,28 +2006,12 @@ Address: %4
         <translation>هشدار</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>هشدار: این نسخه قدیمی است، روزآمدسازی مورد نیاز است</translation>
-    </message>
-    <message>
         <source>Password for JSON-RPC connections</source>
         <translation>JSON-RPC عبارت عبور برای ارتباطات</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>زمانی که بهترین بلاک تغییر کرد، دستور را اجرا کن (%s در cmd با block hash جایگزین شده است)</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>wallet  را به جدیدترین فرمت روزآمد کنید</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>اسکان مجدد زنجیر بلوکها برای گم والت معامله</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>JSON-RPCبرای ارتباطات   استفاده کنید OpenSSL (https)</translation>
     </message>
     <message>
         <source>This help message</source>

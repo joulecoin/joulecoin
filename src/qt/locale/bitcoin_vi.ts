@@ -49,13 +49,20 @@
     <name>AskPassphraseDialog</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     </context>
 <context>
     <name>ClientModel</name>
     </context>
 <context>
     <name>CoinControlDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Số lượng:</translation>
+    </message>
     <message>
         <source>Amount</source>
         <translation>Số lượng</translation>
@@ -67,6 +74,14 @@
     </context>
 <context>
     <name>EditAddressDialog</name>
+    <message>
+        <source>&amp;Label</source>
+        <translation>Nhãn dữ liệu</translation>
+    </message>
+    <message>
+        <source>&amp;Address</source>
+        <translation>Địa chỉ</translation>
+    </message>
     </context>
 <context>
     <name>FreespaceChecker</name>
@@ -111,6 +126,10 @@
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
+        <source>Copy &amp;Address</source>
+        <translation>Sao chép địa chỉ</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>Địa chỉ</translation>
     </message>
@@ -140,6 +159,10 @@
     </context>
 <context>
     <name>SendCoinsDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Số lượng:</translation>
+    </message>
     <message>
         <source>(no label)</source>
         <translation>(chưa có nhãn)</translation>
@@ -173,8 +196,8 @@
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <source>Address</source>
-        <translation>Địa chỉ</translation>
+        <source>Label</source>
+        <translation>Nhãn dữ liệu</translation>
     </message>
     </context>
 <context>

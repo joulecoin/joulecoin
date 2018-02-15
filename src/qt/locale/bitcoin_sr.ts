@@ -88,10 +88,6 @@
         <translation>Промена лозинке</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Унесите стару и нову лозинку за шифровање новчаника.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Одобрите шифровање новчаника</translation>
     </message>
@@ -106,10 +102,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Новчаник је шифрован</translation>
-    </message>
-    <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>Joulecoin će se sad zatvoriti da bi završio  proces enkripcije. Zapamti da enkripcija tvog novčanika ne može u potpunosti da zaštiti tvoje joulecoine da ne budu ukradeni od malawarea koji bi inficirao tvoj kompjuter.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -141,7 +133,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Синхронизација са мрежом у току...</translation>
@@ -199,10 +194,6 @@
         <translation>Пошаљите новац на joulecoin адресу</translation>
     </message>
     <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Изаберите могућности joulecoin-а</translation>
-    </message>
-    <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Мењање лозинке којом се шифрује новчаник</translation>
     </message>
@@ -231,6 +222,10 @@
         <translation>Трака са картицама</translation>
     </message>
     <message>
+        <source>&amp;About Joulecoin Core</source>
+        <translation>O Joulecoin Coru</translation>
+    </message>
+    <message>
         <source>Up to date</source>
         <translation>Ажурно</translation>
     </message>
@@ -245,14 +240,6 @@
     <message>
         <source>Incoming transaction</source>
         <translation>Придошла трансакција</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Datum: %1⏎ Iznos: %2⏎ Tip: %3⏎ Adresa: %4⏎</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -355,6 +342,10 @@ Address: %4
         <translation>Поставке</translation>
     </message>
     <message>
+        <source>W&amp;allet</source>
+        <translation>новчаник</translation>
+    </message>
+    <message>
         <source>&amp;Unit to show amounts in:</source>
         <translation>&amp;Јединица за приказивање износа:</translation>
     </message>
@@ -392,8 +383,16 @@ Address: %4
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+        <source>&amp;Amount:</source>
+        <translation>Iznos:</translation>
+    </message>
+    <message>
         <source>&amp;Label:</source>
         <translation>&amp;Етикета</translation>
+    </message>
+    <message>
+        <source>&amp;Message:</source>
+        <translation>Poruka:</translation>
     </message>
     <message>
         <source>Copy label</source>
@@ -407,6 +406,10 @@ Address: %4
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
+        <source>Copy &amp;Address</source>
+        <translation>Kopirajte adresu</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>Адреса</translation>
     </message>
@@ -418,6 +421,10 @@ Address: %4
         <source>Label</source>
         <translation>Етикета</translation>
     </message>
+    <message>
+        <source>Message</source>
+        <translation>Poruka</translation>
+    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -428,6 +435,10 @@ Address: %4
     <message>
         <source>Label</source>
         <translation>Етикета</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Poruka</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -467,6 +478,10 @@ Address: %4
     </context>
 <context>
     <name>SendCoinsEntry</name>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>Iznos:</translation>
+    </message>
     <message>
         <source>&amp;Label:</source>
         <translation>&amp;Етикета</translation>
@@ -531,6 +546,14 @@ Address: %4
         <translation>етикета</translation>
     </message>
     <message>
+        <source>Message</source>
+        <translation>Poruka</translation>
+    </message>
+    <message>
+        <source>Transaction</source>
+        <translation>transakcije</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>iznos</translation>
     </message>
@@ -565,10 +588,6 @@ Address: %4
         <translation>tip</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Адреса</translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>Otvoreno do %1</translation>
     </message>
@@ -583,6 +602,10 @@ Address: %4
     <message>
         <source>Generated but not accepted</source>
         <translation>Generisan ali nije prihvaćen</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Етикета</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -619,10 +642,6 @@ Address: %4
     <message>
         <source>Type of transaction.</source>
         <translation>Tip transakcije</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Destinacija  i adresa transakcije</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -775,24 +794,12 @@ Address: %4
         <translation>Radi u pozadini kao daemon servis i prihvati komande</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Koristi testnu mrežu</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Korisničko ime za JSON-RPC konekcije</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Lozinka za JSON-RPC konekcije</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Ponovo skeniraj lanac blokova za nedostajuće transakcije iz novčanika</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Koristi OpenSSL (https) za  JSON-RPC konekcije</translation>
     </message>
     <message>
         <source>This help message</source>

@@ -23,7 +23,7 @@
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Aadressi kopeerimine</translation>
+        <translation>&amp;Kopeeri Aadress</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -47,7 +47,7 @@
     </message>
     <message>
         <source>These are your Joulecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Joulecoin. aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
+        <translation>Need on sinu Joulecoini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -124,10 +124,6 @@
         <translation>Muuda salafraasi</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Sisesta rahakoti vana ning uus salafraas.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Kinnita rahakoti krüpteering</translation>
     </message>
@@ -150,10 +146,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Rahakott krüpteeritud</translation>
-    </message>
-    <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>Joulecoin sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista joulecoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -185,7 +177,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signeeri &amp;sõnum</translation>
@@ -256,11 +251,7 @@
     </message>
     <message>
         <source>Send coins to a Joulecoin address</source>
-        <translation>Saada münte Joulecoin. aadressile</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Muuda Joulecoin. seadeid</translation>
+        <translation>Saada münte Joulecoini aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -312,11 +303,11 @@
     </message>
     <message>
         <source>Sign messages with your Joulecoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Joulecoin. aadressiga</translation>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Joulecoini aadressiga</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Joulecoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Joulecoin. aadressiga</translation>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Joulecoini aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -338,9 +329,13 @@
         <source>Joulecoin Core</source>
         <translation>Joulecoini tuumik</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Joulecoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Joulecoin. võrku</numerusform><numerusform>%n aktiivset ühendust Joulecoin. võrku</numerusform></translation>
+    <message>
+        <source>&amp;About Joulecoin Core</source>
+        <translation>Kirjeldus Joulecoini Tuumast</translation>
+    </message>
+    <message>
+        <source>&amp;Command-line options</source>
+        <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -357,6 +352,10 @@
     <message>
         <source>%1 and %2</source>
         <translation>%1 ja %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n aasta</numerusform><numerusform>%n aastat</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -391,23 +390,42 @@
         <translation>Jõuan...</translation>
     </message>
     <message>
+        <source>Date: %1
+</source>
+        <translation>Kuupäev: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Summa: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Tüüp: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>&amp;Märgis: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Aadress: %1
+</translation>
+    </message>
+    <message>
         <source>Sent transaction</source>
         <translation>Saadetud tehing</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
         <translation>Sisenev tehing</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Kuupäev: %1⏎
-Summa: %2⏎
-Tüüp: %3⏎
-Aadress: %4⏎</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -552,7 +570,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid Joulecoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole Joulecoin.s kehtiv.</translation>
+        <translation>Sisestatud aadress "%1" ei ole Joulecoinis kehtiv.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -582,7 +600,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <source>About Joulecoin Core</source>
-        <translation>Kirjeldus Joulecoin. Tuumast</translation>
+        <translation>Kirjeldus Joulecoini Tuumast</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -595,22 +613,6 @@ Aadress: %4⏎</translation>
     <message>
         <source>command-line options</source>
         <translation>käsurea valikud</translation>
-    </message>
-    <message>
-        <source>UI options</source>
-        <translation>UI valikud</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Keele valik, nt "ee_ET" (vaikeväärtus: system locale)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>Käivitu tegumiribale</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Käivitamisel teabeakna kuvamine (vaikeväärtus: 1)</translation>
     </message>
     </context>
 <context>
@@ -646,12 +648,8 @@ Aadress: %4⏎</translation>
         <translation>Valikud</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>Käivita Joulecoin süsteemi logimisel.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>&amp;Start Joulecoin sisselogimisel</translation>
+        <source>&amp;Main</source>
+        <translation>&amp;Peamine</translation>
     </message>
     <message>
         <source>MB</source>
@@ -710,10 +708,6 @@ Aadress: %4⏎</translation>
         <translation>&amp;Minimeeri systray alale</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Sulgemise asemel minimeeri aken. Selle valiku tegemisel suletakse programm Menüüst "Välju" käsuga.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>M&amp;inimeeri sulgemisel</translation>
     </message>
@@ -724,10 +718,6 @@ Aadress: %4⏎</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Kasutajaliidese &amp;keel:</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>Kasutajaliidese keele valimise koht. Valik rakendub Joulecoin. käivitamisel.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -780,11 +770,7 @@ Aadress: %4⏎</translation>
         <source>Recent transactions</source>
         <translation>Hiljutised tehingud</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>sünkimata</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -834,6 +820,10 @@ Aadress: %4⏎</translation>
     <message>
         <source>&amp;Information</source>
         <translation>&amp;Informatsioon</translation>
+    </message>
+    <message>
+        <source>Debug window</source>
+        <translation>Debugimise aken</translation>
     </message>
     <message>
         <source>General</source>
@@ -908,16 +898,8 @@ Aadress: %4⏎</translation>
         <translation>Debugimise logifail</translation>
     </message>
     <message>
-        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ava Joulecoin. logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Puhasta konsool</translation>
-    </message>
-    <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>Teretulemast Joulecoin. RPC konsooli.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -982,6 +964,10 @@ Aadress: %4⏎</translation>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
+        <source>Copy &amp;Address</source>
+        <translation>&amp;Kopeeri Aadress</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation>Aadress</translation>
     </message>
@@ -1044,6 +1030,10 @@ Aadress: %4⏎</translation>
         <translation>Müntide saatmine</translation>
     </message>
     <message>
+        <source>Insufficient funds!</source>
+        <translation>Liiga suur summa</translation>
+    </message>
+    <message>
         <source>Quantity:</source>
         <translation>Kogus:</translation>
     </message>
@@ -1056,8 +1046,16 @@ Aadress: %4⏎</translation>
         <translation>Tasu:</translation>
     </message>
     <message>
+        <source>Transaction Fee:</source>
+        <translation>Tehingu tasu:</translation>
+    </message>
+    <message>
         <source>Choose...</source>
         <translation>Vali...</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Peida</translation>
     </message>
     <message>
         <source>Recommended:</source>
@@ -1112,10 +1110,6 @@ Aadress: %4⏎</translation>
         <translation>või</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Saaja aadress ei ole kehtiv, palun kontrolli.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>Makstav summa peab olema suurem kui 0.</translation>
     </message>
@@ -1126,10 +1120,6 @@ Aadress: %4⏎</translation>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>Summa koos tehingu tasuga %1 ületab sinu jääki.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Ühe saatmisega topelt-adressaati olla ei tohi.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1170,6 +1160,10 @@ Aadress: %4⏎</translation>
         <source>Message:</source>
         <translation>Sõnum:</translation>
     </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>Maksa :</translation>
+    </message>
     </context>
 <context>
     <name>ShutdownWindow</name>
@@ -1183,10 +1177,6 @@ Aadress: %4⏎</translation>
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Allkirjastamise teade</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Omandiõigsuse tõestamiseks saad sõnumeid allkirjastada oma aadressiga. Ettevaatust petturitega, kes üritavad saada sinu allkirja endale saada. Allkirjasta ainult korralikult täidetud avaldusi, millega nõustud.</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1214,7 +1204,7 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this Joulecoin address</source>
-        <translation>Allkirjasta sõnum Joulecoin. aadressi sulle kuulumise tõestamiseks</translation>
+        <translation>Allkirjasta sõnum Joulecoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1233,12 +1223,8 @@ Aadress: %4⏎</translation>
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Kinnitamiseks sisesta allkirjastamise aadress, sõnum (kindlasti kopeeri täpselt ka reavahetused, tühikud, tabulaatorid jms) ning allolev signatuur.</translation>
-    </message>
-    <message>
         <source>Verify the message to ensure it was signed with the specified Joulecoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Joulecoin. aadressiga.</translation>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Joulecoini aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1330,6 +1316,10 @@ Aadress: %4⏎</translation>
         <translation>Avatud kuni %1</translation>
     </message>
     <message>
+        <source>%1/offline</source>
+        <translation>%1/offline'is</translation>
+    </message>
+    <message>
         <source>%1/unconfirmed</source>
         <translation>%1/kinnitamata</translation>
     </message>
@@ -1340,10 +1330,6 @@ Aadress: %4⏎</translation>
     <message>
         <source>Status</source>
         <translation>Staatus</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, levita läbi %n node'i</numerusform><numerusform>, levita läbi %n node'i</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -1376,10 +1362,6 @@ Aadress: %4⏎</translation>
     <message>
         <source>Credit</source>
         <translation>Krediit</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>aegub %n bloki pärast</numerusform><numerusform>aegub %n bloki pärast</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -1437,10 +1419,6 @@ Aadress: %4⏎</translation>
         <source>, has not been successfully broadcast yet</source>
         <translation>, veel esitlemata</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Avaneb %n bloki pärast</numerusform><numerusform>Avaneb %n bloki pärast</numerusform></translation>
-    </message>
     <message>
         <source>unknown</source>
         <translation>tundmatu</translation>
@@ -1468,14 +1446,6 @@ Aadress: %4⏎</translation>
         <translation>Tüüp</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Aadress</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Avaneb %n bloki pärast</numerusform><numerusform>Avaneb %n bloki pärast</numerusform></translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>Avatud kuni %1</translation>
     </message>
@@ -1490,6 +1460,10 @@ Aadress: %4⏎</translation>
     <message>
         <source>Generated but not accepted</source>
         <translation>Loodud, kuid aktsepteerimata</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Silt</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -1526,10 +1500,6 @@ Aadress: %4⏎</translation>
     <message>
         <source>Type of transaction.</source>
         <translation>Tehingu tüüp.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Tehingu saaja aadress.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -1726,10 +1696,6 @@ Aadress: %4⏎</translation>
         <translation>Tööta taustal ning aktsepteeri käsklusi</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Testvõrgu kasutamine</translation>
-    </message>
-    <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Luba välisühendusi (vaikeväärtus: 1 kui puudub -proxy või -connect)</translation>
     </message>
@@ -1746,20 +1712,8 @@ Aadress: %4⏎</translation>
         <translation>See on test-versioon - kasutamine omal riisikol - ära kasuta mining'uks ega kaupmeeste programmides</translation>
     </message>
     <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Hoiatus: -paytxfee on seatud väga kõrgeks! See on sinu poolt makstav tehingu lisatasu.</translation>
-    </message>
-    <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Hoiatus: ilmnes tõrge wallet.dat faili lugemisel! Võtmed on terved, kuid tehingu andmed või aadressiraamatu kirjed võivad olla kadunud või vigased.</translation>
-    </message>
-    <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Hoiatus: toimus wallet.dat faili andmete päästmine! Originaal wallet.dat nimetati kaustas %s ümber wallet.{ajatempel}.bak'iks, jäägi või tehingute ebakõlade puhul tuleks teha backup'ist taastamine.</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Püüa vigasest wallet.dat failist taastada turvavõtmed</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -1772,10 +1726,6 @@ Aadress: %4⏎</translation>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Tuvastati vigane bloki andmebaas</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Leia oma IP aadress (vaikeväärtus: 1, kui kuulatakse ning puudub -externalip)</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -1806,10 +1756,6 @@ Aadress: %4⏎</translation>
         <translation>Pordi kuulamine nurjus. Soovikorral kasuta -listen=0.</translation>
     </message>
     <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Taasta bloki jada indeks blk000??.dat failist</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Kontrollin blokke...</translation>
     </message>
@@ -1822,12 +1768,28 @@ Aadress: %4⏎</translation>
         <translation>Rahakoti valikud:</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Impordi blokid välisest blk000??.dat failist</translation>
+        <source>(default: %u)</source>
+        <translation>(vaikimisi: %u)</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Tundmatu -whitebind aadress: '%s'</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>Informatsioon</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-maxtxfee=&lt;amount&gt; jaoks vigane kogus: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-minrelaytxfee=&lt;amount&gt; jaoks vigane kogus: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-mintxfee=&lt;amount&gt; jaoks vigane kogus: '%s'</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -1846,6 +1808,10 @@ Aadress: %4⏎</translation>
         <translation>Tehingu allkirjastamine ebaõnnestus</translation>
     </message>
     <message>
+        <source>The transaction amount is too small to pay the fee</source>
+        <translation>Tehingu summa on tasu maksmiseks liiga väikene</translation>
+    </message>
+    <message>
         <source>Transaction amount too small</source>
         <translation>Tehingu summa liiga väikene</translation>
     </message>
@@ -1854,24 +1820,12 @@ Aadress: %4⏎</translation>
         <translation>Tehing liiga suur</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Kasuta kuulatava pordi määramiseks UPnP ühendust (vaikeväärtus: 1, kui kuulatakse)</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>JSON-RPC ühenduste kasutajatunnus</translation>
     </message>
     <message>
         <source>Warning</source>
         <translation>Hoiatus</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Hoiatus: versioon on aegunud, uuendus on nõutav!</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>käivitamisel</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
@@ -1884,18 +1838,6 @@ Aadress: %4⏎</translation>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Käivita käsklus, kui parim plokk muutub (käskluse %s asendatakse ploki hash'iga)</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Uuenda rahakott uusimasse vormingusse</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Otsi ploki jadast rahakoti kadunud tehinguid</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Kasuta JSON-RPC ühenduste jaoks OpenSSL'i (https)</translation>
     </message>
     <message>
         <source>This help message</source>

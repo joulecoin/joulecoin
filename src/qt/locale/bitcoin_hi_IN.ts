@@ -84,10 +84,6 @@
         <translation>पहचान शब्द/अक्षर बदलिये !</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>कृपा करके पुराना एवं नया पहचान शब्द/अक्षर वॉलेट में डालिए !</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>वॉलेट एनक्रिपशन को प्रमाणित कीजिए !</translation>
     </message>
@@ -121,7 +117,10 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>नेटवर्क से समकालिक (मिल) रहा है ...</translation>
@@ -187,22 +186,6 @@
         <source>Tabs toolbar</source>
         <translation>टैबस टूलबार</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Joulecoin network</source>
-        <translation><numerusform>%n सक्रिया संपर्क बीटकोइन नेटवर्क से</numerusform><numerusform>%n सक्रिया संपर्क बीटकोइन नेटवर्क से</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n घंटा</numerusform><numerusform>%n घंटे</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n दिन</numerusform><numerusform>%n दिनो</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n हफ़्ता</numerusform><numerusform>%n हफ्ते</numerusform></translation>
-    </message>
     <message>
         <source>%1 behind</source>
         <translation>%1 पीछे</translation>
@@ -230,17 +213,6 @@
     <message>
         <source>Incoming transaction</source>
         <translation>प्राप्त हुई ट्रांजक्शन</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>तारीख: %1\n
-राशि: %2\n
-टाइप: %3\n
-पता:%4\n</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -363,6 +335,10 @@ Address: %4
         <translation>विकल्प</translation>
     </message>
     <message>
+        <source>W&amp;allet</source>
+        <translation>वॉलेट</translation>
+    </message>
+    <message>
         <source>&amp;OK</source>
         <translation>&amp;ओके</translation>
     </message>
@@ -414,6 +390,10 @@ Address: %4
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+        <source>&amp;Amount:</source>
+        <translation>राशि :</translation>
+    </message>
+    <message>
         <source>&amp;Label:</source>
         <translation>लेबल:</translation>
     </message>
@@ -428,6 +408,10 @@ Address: %4
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Copy &amp;Address</source>
+        <translation>&amp;पता कॉपी करे</translation>
+    </message>
     <message>
         <source>Address</source>
         <translation>पता</translation>
@@ -529,6 +513,10 @@ Address: %4
         <source>Alt+P</source>
         <translation>Alt-P</translation>
     </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>प्राप्तकर्ता:</translation>
+    </message>
     </context>
 <context>
     <name>ShutdownWindow</name>
@@ -627,10 +615,6 @@ Address: %4
         <translation>टाइप</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>पता</translation>
-    </message>
-    <message>
         <source>Open until %1</source>
         <translation>खुला है जबतक %1</translation>
     </message>
@@ -647,8 +631,12 @@ Address: %4
         <translation>जेनरेट किया गया किंतु स्वीकारा नही गया !</translation>
     </message>
     <message>
+        <source>Label</source>
+        <translation>लेबल</translation>
+    </message>
+    <message>
         <source>Received with</source>
-        <translation>स्वीकारा गया</translation>
+        <translation>स्वीकार करना</translation>
     </message>
     <message>
         <source>Received from</source>
@@ -681,10 +669,6 @@ Address: %4
     <message>
         <source>Type of transaction.</source>
         <translation>ट्रांसेक्शन का प्रकार|</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>ट्रांसेक्शन की मंजिल का पता|</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -847,10 +831,6 @@ Address: %4
     <message>
         <source>Run in the background as a daemon and accept commands</source>
         <translation>बैकग्राउंड में डेमॉन बन कर रन करे तथा कमांड्स स्वीकार करें </translation>
-    </message>
-    <message>
-        <source>Use the test network</source>
-        <translation>टेस्ट नेटवर्क का इस्तेमाल करे </translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

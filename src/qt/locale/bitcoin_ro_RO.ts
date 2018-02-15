@@ -156,10 +156,6 @@
         <translation>Schimbare frază de acces</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Introduceţi vechea şi noua parolă pentru portofel.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>Confirmaţi criptarea portofelului</translation>
     </message>
@@ -170,6 +166,10 @@
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sigur doriţi să criptaţi portofelul dvs.?</translation>
+    </message>
+    <message>
+        <source>Joulecoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
+        <translation>Joulecoin se va închide acum pentru a termina procesul de criptare. Ţineţi minte că criptarea portofelului nu vă poate proteja în totalitate de furtul monedelor de către programe dăunătoare care vă infectează calculatorul.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -188,8 +188,8 @@
         <translation>Introduceţi noua parolă a portofelului electronic.&lt;br/&gt;Vă rugăm să folosiţi o parolă de&lt;b&gt;minimum 10 caractere aleatoare&lt;/b&gt;, sau &lt;b&gt;minimum 8 cuvinte&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>Joulecoin se va închide acum pentru a termina procesul de criptare. Ţineţi minte că criptarea portofelului nu vă poate proteja în totalitate de furtul monedelor de către programe dăunătoare care vă infectează calculatorul.</translation>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>Introduceţi vechea şi noua parolă pentru portofel.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -221,7 +221,18 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    <message>
+        <source>IP/Netmask</source>
+        <translation>IP/Netmask</translation>
+    </message>
+    <message>
+        <source>Banned Until</source>
+        <translation>Banat până la</translation>
+    </message>
+</context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Semnează &amp;mesaj...</translation>
@@ -309,10 +320,6 @@
     <message>
         <source>Send coins to a Joulecoin address</source>
         <translation>Trimite monede către o adresă Joulecoin</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Modifică opţiunile de configurare pentru Joulecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -403,6 +410,10 @@
         <translation>&amp;Despre Nucleul Joulecoin</translation>
     </message>
     <message>
+        <source>Modify configuration options for Joulecoin Core</source>
+        <translation>Modifică opţiunile de configurare pentru Joulecoin</translation>
+    </message>
+    <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Arată lista de adrese trimise şi etichetele folosite.</translation>
     </message>
@@ -429,6 +440,10 @@
     <message>
         <source>No block source available...</source>
         <translation>Nici o sursă de bloc disponibilă...</translation>
+    </message>
+    <message numerus="yes">
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation><numerusform>S-a procesat %n bloc din istoricul tranzacţiilor.</numerusform><numerusform>S-au procesat %n blocuri din istoricul tranzacţiilor.</numerusform><numerusform>S-au procesat %n de blocuri din istoricul tranzacţiilor.</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -478,13 +493,39 @@
         <source>Up to date</source>
         <translation>Actualizat</translation>
     </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>S-a procesat %n bloc din istoricul tranzacţiilor.</numerusform><numerusform>S-au procesat %n blocuri din istoricul tranzacţiilor.</numerusform><numerusform>S-au procesat %n de blocuri din istoricul tranzacţiilor.</numerusform></translation>
-    </message>
     <message>
         <source>Catching up...</source>
         <translation>Se actualizează...</translation>
+    </message>
+    <message>
+        <source>Date: %1
+</source>
+        <translation>Data: %1
+</translation>
+    </message>
+    <message>
+        <source>Amount: %1
+</source>
+        <translation>Sumă: %1
+</translation>
+    </message>
+    <message>
+        <source>Type: %1
+</source>
+        <translation>Tip: %1
+</translation>
+    </message>
+    <message>
+        <source>Label: %1
+</source>
+        <translation>Etichetă: %1
+</translation>
+    </message>
+    <message>
+        <source>Address: %1
+</source>
+        <translation>Adresă: %1
+</translation>
     </message>
     <message>
         <source>Sent transaction</source>
@@ -493,18 +534,6 @@
     <message>
         <source>Incoming transaction</source>
         <translation>Tranzacţie recepţionată</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Data: %1
-Suma: %2
-Tipul: %3
-Adresa: %4
-</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -689,8 +718,24 @@ Adresa: %4
         <translation>cea mai scăzută</translation>
     </message>
     <message>
+        <source>(%1 locked)</source>
+        <translation>(%1 blocat)</translation>
+    </message>
+    <message>
         <source>none</source>
         <translation>nimic</translation>
+    </message>
+    <message>
+        <source>This label turns red if the transaction size is greater than 1000 bytes.</source>
+        <translation>Această etichetă devine roşie în cazul în care dimensiunea tranzacţiei este mai mare de 1000 de octeţi.</translation>
+    </message>
+    <message>
+        <source>This label turns red if the priority is smaller than "medium".</source>
+        <translation>Această etichetă devine roşie dacă prioritatea e mai mică decît "medie".</translation>
+    </message>
+    <message>
+        <source>This label turns red if any recipient receives an amount smaller than %1.</source>
+        <translation>Această etichetă devine roşie, dacă orice beneficiar primeşte o sumă mai mică decât %1.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
@@ -705,8 +750,8 @@ Adresa: %4
         <translation>nu</translation>
     </message>
     <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Această etichetă devine roşie, în cazul în care dimensiunea tranzacţiei este mai mare de 1000 de octeţi.</translation>
+        <source>This means a fee of at least %1 per kB is required.</source>
+        <translation>Aceasta înseamnă o taxă de cel puţin %1 pe kB necesar.</translation>
     </message>
     <message>
         <source>Can vary +/- 1 byte per input.</source>
@@ -715,10 +760,6 @@ Adresa: %4
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>Tranzacţiile cu prioritate mai mare sînt mai susceptibile de fi incluse într-un bloc.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than "medium".</source>
-        <translation>Această etichetă devine roşie dacă prioritatea e mai mică decît "medie".</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -842,30 +883,30 @@ Adresa: %4
         <translation>Opţiuni linie de comandă</translation>
     </message>
     <message>
-        <source>UI options</source>
-        <translation>Opţiuni UI</translation>
+        <source>UI Options:</source>
+        <translation>Opţiuni UI:</translation>
+    </message>
+    <message>
+        <source>Choose data directory on startup (default: %u)</source>
+        <translation>Alege dosarul de date la pornire (implicit: %u)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>Setează limba, de exemplu: "de_DE" (implicit: sistem local)</translation>
+        <translation>Setează limba, de exemplu: "ro_RO" (implicit: sistem local)</translation>
     </message>
     <message>
         <source>Start minimized</source>
-        <translation>Începe minimizat</translation>
+        <translation>Porniţi minimizat</translation>
     </message>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Setare rădăcină certificat SSL pentru cerere de plată (implicit: -sistem- )</translation>
     </message>
     <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>Afişează pe ecran splash la pornire (implicit: 1)</translation>
+        <source>Show splash screen on startup (default: %u)</source>
+        <translation>Afişează ecran splash la pornire (implicit: %u)</translation>
     </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>Alege dosarul de date la pornire (implicit: 0)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -879,6 +920,10 @@ Adresa: %4
     <message>
         <source>As this is the first time the program is launched, you can choose where Joulecoin Core will store its data.</source>
         <translation>Dacă aceasta este prima dată cînd programul este lansat, puteţi alege unde Nucleul Joulecoin va stoca datele.</translation>
+    </message>
+    <message>
+        <source>Joulecoin Core will download and store a copy of the Joulecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Nucleul Joulecoin se va descărca şi va stoca o copie a lanţului blocului Joulecoin. Cel puţin %1GB de date vor fi stocate în acest dosar şi se va mări în timp. Portofelul va fi, de asemenea, stocat în acest dosar.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -943,14 +988,6 @@ Adresa: %4
         <translation>Principal</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>Porneşte automat Joulecoin după pornirea calculatorului.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>Porneşte Joulecoin la pornirea sistemului</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
         <translation>Mărimea bazei de &amp;date cache</translation>
     </message>
@@ -975,6 +1012,14 @@ Adresa: %4
         <translation>Adresa IP a serverului proxy (de exemplu: IPv4: 127.0.0.1 / IPv6: ::1)</translation>
     </message>
     <message>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
+        <translation>Minimizează fereastra în locul părăsirii programului în momentul închiderii ferestrei. Cînd acestă opţiune e activă, aplicaţia se va opri doar în momentul selectării comenzii 'Închide aplicaţia' din menu.</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin Core.</source>
+        <translation>Limba interfeţei utilizatorului poate fi setată aici. Această setare va avea efect după repornirea Nucleului Joulecoin.</translation>
+    </message>
+    <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>URL-uri terţe părţi (de exemplu, un explorator de bloc), care apar în tab-ul tranzacţiilor ca elemente de meniu contextual. %s în URL este înlocuit cu hash de tranzacţie. URL-urile multiple sînt separate prin bară verticală |.</translation>
     </message>
@@ -997,6 +1042,10 @@ Adresa: %4
     <message>
         <source>&amp;Network</source>
         <translation>Reţea</translation>
+    </message>
+    <message>
+        <source>&amp;Start Joulecoin Core on system login</source>
+        <translation>Porneşte Nucleul Joulecoin la pornirea sistemului</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1063,10 +1112,6 @@ Adresa: %4
         <translation>&amp;Minimizare în tray în loc de taskbar</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Ascunde fereastra în locul părăsirii programului în momentul închiderii ferestrei. Cînd acestă opţiune e activă, aplicaţia se va opri doar în momentul selectării comenzii 'Închide aplicaţia' din menu.</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>M&amp;inimizare fereastră în locul închiderii programului</translation>
     </message>
@@ -1077,10 +1122,6 @@ Adresa: %4
     <message>
         <source>User Interface &amp;language:</source>
         <translation>&amp;Limbă interfaţă utilizator</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>Limba interfeţei utilizatorului poate fi setată aici. Această setare va avea efect după repornirea Joulecoin.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1119,8 +1160,8 @@ Adresa: %4
         <translation>Este necesară repornirea clientului pentru a activa schimbările.</translation>
     </message>
     <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Clientul va fi închis, doriţi să continuaţi?</translation>
+        <source>Client will be shut down. Do you want to proceed?</source>
+        <translation>Clientul va fi închis. Doriţi să continuaţi?</translation>
     </message>
     <message>
         <source>This change would require a client restart.</source>
@@ -1205,10 +1246,6 @@ Adresa: %4
         <source>Current total balance in watch-only addresses</source>
         <translation>Soldul dvs. total în adresele doar-supraveghere</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>nesincronizat</translation>
-    </message>
 </context>
 <context>
     <name>PaymentServer</name>
@@ -1227,10 +1264,6 @@ Adresa: %4
     <message>
         <source>Payment request network doesn't match client network.</source>
         <translation>Cererea de plată din reţea nu se potriveşte cu clientul din reţea</translation>
-    </message>
-    <message>
-        <source>Payment request has expired.</source>
-        <translation>Cererea de plată a expirat.</translation>
     </message>
     <message>
         <source>Payment request is not initialized.</source>
@@ -1265,8 +1298,16 @@ Adresa: %4
         <translation>Fişierul cerere de plată nu poate fi citit! Cauza poate fi un fişier cerere de plată nevalid.</translation>
     </message>
     <message>
+        <source>Payment request expired.</source>
+        <translation>Cererea de plată a expirat.</translation>
+    </message>
+    <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
         <translation>Cererile de plată neverificate prin script-uri personalizate de plată nu sînt suportate.</translation>
+    </message>
+    <message>
+        <source>Invalid payment request.</source>
+        <translation>Cerere de plată nevalidă.</translation>
     </message>
     <message>
         <source>Refund from %1</source>
@@ -1275,10 +1316,6 @@ Adresa: %4
     <message>
         <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
         <translation>Cererea de plată %1 este prea mare (%2 octeţi, permis %3 octeţi).</translation>
-    </message>
-    <message>
-        <source>Payment request DoS protection</source>
-        <translation>Protecţie DoS cerere de plată</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
@@ -1308,8 +1345,8 @@ Adresa: %4
         <translation>Agent utilizator</translation>
     </message>
     <message>
-        <source>Address/Hostname</source>
-        <translation>Adresă/Nume gazdă</translation>
+        <source>Node/Service</source>
+        <translation>Nod/Serviciu</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -1341,14 +1378,6 @@ Adresa: %4
     <message>
         <source>%1 s</source>
         <translation>%1 s</translation>
-    </message>
-    <message>
-        <source>NETWORK</source>
-        <translation>REŢEA</translation>
-    </message>
-    <message>
-        <source>UNKNOWN</source>
-        <translation>NECUNOSCUT</translation>
     </message>
     <message>
         <source>None</source>
@@ -1485,14 +1514,6 @@ Adresa: %4
         <translation>Ultima primire</translation>
     </message>
     <message>
-        <source>Bytes Sent</source>
-        <translation>Octeţi trimişi</translation>
-    </message>
-    <message>
-        <source>Bytes Received</source>
-        <translation>Octeţi primiţi</translation>
-    </message>
-    <message>
         <source>Ping Time</source>
         <translation>Timp ping</translation>
     </message>
@@ -1537,16 +1558,12 @@ Adresa: %4
         <translation>Fişier jurnal depanare</translation>
     </message>
     <message>
-        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Deschide fişierul jurnal depanare din directorul curent. Aceasta poate dura cîteva secunde pentru fişierele mai mari.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>Curăţă consola</translation>
     </message>
     <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>Bun venit la consola joulecoin RPC.</translation>
+        <source>Welcome to the Joulecoin Core RPC console.</source>
+        <translation>Bun venit la consola Nucleului Joulecoin RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1591,10 +1608,6 @@ Adresa: %4
     <message>
         <source>Unknown</source>
         <translation>Necunoscut</translation>
-    </message>
-    <message>
-        <source>Fetching...</source>
-        <translation>Preluare...</translation>
     </message>
 </context>
 <context>
@@ -1833,12 +1846,12 @@ Adresa: %4
         <translation>Alegeţi...</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation>Minimizare</translation>
-    </message>
-    <message>
         <source>per kilobyte</source>
         <translation>per kilooctet</translation>
+    </message>
+    <message>
+        <source>Hide</source>
+        <translation>Ascunde</translation>
     </message>
     <message>
         <source>total at least</source>
@@ -1945,10 +1958,6 @@ Adresa: %4
         <translation>sau</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Adresa destinatarului nu este validă, vă rugăm să o verificaţi.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>Suma de plată trebuie să fie mai mare decît 0.</translation>
     </message>
@@ -1961,10 +1970,6 @@ Adresa: %4
         <translation>Totalul depăşeşte soldul contului dacă se include şi plata taxei de %1.</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>S-a descoperit o adresă duplicat.Se poate trimite către fiecare adresă doar o singură dată per operaţiune.</translation>
-    </message>
-    <message>
         <source>Transaction creation failed!</source>
         <translation>Creare tranzacţie nereuşită!</translation>
     </message>
@@ -1973,8 +1978,12 @@ Adresa: %4
         <translation>Tranzacţia a fost respinsă! Acest lucru se poate întîmpla dacă o parte din monedele tale din portofel au fost deja cheltuite, la fel ca şi cum aţi fi folosit o copie a wallet.dat şi monedele au fost cheltuite în copie, dar nu au fost marcate ca şi cheltuite şi aici.</translation>
     </message>
     <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Plăteşte doar taxa minimă de %1</translation>
+        <source>Payment request expired.</source>
+        <translation>Cererea de plată a expirat.</translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid. Please recheck.</source>
+        <translation>Adresa destinatarului nu este validă, vă rugăm să o verificaţi.</translation>
     </message>
     <message>
         <source>Warning: Invalid Joulecoin address</source>
@@ -2052,20 +2061,12 @@ Adresa: %4
         <translation>Mesaj:</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Aceasta este o cerere de plată verificată.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Introduceţi eticheta pentru ca această adresa să fie introdusă în lista de adrese folosite</translation>
     </message>
     <message>
         <source>A message that was attached to the joulecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Joulecoin network.</source>
         <translation>un mesaj a fost ataşat la joulecoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua joulecoin.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Aceasta este o cerere de plata neverificată.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2096,10 +2097,6 @@ Adresa: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>&amp;Semnează mesaj</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Puteţi semna mesaje cu adresa dvs. pentru a demostra ca sînteti proprietarul lor. Aveţi grijă să nu semnaţi nimic vag, deoarece atacurile de tip phishing vă pot păcăli să le transferaţi identitatea. Semnaţi numai declaraţiile detaliate cu care sînteti de acord.</translation>
     </message>
     <message>
         <source>The Joulecoin address to sign the message with</source>
@@ -2152,10 +2149,6 @@ Adresa: %4
     <message>
         <source>&amp;Verify Message</source>
         <translation>&amp;Verifică mesaj</translation>
-    </message>
-    <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Introduceţi adresa de semnatură, mesajul (asiguraţi-vă că aţi copiat spaţiile, taburile etc. exact) şi semnatura dedesubt pentru a verifica mesajul. Aveţi grijă să nu citiţi mai mult în semnatură decît mesajul în sine, pentru a evita să fiţi păcăliţi de un atac de tip man-in-the-middle.</translation>
     </message>
     <message>
         <source>The Joulecoin address the message was signed with</source>
@@ -2390,6 +2383,10 @@ Adresa: %4
         <source>, has not been successfully broadcast yet</source>
         <translation>, nu s-a propagat încă</translation>
     </message>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Deschis pentru încă %n bloc</numerusform><numerusform>Deschis pentru încă %n blocuri</numerusform><numerusform>Deschis pentru încă %n de blocuri</numerusform></translation>
+    </message>
     <message>
         <source>unknown</source>
         <translation>necunoscut</translation>
@@ -2417,12 +2414,12 @@ Adresa: %4
         <translation>Tip</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adresă</translation>
-    </message>
-    <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Imatur (%1 confirmări, va fi disponibil după %2)</translation>
+    </message>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Deschis pentru încă %n bloc</numerusform><numerusform>Deschis pentru încă %n blocuri</numerusform><numerusform>Deschis pentru încă %n de blocuri</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -2443,6 +2440,10 @@ Adresa: %4
     <message>
         <source>Offline</source>
         <translation>Deconectat</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etichetă</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2499,10 +2500,6 @@ Adresa: %4
     <message>
         <source>Whether or not a watch-only address is involved in this transaction.</source>
         <translation>Indiferent dacă sau nu o adresă doar-suăpraveghere este implicată în această tranzacţie.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Adresa de destinaţie a tranzacţiei.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2735,10 +2732,6 @@ Adresa: %4
         <translation>Rulează în fundal ca un demon şi acceptă comenzi</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>Utilizează reţeaua de test</translation>
-    </message>
-    <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Acceptă conexiuni din afară (implicit: 1 dacă nu se foloseşte -proxy sau -connect)</translation>
     </message>
@@ -2751,16 +2744,8 @@ Adresa: %4
         <translation>Distribuit sub licenţa de programe MIT/X11, vezi fişierul însoţitor COPYING sau &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Iniţiază modul de test regresie, care foloseşte un lanţ special în care blocurile pot fi rezolvate instantaneu.</translation>
-    </message>
-    <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Execută comanda cînd o tranzacţie a portofelului se schimbă (%s în cmd este înlocuit de TxID)</translation>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>În acest mod -genproclimit controlează cîte blocuri sînt generate imediat.</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
@@ -2775,10 +2760,6 @@ Adresa: %4
         <translation>Nu se poate lega la %s pe acest calculator. Nucleul Joulecoin probabil deja rulează.</translation>
     </message>
     <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Atenţie: setarea -paytxfee este foarte mare! Aceasta este taxa tranzacţiei pe care o veţi plăti dacă trimiteţi o tranzacţie.</translation>
-    </message>
-    <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Atenţie: Reţeaua nu pare să fie de acord în totalitate! Aparent nişte mineri au probleme.</translation>
     </message>
@@ -2787,24 +2768,12 @@ Adresa: %4
         <translation>Atenţie: Aparent, nu sîntem de acord cu toţi partenerii noştri! Va trebui să faceţi o actualizare, sau alte noduri necesită actualizare.</translation>
     </message>
     <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Atenţie: eroare la citirea fişierului wallet.dat! Toate cheile sînt citite corect, dar datele tranzactiei sau anumite intrări din agenda sînt incorecte sau lipsesc.</translation>
-    </message>
-    <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Atenţie: fişierul wallet.dat este corupt, date salvate! Fişierul original wallet.dat a fost salvat ca wallet.{timestamp}.bak in %s; dacă balansul sau tranzactiile sînt incorecte ar trebui să restauraţi dintr-o copie de siguranţă.</translation>
     </message>
     <message>
-        <source>(default: 1)</source>
-        <translation>(iniţial: 1)</translation>
-    </message>
-    <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; poate fi:</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Încercare de recuperare a cheilor private dintr-un wallet.dat corupt</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -2825,10 +2794,6 @@ Adresa: %4
     <message>
         <source>Debugging/Testing options:</source>
         <translation>Opţiuni Depanare/Test:</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Descoperă propria adresă IP (inţial: 1)</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2863,10 +2828,6 @@ Adresa: %4
         <translation>Nu s-a reuşit ascultarea pe orice port. Folosiţi -listen=0 dacă vreţi asta.</translation>
     </message>
     <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>Dacă &lt;category&gt; nu este furnizat, produce toate informaţiile de depanare.</translation>
-    </message>
-    <message>
         <source>Importing...</source>
         <translation>Import...</translation>
     </message>
@@ -2887,10 +2848,6 @@ Adresa: %4
         <translation>Se conectează doar la noduri în reţeaua &lt;net&gt; (ipv4, ipv6 sau onion)</translation>
     </message>
     <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Reconstruirea indexului lanţului de bloc din fişierele actuale blk000???.dat</translation>
-    </message>
-    <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
         <translation>Setează mărimea bazei de date cache în megaocteţi (%d la %d, implicit: %d)</translation>
     </message>
@@ -2901,10 +2858,6 @@ Adresa: %4
     <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>Specifică fişierul portofel (în dosarul de date)</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>Este folosită pentru programe de testare a regresiei în algoritmi şi dezvoltare de alte aplicaţii.</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
@@ -2931,16 +2884,8 @@ Adresa: %4
         <translation>Trebuie să reconstruiţi baza de date folosind -reindex pentru a schimba -txindex</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Importă blocuri dintr-un fişier extern blk000??.dat</translation>
-    </message>
-    <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
         <translation>Permite conexiunile JSON-RPC din sursa specificată. Valid pentru &lt;ip&gt; sînt IP singulare (ex. 1.2.3.4), o reţea/mască-reţea (ex. 1.2.3.4/255.255.255.0) sau o reţea/CIDR (ex. 1.2.3.4/24). Această opţiune poate fi specificată de mai multe ori</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation>A apărut o eroare la setarea adresei RPC %s portul %u pentru ascultare: %s</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Joulecoin Core is probably already running.</source>
@@ -2959,8 +2904,16 @@ Adresa: %4
         <translation>Acest produs include programe dezvoltate de către Proiectul OpenSSL pentru a fi folosite în OpenSSL Toolkit &lt;https://www.openssl.org/&gt; şi programe criptografice scrise de către Eric Young şi programe UPnP scrise de către Thomas Bernard.</translation>
     </message>
     <message>
+        <source>(default: %u)</source>
+        <translation>(implicit: %u)</translation>
+    </message>
+    <message>
         <source>Accept public REST requests (default: %u)</source>
         <translation>Acceptă cererile publice REST (implicit: %u)</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Nu se poate rezolva adresa -whitebind: '%s'</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -2973,14 +2926,6 @@ Adresa: %4
     <message>
         <source>Error reading from database, shutting down.</source>
         <translation>Eroare la citirea bazei de date. Oprire.</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>Eroare: Argument nesuportat -tor găsit, folosiţi -onion.</translation>
-    </message>
-    <message>
-        <source>Fee (in XJO/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (în XJO/kB) de adăugat la tranzacţiile pe care le trimiteţi(implicit: %s)</translation>
     </message>
     <message>
         <source>Information</source>
@@ -3015,24 +2960,8 @@ Adresa: %4
         <translation>Trebuie să specificaţi un port cu -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Joulecoin Wiki for SSL setup instructions)</source>
-        <translation>Opţiuni RPC SSL: (vedeţi Wiki Joulecoin pentru intrucţiunile de setare SSL)</translation>
-    </message>
-    <message>
         <source>RPC server options:</source>
         <translation>Opţiuni server RPC:</translation>
-    </message>
-    <message>
-        <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation>RPC suportă pentru HTTP conexiuni persistente (implicit: %d)</translation>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Aleator sccapă 1 din fiecare &lt;n&gt; mesaje ale reţelei</translation>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Aleator aproximează 1 din fiecare &lt;n&gt; mesaje ale reţelei</translation>
     </message>
     <message>
         <source>Send trace/debug info to console instead of debug.log file</source>
@@ -3079,10 +3008,6 @@ Adresa: %4
         <translation>Nu se poate lega la %s pe acest calculator. (Legarea a întors eroarea %s)</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Foloseşte UPnP pentru a vedea porturile (implicit: 1 cînd ascultă)</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Utilizator pentru conexiunile JSON-RPC</translation>
     </message>
@@ -3095,24 +3020,8 @@ Adresa: %4
         <translation>Avertisment</translation>
     </message>
     <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Atenţie: această versiune este depăşită, este necesară actualizarea!</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Avertisment: Argument nesuportat -benchmark ignorat, folosiţi -debug=bench.</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Avertisment: Argument nesuportat -debugnet ignorat, folosiţi -debug=net.</translation>
-    </message>
-    <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Şterge toate tranzacţiile din portofel...</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>la pornire</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
@@ -3125,18 +3034,6 @@ Adresa: %4
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Execută comanda cînd cel mai bun bloc se modifică (%s în cmd este înlocuit cu hash-ul blocului)</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Actualizează portofelul la ultimul format</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Rescanează lanţul de bloc pentru tranzacţiile portofel lipsă</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Foloseşte OpenSSL (https) pentru conexiunile JSON-RPC</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -3155,10 +3052,6 @@ Adresa: %4
         <translation>Eroare la încărcarea wallet.dat: Portofel corupt</translation>
     </message>
     <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
-        <translation>Goleşte baza de date a activităţii din memoria pool în jurnal pe disc la fiecare &lt;n&gt; megaocteţi (implicit: %u)</translation>
-    </message>
-    <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Produce toate informaţiile de depanare (implicit: %u &lt;category&gt; furnizată este opţională)</translation>
     </message>
@@ -3167,16 +3060,8 @@ Adresa: %4
         <translation>(implicit: %s)</translation>
     </message>
     <message>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation>Cifruri acceptabile (implicit: %s)</translation>
-    </message>
-    <message>
         <source>Error loading wallet.dat</source>
         <translation>Eroare la încărcarea wallet.dat</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: %u)</source>
-        <translation>Forţează mod sigur (implicit: %u)</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -3189,14 +3074,6 @@ Adresa: %4
     <message>
         <source>Invalid -proxy address: '%s'</source>
         <translation>Adresa -proxy nevalidă: '%s'</translation>
-    </message>
-    <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>Fişierul certificat al serverului (implicit: %s)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>Cheia privată a serverului (implicit: %s)</translation>
     </message>
     <message>
         <source>Set minimum block size in bytes (default: %u)</source>

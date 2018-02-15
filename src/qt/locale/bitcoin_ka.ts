@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your Joulecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>ეს არის თქვენი Joulecoin.მისამართები გადახდების შესასრულებლად. მონეტების გაგზავნამდე ყოველთვის შეამოწმეთ თანხა და მიმღების მისამართი.</translation>
+        <translation>ეს არის თქვენი Joulecoin-მისამართები გადახდების შესასრულებლად. მონეტების გაგზავნამდე ყოველთვის შეამოწმეთ თანხა და მიმღების მისამართი.</translation>
     </message>
     <message>
         <source>These are your Joulecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>ეს არის თქვენი Joulecoin.მისამართები გადახდების მისაღებად. რეკომენდებულია ყოველი ტრანსაქციისათვის ახალი მიღების მისამართის გამოყენება.</translation>
+        <translation>ეს არის თქვენი Joulecoin-მისამართები გადახდების მისაღებად. რეკომენდებულია ყოველი ტრანსაქციისათვის ახალი მიღების მისამართის გამოყენება.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -148,10 +148,6 @@
         <translation>ფრაზა-პაროლის შეცვლა</translation>
     </message>
     <message>
-        <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>შეიყვანეთ საფულის ძველი და ახალი ფრაზა-პაროლი.</translation>
-    </message>
-    <message>
         <source>Confirm wallet encryption</source>
         <translation>დაადასტურეთ საფულის დაშიფრვა</translation>
     </message>
@@ -174,10 +170,6 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>საფულე დაშიფრულია</translation>
-    </message>
-    <message>
-        <source>Joulecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your joulecoins from being stolen by malware infecting your computer.</source>
-        <translation>ახლა Joulecoin დაიხურება დაშიფრვის პროცესის დასასრულებლად. გაითვალისწინეთ, რომ დაშიფრვა სრულად ვერ დაიცავს თქვენს ბითქოინებს თქვენს კომპიუტერში შემოპარული მავნე პროგრამების საშუალებით დატაცებისაგან.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -209,7 +201,10 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>ხელ&amp;მოწერა</translation>
@@ -292,11 +287,7 @@
     </message>
     <message>
         <source>Send coins to a Joulecoin address</source>
-        <translation>მონეტების გაგზავნა Joulecoin.მისამართზე</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Joulecoin</source>
-        <translation>Joulecoin-ის საკონფიგურაციო პარამეტრების ცვლილება</translation>
+        <translation>მონეტების გაგზავნა Joulecoin-მისამართზე</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -348,11 +339,11 @@
     </message>
     <message>
         <source>Sign messages with your Joulecoin addresses to prove you own them</source>
-        <translation>მესიჯებზე ხელმოწერა თქვენი Joulecoin.მისამართებით იმის დასტურად, რომ ის თქვენია</translation>
+        <translation>მესიჯებზე ხელმოწერა თქვენი Joulecoin-მისამართებით იმის დასტურად, რომ ის თქვენია</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Joulecoin addresses</source>
-        <translation>შეამოწმეთ, რომ მესიჯები ხელმოწერილია მითითებული Joulecoin.მისამართით</translation>
+        <translation>შეამოწმეთ, რომ მესიჯები ხელმოწერილია მითითებული Joulecoin-მისამართით</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -400,7 +391,7 @@
     </message>
     <message>
         <source>Show the Joulecoin Core help message to get a list with possible Joulecoin command-line options</source>
-        <translation>Joulecoin Core-ს დახმარების ჩვენება Joulecoin.ის საკომანდო სტრიქონის დასაშვები ოპციების სანახავად</translation>
+        <translation>Joulecoin Core-ს დახმარების ჩვენება Joulecoin-ის საკომანდო სტრიქონის დასაშვები ოპციების სანახავად</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -449,18 +440,6 @@
     <message>
         <source>Incoming transaction</source>
         <translation>მიღებული ტრანსაქციები</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>თარიღი: %1
-თანხა: %2
-ტიპი: %3
-მისამართი: %4
-</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -641,10 +620,6 @@ Address: %4
         <translation>არა</translation>
     </message>
     <message>
-        <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>ნიშნული წითლდება, როცა ტრანსაქციის ზომა 1000 ბაიტზე მეტია.</translation>
-    </message>
-    <message>
         <source>This means a fee of at least %1 per kB is required.</source>
         <translation>ეს ნიშნავს, რომ კილობაიტზე საკომისიო იქნება მინიმუმ %1</translation>
     </message>
@@ -655,14 +630,6 @@ Address: %4
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
         <translation>მეტი პრიორიტეტის ტრანსაქციებს მეტი შანსი აქვს მოხვდეს ბლოკში.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if the priority is smaller than "medium".</source>
-        <translation>ნიშნული წითლდება, როცა პრიორიტეტი "საშუალო"-ზე დაბალია.</translation>
-    </message>
-    <message>
-        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>ნიშნული წითლდება, როცა რომელიმე რეციპიენტი მიიღებს %1-ზე ნაკლებს.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -721,7 +688,7 @@ Address: %4
     </message>
     <message>
         <source>The entered address "%1" is not a valid Joulecoin address.</source>
-        <translation>შეყვანილი მისამართი "%1" არ არის ვალიდური Joulecoin.მისამართი.</translation>
+        <translation>შეყვანილი მისამართი "%1" არ არის ვალიდური Joulecoin-მისამართი.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -781,27 +748,7 @@ Address: %4
         <source>command-line options</source>
         <translation>კომანდების ზოლის ოპციები</translation>
     </message>
-    <message>
-        <source>UI options</source>
-        <translation>ინტერფეისის პარამეტრები</translation>
-    </message>
-    <message>
-        <source>Set language, for example "de_DE" (default: system locale)</source>
-        <translation>აირჩიეთ ენა, მაგალითად "de_DE" (ნაგულისხმევია სისტემური ლოკალი)</translation>
-    </message>
-    <message>
-        <source>Start minimized</source>
-        <translation>გაშვება მინიმიზებული ეკრანით</translation>
-    </message>
-    <message>
-        <source>Show splash screen on startup (default: 1)</source>
-        <translation>მისალმების ეკრანის ჩვენება გაშვებისას (ნაგულისხმევი:1)</translation>
-    </message>
-    <message>
-        <source>Choose data directory on startup (default: 0)</source>
-        <translation>მონაცემთა კატალოგის მითითება ყოველი გაშვებისას (ნაგულისხმევი: 0)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -815,6 +762,10 @@ Address: %4
     <message>
         <source>As this is the first time the program is launched, you can choose where Joulecoin Core will store its data.</source>
         <translation>ეს პროგრამის პირველი გაშვებაა; შეგიძლიათ მიუთითოთ, სად შეინახოს მონაცემები Joulecoin Core-მ.</translation>
+    </message>
+    <message>
+        <source>Joulecoin Core will download and store a copy of the Joulecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Joulecoin Core გადმოტვირთავს და შეინახავს Joulecoin-ის ბლოკთა ჯაჭვს. მითითებულ კატალოგში დაგროვდება სულ ცოტა %1 გბ მონაცემები, და მომავალში უფრო გაიზრდება. საფულეც ამავე კატალოგში შეინახება.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -867,14 +818,6 @@ Address: %4
         <translation>&amp;მთავარი</translation>
     </message>
     <message>
-        <source>Automatically start Joulecoin after logging in to the system.</source>
-        <translation>სისტემაში შესვლის შემდეგ Joulecoin.ის ავტომატური გაშვება.</translation>
-    </message>
-    <message>
-        <source>&amp;Start Joulecoin on system login</source>
-        <translation>&amp;სისტემაში შესვლისას გაშვება</translation>
-    </message>
-    <message>
         <source>Size of &amp;database cache</source>
         <translation>მონაცემთა ბაზის კეშის სი&amp;დიდე</translation>
     </message>
@@ -916,7 +859,7 @@ Address: %4
     </message>
     <message>
         <source>Automatically open the Joulecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>როუტერში Joulecoin.კლიენტის პორტის ავტომატური გახსნა. მუშაობს, თუ თქვენს როუტერს ჩართული აქვს UPnP.</translation>
+        <translation>როუტერში Joulecoin-კლიენტის პორტის ავტომატური გახსნა. მუშაობს, თუ თქვენს როუტერს ჩართული აქვს UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -947,10 +890,6 @@ Address: %4
         <translation>&amp;მინიმიზება სისტემურ ზონაში პროგრამების პანელის ნაცვლად</translation>
     </message>
     <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>პროგრამის მინიმიზება ფანჯრის დახურვისას. ოპციის ჩართვის შემდეგ პროგრამის დახურვა შესაძლებელი იქნება მხოლოდ მენიუდან - პუნქტი "გასვლა".</translation>
-    </message>
-    <message>
         <source>M&amp;inimize on close</source>
         <translation>მ&amp;ინიმიზება დახურვისას</translation>
     </message>
@@ -961,10 +900,6 @@ Address: %4
     <message>
         <source>User Interface &amp;language:</source>
         <translation>სამომხმარებ&amp;ლო ენა:</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Joulecoin.</source>
-        <translation>აქ შეგიძლიათ აირჩიოთ სამომხმარებლო ენა. ძალაში შევა Joulecoin.ის რესტარტის შემდეგ.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1003,10 +938,6 @@ Address: %4
         <translation>ცვლილებები ძალაში შევა კლიენტის ხელახალი გაშვების შემდეგ.</translation>
     </message>
     <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>კლიენტი დაიხურება, გავაგრძელოთ?</translation>
-    </message>
-    <message>
         <source>This change would require a client restart.</source>
         <translation>ამ ცვლილებების ძალაში შესასვლელად საჭიროა კლიენტის დახურვა და ხელახალი გაშვება.</translation>
     </message>
@@ -1023,7 +954,7 @@ Address: %4
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Joulecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>ნაჩვენები ინფორმაცია შეიძლება მოძველებული იყოს. თქვენი საფულე ავტომატურად სინქრონიზდება Joulecoin.ის ქსელთან კავშირის დამყარების შემდეგ, ეს პროცესი ჯერ არ არის დასრულებული.</translation>
+        <translation>ნაჩვენები ინფორმაცია შეიძლება მოძველებული იყოს. თქვენი საფულე ავტომატურად სინქრონიზდება Joulecoin-ის ქსელთან კავშირის დამყარების შემდეგ, ეს პროცესი ჯერ არ არის დასრულებული.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1057,11 +988,7 @@ Address: %4
         <source>Your current total balance</source>
         <translation>თქვენი სრული მიმდინარე ბალანსი</translation>
     </message>
-    <message>
-        <source>out of sync</source>
-        <translation>არ არის სინქრონიზებული</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -1253,16 +1180,8 @@ Address: %4
         <translation>დახვეწის ლოგ-ფაილი</translation>
     </message>
     <message>
-        <source>Open the Joulecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>გახსენით Joulecoin.ის დახვეწის ლოგ-ფაილი მიმდინარე კატალოგიდან. დიდი ლოგ-ფაილის შემთხვევაში ამას შეიძლება რამდენიმე წამი მოუნდეს.</translation>
-    </message>
-    <message>
         <source>Clear console</source>
         <translation>კონსოლის გასუფთავება</translation>
-    </message>
-    <message>
-        <source>Welcome to the Joulecoin RPC console.</source>
-        <translation>მოგესალმებათ Joulecoin.ის RPC კონსოლი.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1517,6 +1436,10 @@ Address: %4
         <translation>ხურდის მისამართი</translation>
     </message>
     <message>
+        <source>Transaction Fee:</source>
+        <translation>ტრანსაქციის საფასური - საკომისიო:</translation>
+    </message>
+    <message>
         <source>Send to multiple recipients at once</source>
         <translation>გაგზავნა რამდენიმე რეციპიენტთან ერთდროულად</translation>
     </message>
@@ -1585,10 +1508,6 @@ Address: %4
         <translation>ან</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>მიმღების მისამართი არასწორია, შეამოწმეთ.</translation>
-    </message>
-    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>გადახდის მოცულობა 0-ზე მეტი უნდა იყოს</translation>
     </message>
@@ -1597,8 +1516,8 @@ Address: %4
         <translation>თანხა აღემატება თქვენს ბალანსს</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>მისამართები დუბლირებულია, დაშვებულია ერთ ჯერზე თითო მისამართზე ერთხელ გაგზავნა.</translation>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>საკომისიო %1-ის დამატების შემდეგ თანხა აჭარბებს თქვენს ბალანსს</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
@@ -1610,7 +1529,7 @@ Address: %4
     </message>
     <message>
         <source>Warning: Invalid Joulecoin address</source>
-        <translation>ყურადღება: არასწორია Joulecoin.მისამართი</translation>
+        <translation>ყურადღება: არასწორია Joulecoin-მისამართი</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1676,20 +1595,12 @@ Address: %4
         <translation>მესიჯი:</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>ეს არის ვერიფიცირებული გადახდის მოთხოვნა.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>შეიყვანეთ ამ მისამართის ნიშნული გამოყენებული მისამართების სიაში დასამატებლად</translation>
     </message>
     <message>
         <source>A message that was attached to the joulecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Joulecoin network.</source>
         <translation>მესიჯი, რომელიც თან ერთვის მონეტებს:  URI, რომელიც შეინახება ტრანსაქციასთან ერთად თქვენთვის. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>ეს არის არავერიფიცირებული გადახდის მოთხოვნა.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1720,10 +1631,6 @@ Address: %4
     <message>
         <source>&amp;Sign Message</source>
         <translation>მე&amp;სიჯის ხელმოწერა</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>ხელმოწერით თქვენ ადასტურებთ, რომ მესიჯი თქვენია. ფრთხილად - არ მოაწეროთ ხელი რაიმე საეჭვოს: ფიშინგური ხრიკებით შეიძლება ის თქვენს მესიჯად გაასაღონ. მოაწერეთ ხელი მხოლოდ იმას, რასაც ყველა წვრილმანში ეთანხმებით.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1774,12 +1681,8 @@ Address: %4
         <translation>მესიჯის &amp;ვერიფიკაცია</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>შეიყვანეთ ხელმოწერის მისამართი, მესიჯი (დაუკვირდით, რომ ზუსტად იყოს კოპირებული სტრიქონის გადატანები, ჰარები, ტაბულაციები და სხვ) და ხელმოწერა მესიჯის ვერიფიკაციისათვის. მიაქციეთ ყურადღება, რომ რაიმე ზედმეტი არ გაგყვეთ კოპირებისას, რათა არ გახდეთ "man-in-the-middle" შეტევის ობიექტი.</translation>
-    </message>
-    <message>
         <source>Verify the message to ensure it was signed with the specified Joulecoin address</source>
-        <translation>შეამოწმეთ, რომ მესიჯი ხელმოწერილია მითითებული Joulecoin.მისამართით</translation>
+        <translation>შეამოწმეთ, რომ მესიჯი ხელმოწერილია მითითებული Joulecoin-მისამართით</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2013,10 +1916,6 @@ Address: %4
         <translation>ტიპი</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>მისამართი</translation>
-    </message>
-    <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>არ არის მომწიფებული (%1 დასტური, საჭიროა სულ %2)</translation>
     </message>
@@ -2039,6 +1938,10 @@ Address: %4
     <message>
         <source>Offline</source>
         <translation>ოფლაინშია</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>ნიშნული</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -2087,10 +1990,6 @@ Address: %4
     <message>
         <source>Type of transaction.</source>
         <translation>ტრანსაქციის ტიპი.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>ტრანსაქიის დანიშნულების მისამართი.</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -2315,20 +2214,12 @@ Address: %4
         <translation>რეზიდენტულად გაშვება და კომანდების მიღება</translation>
     </message>
     <message>
-        <source>Use the test network</source>
-        <translation>სატესტო ქსელის გამოყენება</translation>
-    </message>
-    <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>გარედან შეერთებების დაშვება (ნაგულისხმევი: 1 თუ არ გამოიყენება -proxy ან -connect)</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>მოცემულ მისამართზე მიჯაჭვა მუდმივად მასზე მიყურადებით. გამოიყენეთ [host]:port ფორმა IPv6-სათვის</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>გადასვლა რეგრესული ტესტირების რეჟიმში, რომელიც იყენებს სპეციალურ ჯაჭვს ბლოკების დაუყოვნებლივი პოვნის შესაძლებლობით.</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
@@ -2339,10 +2230,6 @@ Address: %4
         <translation>ეს არის წინასწარი სატესტო ვერსია - გამოიყენეთ საკუთარი რისკით - არ გამოიყენოთ მოპოვებისა ან კომერციული მიზნებისათვის</translation>
     </message>
     <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>ყურადღება:  ძალიან მაღალია -paytxfee - საკომისო, რომელსაც თქვენ გადაიხდით ამ ტრანსაქციის გაგზავნის საფასურად.</translation>
-    </message>
-    <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>ყურადღება: ქსელში შეუთანხმებლობაა. შესაძლოა ცალკეულ მომპოვებლებს პრობლემები ექმნებათ!</translation>
     </message>
@@ -2351,20 +2238,12 @@ Address: %4
         <translation>ყურადღება: ჩვენ არ ვეთანხმებით ყველა პირს. შესაძლოა თქვენ ან სხვა კვანძებს განახლება გჭირდებათ.</translation>
     </message>
     <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>ყურადღება: არ იკითხება wallet.dat! ყველა გასაღები წაკითხულია, მაგრამ გამორჩენილი ან არასწორია ტრანსაქციის თარიღი ან ჩანაწერები მისამართების წიგნში.</translation>
-    </message>
-    <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>ყურადღება: wallet.dat დაზიანებულია! ორიგინალური wallet.dat შენახულია როგორც wallet.{timestamp}.bak %s-ში; თუ შეამჩნიეთ უზუსტობა ნაშთში ან ტრანსაქციებში, აღადგინეთ არქივიდან.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
         <translation>&lt;category&gt; შეიძლება იყოს:</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>პირადი გასაღებების აღდგენის მცდელობა wallet.dat-იდან</translation>
     </message>
     <message>
         <source>Block creation options:</source>
@@ -2377,10 +2256,6 @@ Address: %4
     <message>
         <source>Corrupted block database detected</source>
         <translation>შენიშნულია ბლოკთა ბაზის დაზიანება</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>საკუთარი IP-მისამართის განსაზღვრა (ნაგულისხმევი: 1 თუ ჩართულია მიყურადება და არ გამოიყენება -externalip)</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -2415,10 +2290,6 @@ Address: %4
         <translation>ვერ ხერხდება პორტების მიყურადება. თუ გსურთ, გამოიყენეთ -listen=0.</translation>
     </message>
     <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>თუ &lt;category&gt; არ არის მითითებული, ნაჩვენები იქნება სრული დახვეწის ინფორმაცია.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>საწყისი ბლოკი არ არსებობს ან არასწორია. ქსელის მონაცემთა კატალოგი datadir ხომ არის არასწორი?</translation>
     </message>
@@ -2431,20 +2302,12 @@ Address: %4
         <translation>არ არის საკმარისი ფაილ-დესკრიპტორები.</translation>
     </message>
     <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>ბლოკთა ჯაჭვის ინდექსის  ხელახლა აგება blk000??.dat ფაილიდან</translation>
-    </message>
-    <message>
         <source>Set maximum block size in bytes (default: %d)</source>
         <translation>ბლოკის მაქსიმალური ზომის განსაზღვრა ბაიტებში (ნადულისხმევი: %d)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
         <translation>მიუთითეთ საფულის ფაილი (კატალოგში)</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>გამოიყენება რეგრესული ტესტირების ინსტრუმენტებისა და პროგრამების შემუშავებისას.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -2467,10 +2330,6 @@ Address: %4
         <translation>საჭიროა ბაზის ხელახალი აგება, გამოიყენეთ -reindex რათა შეცვალოთ -txindex</translation>
     </message>
     <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>ბლოკების იმპორტი გარე blk000??.dat ფაილიდან</translation>
-    </message>
-    <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>ბრძანების შესრულება შესაბამისი უწყების მიღებისას ან როცა შეინიშნება საგრძნობი გახლეჩა (cmd-ში %s შეიცვლება მესიჯით)</translation>
     </message>
@@ -2479,8 +2338,16 @@ Address: %4
         <translation>მაღალპრიორიტეტული/დაბალსაკომისიოიანი ტრანსაქციების მაქსიმალური ზომა ბაიტებში (ნაგულისხმევი: %d)</translation>
     </message>
     <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>ვერ ხერხდება -whitebind მისამართის გარკვევა: '%s'</translation>
+    </message>
+    <message>
         <source>Information</source>
         <translation>ინფორმაცია</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>დაუშვებელი მნიშვნელობა -pmaxtxfee&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
@@ -2515,20 +2382,12 @@ Address: %4
         <translation>ტრანსაქცია ძალიან დიდია</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>გამოიყენეთ UPnP მისაყურადებელი პორტის გადასამისამართებლად (ნაგულისხმევი: 1 როცა ჩართულია მიყურადება)</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>მომხმარებლის სახელი JSON-RPC-შეერთებისათვის</translation>
     </message>
     <message>
         <source>Warning</source>
         <translation>გაფრთხილება</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>ყურადღება: ვერსია მოძველებულია, საჭიროა განახლება!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -2545,18 +2404,6 @@ Address: %4
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>კომანდის შესრულება უკეთესი ბლოკის გამოჩენისას (%s კომანდაში ჩანაცვლდება ბლოკის ჰეშით)</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>საფულის ფორმატის განახლება</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>ბლოკების ჯაჭვის გადამოწმება საფულეში გამორჩენილ ტრანსაქციებზე</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>OpenSSL-ის (https) გამოყენება JSON-RPC-შეერთებებისათვის</translation>
     </message>
     <message>
         <source>This help message</source>

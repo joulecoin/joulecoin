@@ -54,6 +54,14 @@
         <translation>کوئین بھیجنے  والے کا پتہ</translation>
     </message>
     <message>
+        <source>Choose the address to send coins to</source>
+        <translation>کوئین وصول کرنے والے کا پتہ</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>کوئین بھیجنے  والے کا پتہ</translation>
+    </message>
+    <message>
         <source>C&amp;hoose</source>
         <translation>چننا</translation>
     </message>
@@ -109,7 +117,10 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>JoulecoinGUI</name>
     <message>
         <source>Error</source>
         <translation>نقص</translation>
@@ -120,6 +131,10 @@
     </context>
 <context>
     <name>CoinControlDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>رقم:</translation>
+    </message>
     <message>
         <source>Amount</source>
         <translation>رقم</translation>
@@ -135,6 +150,14 @@
     </context>
 <context>
     <name>EditAddressDialog</name>
+    <message>
+        <source>&amp;Label</source>
+        <translation>چٹ</translation>
+    </message>
+    <message>
+        <source>&amp;Address</source>
+        <translation> پتہ</translation>
+    </message>
     </context>
 <context>
     <name>FreespaceChecker</name>
@@ -183,6 +206,10 @@
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
+        <source>Copy &amp;Address</source>
+        <translation>کاپی پتہ</translation>
+    </message>
+    <message>
         <source>Address</source>
         <translation> پتہ</translation>
     </message>
@@ -216,6 +243,14 @@
     </context>
 <context>
     <name>SendCoinsDialog</name>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>ناکافی فنڈز</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>رقم:</translation>
+    </message>
     <message>
         <source>Balance:</source>
         <translation>بیلنس:</translation>
@@ -265,8 +300,8 @@
         <translation>ٹائپ</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation> پتہ</translation>
+        <source>Label</source>
+        <translation>چٹ</translation>
     </message>
     <message>
         <source>Sent to</source>
