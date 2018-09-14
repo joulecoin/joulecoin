@@ -71,11 +71,12 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         (1150502, uint256("0x000000000000660efa747fee365969d424965bfdebbc6feb034863608241e2c3"))
         (1908153, uint256("0x00000000000148056ebc887282146af6e0cb267ecd83bb71105afddc5706f066"))
         (2600671, uint256("0x0000000000004c3bfb23dca6507f29805f4e42247542e433fdae49d8d5ca6bed"))
+        (3562822, uint256("0x00000000000003599c888ab1e01d1eeb27f4f733cc12146017d5149b162ad103"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1495074242, // * UNIX timestamp of last checkpoint block
-        3142416,    // * total number of transactions between genesis and last checkpoint
+        1536643969, // * UNIX timestamp of last checkpoint block
+        4272152,    // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         1920        // * estimated number of transactions per day after checkpoint
     };
@@ -161,8 +162,8 @@ public:
         vSeeds.push_back(CDNSSeedData("seed2.jouleco.in", "seed2.jouleco.in"));
         vSeeds.push_back(CDNSSeedData("seed3.jouleco.in", "seed3.jouleco.in"));
         vSeeds.push_back(CDNSSeedData("seed4.jouleco.in", "seed4.jouleco.in"));
-        vSeeds.push_back(CDNSSeedData("joulecoin1.chickenkiller.com", "joulecoin1.chickenkiller.com"));
-        vSeeds.push_back(CDNSSeedData("joulecoin2.crabdance.com", "joulecoin2.crabdance.com"));
+        vSeeds.push_back(CDNSSeedData("seed1.joulecoin.info", "seed1.joulecoin.info"));
+        vSeeds.push_back(CDNSSeedData("seed2.joulecoin.info", "seed2.joulecoin.info"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(43);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(11);
