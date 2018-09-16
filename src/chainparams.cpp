@@ -164,6 +164,8 @@ public:
         vSeeds.push_back(CDNSSeedData("seed4.jouleco.in", "seed4.jouleco.in"));
         vSeeds.push_back(CDNSSeedData("seed1.joulecoin.info", "seed1.joulecoin.info"));
         vSeeds.push_back(CDNSSeedData("seed2.joulecoin.info", "seed2.joulecoin.info"));
+        vSeeds.push_back(CDNSSeedData("seed1.thefilepark.com", "seed1.thefilepark.com"));
+        vSeeds.push_back(CDNSSeedData("seed2.thefilepark.com", "seed2.thefilepark.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(43);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(11);
