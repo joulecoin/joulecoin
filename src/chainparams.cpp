@@ -108,7 +108,7 @@ public:
     CMainParams() {
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
-        /** 
+        /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
@@ -125,14 +125,14 @@ public:
         nRejectBlockOutdatedMajority = 9500;
         nToCheckBlockUpgradeMajority = 10000;
         nMinerThreads = 0;
-        nTargetTimespan = 45; 
+        nTargetTimespan = 45;
         nTargetSpacing = 45;
         nMaxTipAge = 24 * 60 * 60;
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
-         * 
+         *
          * CBlock(hash=000000000019d6, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=4a5e1e, nTime=1231006505, nBits=1d00ffff, nNonce=2083236893, vtx=1)
          *   CTransaction(hash=4a5e1e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
          *     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73)
@@ -158,21 +158,21 @@ public:
         assert(hashGenesisBlock == uint256("0x0000077e5cce889f0920029bf89e8ecb16f7be38e1019c3e21c26d4687ce11f5"));
         assert(genesis.hashMerkleRoot == uint256("0x2d089dcbae340c48fef8b956bfe63806c0ffd592d1d333082bfa8da6c4158e83"));
 
-        vSeeds.push_back(CDNSSeedData("seed1.jouleco.in", "seed1.jouleco.in"));
-        vSeeds.push_back(CDNSSeedData("seed2.jouleco.in", "seed2.jouleco.in"));
-        vSeeds.push_back(CDNSSeedData("seed3.jouleco.in", "seed3.jouleco.in"));
-        vSeeds.push_back(CDNSSeedData("seed4.jouleco.in", "seed4.jouleco.in"));
-        vSeeds.push_back(CDNSSeedData("seed1.joulecoin.info", "seed1.joulecoin.info"));
-        vSeeds.push_back(CDNSSeedData("seed2.joulecoin.info", "seed2.joulecoin.info"));
-        vSeeds.push_back(CDNSSeedData("seed1.thefilepark.com", "seed1.thefilepark.com"));
-        vSeeds.push_back(CDNSSeedData("seed2.thefilepark.com", "seed2.thefilepark.com"));
+        vSeeds.push_back(CDNSSeedData("s1.joulecrypto.net", "s1.joulecrypto.net"));
+        vSeeds.push_back(CDNSSeedData("s2.joulecrypto.net", "s2.joulecrypto.net"));
+        vSeeds.push_back(CDNSSeedData("s3.joulecrypto.net", "s3.joulecrypto.net"));
+        vSeeds.push_back(CDNSSeedData("s4.joulecrypto.net", "s4.joulecrypto.net"));
+        vSeeds.push_back(CDNSSeedData("s5.joulecrypto.net", "s5.joulecrypto.net"));
+        vSeeds.push_back(CDNSSeedData("s6.joulecrypto.net", "s6.joulecrypto.net"));
+        vSeeds.push_back(CDNSSeedData("s7.joulecrypto.net", "s7.joulecrypto.net"));
+        vSeeds.push_back(CDNSSeedData("s8.joulecrypto.net", "s8.joulecrypto.net"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(43);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(11);
         base58Prefixes[SECRET_KEY] =     list_of(143);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E);
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4);
-        
+
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fRequireRPCPassword = true;
@@ -185,7 +185,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = false;
     }
 
-    const Checkpoints::CCheckpointData& Checkpoints() const 
+    const Checkpoints::CCheckpointData& Checkpoints() const
     {
         return data;
     }
@@ -240,7 +240,7 @@ public:
         fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = true;
     }
-    const Checkpoints::CCheckpointData& Checkpoints() const 
+    const Checkpoints::CCheckpointData& Checkpoints() const
     {
         return dataTestnet;
     }
@@ -286,7 +286,7 @@ public:
         fMineBlocksOnDemand = true;
         fTestnetToBeDeprecatedFieldRPC = false;
     }
-    const Checkpoints::CCheckpointData& Checkpoints() const 
+    const Checkpoints::CCheckpointData& Checkpoints() const
     {
         return dataRegtest;
     }
@@ -312,7 +312,7 @@ public:
         fMineBlocksOnDemand = true;
     }
 
-    const Checkpoints::CCheckpointData& Checkpoints() const 
+    const Checkpoints::CCheckpointData& Checkpoints() const
     {
         // UnitTest share the same checkpoints as MAIN
         return data;
