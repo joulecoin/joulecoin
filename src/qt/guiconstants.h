@@ -45,7 +45,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "Joulecoin"
-#define QAPP_ORG_DOMAIN "jouleco.in"
+#define QAPP_ORG_DOMAIN "joulecrypto.net"
 #define QAPP_APP_NAME_DEFAULT "Joulecoin-Qt"
 #define QAPP_APP_NAME_TESTNET "Joulecoin-Qt-testnet"
 

@@ -1,7 +1,7 @@
 Joulecoin Core integration/staging tree
 =======================================
 
-http://www.jouleco.in
+http://www.joulecrypto.net
 
 Copyright (c) 2009-2020 Bitcoin Core Developers
 
@@ -17,7 +17,7 @@ out collectively by the network. Joulecoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Joulecoin Core software, see http://www.jouleco.in/
+the Joulecoin Core software, see http://www.joulecrypto.net/
 
 License
 -------
